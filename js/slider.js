@@ -7,7 +7,7 @@ $(function() {
         var sliderNum = $sliderLi.length;
         var defaultZ = 999;
         var currentIndex = 1;
-
+        var imageRatio = 16/9;
 
         function createPagers() {
             for (pg = 0; pg < sliderNum; pg++) {

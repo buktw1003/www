@@ -1,0 +1,78 @@
+@media (max-width: 768px) {
+    header {
+        padding-bottom: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        height: 80px;
+    }
+    header .width-limiter {
+        width: 100%;
+    }
+    header nav {
+        margin-top: 0;
+        position: absolute;
+        top: 0;
+        height: 80px;
+        width: 100%;
+        z-index: 99999;
+    }
+    header nav .switch {
+        display: block;
+        width: 50px;
+        height: 50px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        background-image:url(/images/switch.png);
+        float: right;
+        padding: 30px 0 0 0;
+        box-sizing: border-box;
+        text-align: center;
+
+    }
+    header nav .menu {
+        clear: both;
+        position: relative;
+        z-index: 99999;
+        width: 100%;
+    }
+    header nav .menu>li {
+        float: none;
+        margin: 0;
+        width: 100%;
+        background-color: #ffffff;
+        border-bottom: 1px solid gray;
+    }
+    header nav a {
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    header nav a span {
+        font-size: 16px;
+        text-transform: uppercase;
+        line-height: 2em;
+    }
+    header nav li a .bar {
+        position: absolute;
+        bottom: -1px;
+    }
+    header nav>ul>li>.submenu {
+        padding: 0;
+    }
+    header nav .submenu .leftside {
+        width: 100%;
+    }
+    header nav .submenu .leftside>ul{
+    	width: auto;
+    }
+    header nav .submenu .leftside .submenu {
+        position: static;
+        width: auto;
+        height: auto;
+    }
+    header nav .submenu .rightside {
+        display: none;
+    }
+    .block-categories li{
+    	width: 50%;
+    }
+}

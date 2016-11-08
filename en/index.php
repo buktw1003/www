@@ -1,24 +1,30 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en">
 <?php 
-$thisLng = "en"
+$lng = "en";
+$css = '<link rel="stylesheet" href="/css/reset.css">
+        <link rel="stylesheet" href="/css/core.css?v=1">
+        <link rel="stylesheet" href="/css/slider.css">
+        <link rel="stylesheet" href="/css/m.css">';
+$js = '<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+       <script src="/js/load.js"></script>
+       <script src="/js/slider.js"></script>
+       <script src="/js/main.js"></script>
+       <script src="/js/index.js"></script>';
 ?>
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Blumen und Katze</title>
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/core.css">
-    <link rel="stylesheet" href="/css/slider.css">
-    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-    <script src="/js/load.js"></script>
-    <script src="/js/slider.js"></script>
-    <script src="/js/main.js"></script>
-    <script src="/js/index.js"></script>
+    <?php
+    echo $css.$js;
+    ?>
+    
 </head>
 
 <body class="lng-en">
     <header></header>
-    <main>
+    <main><div class="width-limiter">
         <section class="block-promo clearfix">
             <div class="slider">
                 <ul class="img">
@@ -38,11 +44,12 @@ $thisLng = "en"
                 <ul class="pager"></ul>
             </div>
             <div class="popular">
-                <a href="/<?php echo $thisLng;?>/prod/jollyheap.html"><img src="/images/index/it1.jpg" alt="Most Popular"></a>
+                <img src="/images/index/slider-assist.png" alt="">
             </div>
         </section>
         <section class="block-categories">
             <ul class="clearfix">
+                <li><a href="/<?php echo $lng;?>/prod/jollyheap.html"><img src="/images/index/it1.jpg" alt="Most Popular"></a></li>
                 <li>
                     <a href=""><img src="/images/index/it2.jpg" alt="Kitchen"></a>
                 </li>
@@ -63,7 +70,7 @@ $thisLng = "en"
                         <a href="#" vid="intro1">INTRO 1</a>
                         <a href="#" vid="intro2">INTRO 2</a>
                     </div>
-                    <div class="btn-detail"><a href="/<?php echo $thisLng;?>/prod/jollyheap.html">DETAIL</a></div>
+                    <div class="btn-detail"><a href="/<?php echo $lng;?>/prod/jollyheap.html">DETAIL</a></div>
                 </div>
                 <div class="intro clearfix">
                     <div class="col-33 dk main-intro">
@@ -157,9 +164,9 @@ $thisLng = "en"
                 </div>
             </div>
             <!-- /prod jollyheap -->
-            
+
         </section>
-    </main>
+    </div></main>
     <footer>
         <div class="width-limiter">
             <a class="btn-fb" href="https://www.facebook.com/Blumen-und-Katze-1074003162719945/?fref=ts" target="_blank">Facebook</a>
@@ -168,12 +175,12 @@ $thisLng = "en"
     </footer>
     <div class="overlay">
         <div class="overlay-container">
-        <div class="top">
-            <h3>Intro 1 - jollyheap</h3>
-            <a class="btn-close" href="#"><span>close</span></a>
-        </div>
+            <div class="top">
+                <h3>Intro 1 - jollyheap</h3>
+                <a class="btn-close" href="#"><span>close</span></a>
+            </div>
             <div class="video">
-                
+
             </div>
         </div>
     </div>

@@ -1,7 +1,7 @@
 .slider{
 	position: absolute;
 	box-sizing:border-box;
-	width: 66.66666666%;
+	width: 100%;
 	overflow: hidden;
 	height: 100%;
 	padding: 5px;
@@ -16,6 +16,7 @@
 }
 .slider>.img>li{
 	position: absolute;
+	width: 100%;
 	opacity: 0;
 }
 .slider>.img>li.active{
@@ -35,13 +36,13 @@
 	display: block;
 	width: 10px;
 	height: 10px;
-	background-color: #b4dbed;
+	background-color: #ccc;
 	//border: 2px solid transparent;
 	border-radius: 10px;
 	margin: 2px;
 }
 .pager .active a{
-	background-color: #316a86;
-	border: 2px solid #b4dbed;
+	background-color: #666;
+	border: 2px solid #ccc;
 	margin: 0;
 }
