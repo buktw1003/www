@@ -1,20 +1,19 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en">
 <?php 
-$thisLng = "zh";
+$lng = "zh";
+$root = $_SERVER['DOCUMENT_ROOT'];
+$commVar = $root."/inc/comm_var.php";
+include_once($commVar);
 ?>
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <title>Blumen und Katze</title>
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/core.css">
-    <link rel="stylesheet" href="/css/slider.css">
-    <link rel="stylesheet" href="/css/m.css">
-    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-    <script src="/js/load.js"></script>
-    <script src="/js/slider.js"></script>
-    <script src="/js/main.js"></script>
-    <script src="/js/index.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><?php echo "首頁 - ".$title;?></title>
+    <?php
+    echo $css.$js;
+    ?>
+    
 </head>
 
 <body class="lng-zh">
@@ -45,7 +44,7 @@ $thisLng = "zh";
             </section>
             <section class="block-categories">
                 <ul class="clearfix">
-                    <li><a href="/<?php echo $lng;?>/prod/jollyheap.html"><img src="/images/index/it1.jpg" alt="Most Popular"></a></li>
+                    <li><a href="/<?php echo $lng;?>/prod/jollyheap.php"><img src="/images/index/it1.jpg" alt="Most Popular"></a></li>
                     <li>
                         <a href=""><img src="/images/index/it2.jpg" alt="Kitchen"></a>
                     </li>
@@ -53,7 +52,7 @@ $thisLng = "zh";
                         <a href=""><img src="/images/index/it3.jpg" alt="Home Decor"></a>
                     </li>
                     <li>
-                        <a href=""><img src="/images/index/it4.jpg" alt="Stationary"></a>
+                        <a href=""><img src="/images/index/it4.jpg" alt="Stationery"></a>
                     </li>
                 </ul>
             </section>
@@ -66,11 +65,11 @@ $thisLng = "zh";
                             <a href="#" vid="intro1">介紹影片 1</a>
                             <a href="#" vid="intro2">介紹影片 2</a>
                         </div>
-                        <div class="btn-detail"><a href="/<?php echo $thisLng;?>/prod/jollyheap.html">詳細資訊</a></div>
+                        <div class="btn-detail"><a href="/<?php echo $lng;?>/prod/jollyheap.php">詳細資訊</a></div>
                     </div>
                     <div class="intro clearfix">
                         <div class="col-33 dk main-intro">
-                            <div class="intro-wrap">
+                            <div class="intro-wrap clearfix">
                                 <div class="img">
                                     <img src="/images/index/prod-1-1.jpg" alt="">
                                 </div>
@@ -175,7 +174,7 @@ $thisLng = "zh";
                     <a class="btn-close" href="#"><span>close</span></a>
                 </div>
                 <div class="video">
-                    
+
                 </div>
             </div>
         </div>

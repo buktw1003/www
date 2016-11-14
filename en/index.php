@@ -2,20 +2,14 @@
 <html lang="en">
 <?php 
 $lng = "en";
-$css = '<link rel="stylesheet" href="/css/reset.css">
-        <link rel="stylesheet" href="/css/core.css?v=1">
-        <link rel="stylesheet" href="/css/slider.css">
-        <link rel="stylesheet" href="/css/m.css">';
-$js = '<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-       <script src="/js/load.js"></script>
-       <script src="/js/slider.js"></script>
-       <script src="/js/main.js"></script>
-       <script src="/js/index.js"></script>';
+$root = $_SERVER['DOCUMENT_ROOT'];
+$commVar = $root."/inc/comm_var.php";
+include_once($commVar);
 ?>
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Blumen und Katze</title>
+    <title><?php echo "Home - ".$title;?></title>
     <?php
     echo $css.$js;
     ?>
@@ -49,7 +43,7 @@ $js = '<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
         </section>
         <section class="block-categories">
             <ul class="clearfix">
-                <li><a href="/<?php echo $lng;?>/prod/jollyheap.html"><img src="/images/index/it1.jpg" alt="Most Popular"></a></li>
+                <li><a href="/<?php echo $lng;?>/prod/jollyheap.php"><img src="/images/index/it1.jpg" alt="Most Popular"></a></li>
                 <li>
                     <a href=""><img src="/images/index/it2.jpg" alt="Kitchen"></a>
                 </li>
@@ -57,7 +51,7 @@ $js = '<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
                     <a href=""><img src="/images/index/it3.jpg" alt="Home Decor"></a>
                 </li>
                 <li>
-                    <a href=""><img src="/images/index/it4.jpg" alt="Stationary"></a>
+                    <a href=""><img src="/images/index/it4.jpg" alt="Stationery"></a>
                 </li>
             </ul>
         </section>
@@ -65,7 +59,10 @@ $js = '<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
             <h2 class="top-products">Top Products</h2>
             <div id="jollyheap" class="prod">
                 <div class="intro-bar clearfix">
-                    <h3><span class="short-intro">Soft Magnetic Construction toy</span><span class="prod-name">JollyHeap</span></h3>
+                    <h3>
+                        <span class="prod-name">JollyHeap</span>
+                        <span class="short-intro">Soft Magnetic Construction toy</span>
+                    </h3>
                     <div class="btn-sp btn-video">
                         <a href="#" vid="intro1">INTRO 1</a>
                         <a href="#" vid="intro2">INTRO 2</a>
@@ -74,7 +71,7 @@ $js = '<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
                 </div>
                 <div class="intro clearfix">
                     <div class="col-33 dk main-intro">
-                        <div class="intro-wrap">
+                        <div class="intro-wrap clearfix">
                             <div class="img">
                                 <img src="/images/index/prod-1-1.jpg" alt="">
                             </div>
@@ -176,7 +173,7 @@ $js = '<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
     <div class="overlay">
         <div class="overlay-container">
             <div class="top">
-                <h3>Intro 1 - jollyheap</h3>
+                <h3>AAA</h3>
                 <a class="btn-close" href="#"><span>close</span></a>
             </div>
             <div class="video">

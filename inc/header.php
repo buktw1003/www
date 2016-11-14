@@ -20,7 +20,7 @@
                                 </div></li>
                                 <li><a href="">KITCHEN<span class="bar"></span></a></li>
                                 <li><a href="">HOME DECOR<span class="bar"></span></a></li>
-                                <li><a href="">STATIONARY<span class="bar"></span></a></li>
+                                <li><a href="">STATIONERY<span class="bar"></span></a></li>
                             </ul>
                         </li>
                         <li class="rightside col-66">

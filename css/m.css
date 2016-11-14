@@ -1,4 +1,11 @@
 @media (max-width: 768px) {
+    .row {
+        margin: 0;
+    }
+    .col-xs-4 {
+        width: 100%;
+        padding: 10px 0;
+    }
     header {
         padding-bottom: 0;
         -webkit-box-shadow: none;
@@ -8,32 +15,47 @@
     header .width-limiter {
         width: 100%;
     }
+    header h1 a {
+        display: block;
+        float: right;
+        max-width: calc(100% - 60px);
+        padding-right: 10px;
+    }
+    header h1 img {
+        display: inline;
+        width: 100%;
+    }
     header nav {
         margin-top: 0;
         position: absolute;
-        top: 0;
-        height: 80px;
+        top: 80px;
         width: 100%;
         z-index: 99999;
     }
     header nav .switch {
-        display: block;
+        position: absolute;
         width: 50px;
         height: 50px;
-        margin-top: 15px;
-        margin-bottom: 15px;
-        background-image:url(/images/switch.png);
-        float: right;
+        /* margin-top: 15px; */
+        /* margin-bottom: 15px; */
+        background-image: url(/images/switch.png);
+        /* float: right; */
         padding: 30px 0 0 0;
-        box-sizing: border-box;
+        /* box-sizing: border-box; */
         text-align: center;
-
+        text-decoration: none;
+        /* color: #333333; */
+        display: block;
+        top: -65px;
+        left: 0;
     }
     header nav .menu {
         clear: both;
         position: relative;
         z-index: 99999;
         width: 100%;
+        display: none;
+        float: none;
     }
     header nav .menu>li {
         float: none;
@@ -41,10 +63,14 @@
         width: 100%;
         background-color: #ffffff;
         border-bottom: 1px solid gray;
+        padding: 0 1em;
     }
     header nav a {
         padding-top: 1em;
         padding-bottom: 1em;
+    }
+    header nav .menu>li>a{
+    	height: auto;
     }
     header nav a span {
         font-size: 16px;
@@ -57,12 +83,13 @@
     }
     header nav>ul>li>.submenu {
         padding: 0;
+        position: static;
     }
     header nav .submenu .leftside {
         width: 100%;
     }
-    header nav .submenu .leftside>ul{
-    	width: auto;
+    header nav .submenu .leftside>ul {
+        width: auto;
     }
     header nav .submenu .leftside .submenu {
         position: static;
@@ -72,7 +99,125 @@
     header nav .submenu .rightside {
         display: none;
     }
-    .block-categories li{
-    	width: 50%;
+    header nav .lng {
+        float: none;
+        clear: both;
+        display: none;
+    }
+    header nav .lng>a {
+        width: 100%;
+    }
+    header .lng .lng-menu {
+        width: 100%;
+        position: static;
+    }
+    main {
+        margin-top: 80px;
+    }
+    .block-categories li {
+        width: 50%;
+    }
+    .prod .intro-bar {
+        /*padding: 5px;*/
+    }
+    .intro-bar h3 .short-intro {
+        margin-right: 1em;
+    }
+    .intro-bar .btn-detail {
+        float: none;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+    .intro-bar h3 {
+    }
+    .intro-bar a {
+        font-size: 13px;
+    }
+    .intro-bar .btn-sp {
+        margin-top: 10px;
+        width: calc(100% + 10px);
+        margin-left: -5px;
+    }
+    .intro-bar .btn-sp a {
+        width: calc(50% - 10px);
+        margin: 0 5px;
+    }
+    .prod .main-intro {
+        width: 100%;
+        margin-bottom: 10px;
+        
+    }
+    .prod .main-intro .intro-wrap{
+    	padding-bottom: 5px;
+        border-bottom: 1px solid silver;
+    }
+    .prod .text {
+        padding: 0 3%;
+    }
+    .prod .text h4 {
+        font-size: 13px;
+    }
+    .prod .grid .text {
+        font-size: 12px;
+        padding: 0;
+    }
+
+    .prod .dk .img {
+        float: left;
+        width: 40%;
+    }
+    .prod .dk .img img {
+        opacity: 1;
+    }
+    .prod .dk .text {
+        width: 60%;
+        float: left;
+        color: #000000;
+        position: static;
+        text-align: left;
+    }
+    .prod .main-intro .text h4 {
+        font-size: 13px;
+    }
+    .prod .main-intro .text p {
+        font-size: 12px;
+        line-height: 1.5em;
+    }
+    .col-66.grid {
+        width: 100%;
+    }
+    .cycle.spl-33 li {
+        width: 50%;
+    }
+    .overlay .overlay-container {
+        width: 100%;
+        padding: 5px;
+    }
+    .overlay h3 {
+        width: calc(100% - 30px);
+        font-size: 18px;
+    }
+    .overlay .btn-close {
+        width: 30px;
+        height: 30px;
+    }
+    .block-figure .onimg.text {
+        position: static;
+        padding: 0.5em;
+        background-color: #999999;
+        text-shadow: none;
+    }
+    .block-figure .text h2 {
+        font-size: 18px;
+    }
+    .block-figure .text p {
+        font-size: 15px;
+    }
+    .prod-intro .row-container {
+        padding: 5% 2.5%;
+    }
+    .prod-intro h3 {
+        font-size: 18px;
     }
 }

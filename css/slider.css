@@ -22,9 +22,20 @@
 .slider>.img>li.active{
 	z-index: 9999!important;
 }
+.slider>.img>li .prod{
+	position: absolute;
+	background-color: rgba(0,0,0,0.5);
+	bottom: 20px;
+	left: 20px;
+	width: 20%;
+	padding: 0 1em;
+	font-size: 24px;
+	color: #ffffff;
+	line-height: 2em;
+}
 .pager{
 	position: absolute;
-	bottom: 13px;
+	bottom: 0;
 	right: 20px;
 	z-index: 9999;
 }
@@ -32,14 +43,18 @@
 	float: left;
 	margin: 0 2px;
 }
-.pager a{
+.pager li a{
 	display: block;
 	width: 10px;
 	height: 10px;
 	background-color: #ccc;
-	//border: 2px solid transparent;
+	//
+	border: 2px solid transparent;
 	border-radius: 10px;
 	margin: 2px;
+	padding: 0;
+	border: none;
+	box-sizing: content-box;
 }
 .pager .active a{
 	background-color: #666;

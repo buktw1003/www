@@ -1,22 +1,18 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en">
-
+<?php 
+$root = $_SERVER['DOCUMENT_ROOT'];
+$commVar = $root."/inc/comm_var.php";
+include_once($commVar);
+?>
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Blumen und Katze</title>
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/reset.css">
-    <!-- Latest compiled and minified CSS -->
-    <!-- Optional theme -->
-    <!-- Latest compiled and minified JavaScript -->
-    <link rel="stylesheet" href="/css/core.css">
-    <link rel="stylesheet" href="/css/slider.css">
-    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-    <script src="/js/load.js"></script>
-    <script src="/js/slider.js"></script>
-    <script src="/js/main.js"></script>
-    <script src="/js/index.js"></script>
+    <?php
+    echo $css.$js;
+    ?>
+    
 </head>
 
 <body class="lng-en">
