@@ -11,7 +11,12 @@
 
 <body>
 <?php
-    echo "ip_info("Visitor", "Country");"
+$ip = $_SERVER["REMOTE_ADDR"];
+$path = $_SERVER["SCRIPT_FILENAME"];
+$char = substr("ABCDE", 0, 2);
+echo $char."<br/>";
+
+echo "$path";
 ?>
 </body>
 

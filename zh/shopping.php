@@ -15,7 +15,7 @@ include_once($commVar);
     
 </head>
 
-<body class="lng-en">
+<body class="lng-zh">
     <header></header>
     <main><div class="width-limiter">
             

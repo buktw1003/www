@@ -1,15 +1,16 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en">
 <?php 
-$lng = "en";
 $root = $_SERVER['DOCUMENT_ROOT'];
 $commVar = $root."/inc/comm_var.php";
+
 include_once($commVar);
+$header = $root."/inc/header_".$lng.".php";
 ?>
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title><?php echo "Home - ".$title;?></title>
+    <title><?php echo "首頁 - ".$title;?></title>
     <?php
     echo $css.$js;
     ?>
@@ -17,23 +18,21 @@ include_once($commVar);
 </head>
 
 <body class="lng-en">
-    <header></header>
+    <header>
+        <?php
+            include_once($header);
+        ?>
+    
+    </header>
+
     <main><div class="width-limiter">
         <section class="block-promo clearfix">
             <div class="slider">
                 <ul class="img">
-                    <li>
-                        <a href=""><img src="/images/prod/cm/jh/banner/slider1.jpg" alt=""></a>
-                    </li>
-                    <li>
-                        <a href=""><img src="/images/prod/cm/jh/banner/slider2.jpg" alt=""></a>
-                    </li>
-                    <li>
-                        <a href=""><img src="/images/prod/cm/jh/banner/slider3.jpg" alt=""></a>
-                    </li>
-                    <li>
-                        <a href=""><img src="/images/prod/cm/jh/banner/slider4.jpg" alt=""></a>
-                    </li>
+                    <li><a href=""><img src="/images/prod/cm/jh/banner/slider1.jpg" alt=""></a></li>
+                    <li><a href=""><img src="/images/prod/cm/jh/banner/slider2.jpg" alt=""></a></li>
+                    <li><a href=""><img src="/images/prod/cm/jh/banner/slider3.jpg" alt=""></a></li>
+                    <li><a href=""><img src="/images/prod/cm/jh/banner/slider4.jpg" alt=""></a></li>
                 </ul>
                 <ul class="pager"></ul>
             </div>
@@ -44,15 +43,9 @@ include_once($commVar);
         <section class="block-categories">
             <ul class="clearfix">
                 <li><a href="/<?php echo $lng;?>/prod/jollyheap.php"><img src="/images/index/it1.jpg" alt="Most Popular"></a></li>
-                <li>
-                    <a href=""><img src="/images/index/it2.jpg" alt="Kitchen"></a>
-                </li>
-                <li>
-                    <a href=""><img src="/images/index/it3.jpg" alt="Home Decor"></a>
-                </li>
-                <li>
-                    <a href=""><img src="/images/index/it4.jpg" alt="Stationery"></a>
-                </li>
+                <li><a href=""><img src="/images/index/it2.jpg" alt="Kitchen"></a></li>
+                <li><a href=""><img src="/images/index/it3.jpg" alt="Home Decor"></a></li>
+                <li><a href=""><img src="/images/index/it4.jpg" alt="Stationery"></a></li>
             </ul>
         </section>
         <section class="block-products">

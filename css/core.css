@@ -198,7 +198,7 @@ header>.width-limiter {
     width: 1200px;
 }
 header h1{
-    padding-top: 20px;
+    padding-top: 10px;
     width: 100%;
 }
 header h1 a{
@@ -246,7 +246,7 @@ header nav li a .bar {
     display: block;
     width: 0%;
     height: 2px;
-    background-color: red;
+    background-color: #9fd4ed;
     transition: width 0.254s;
 }
 
@@ -377,7 +377,7 @@ header nav .submenu .submenu a:hover {
 }
 main{
     /* background-color: #fafafa; */
-    margin-top: 115px;
+    margin-top: 125px;
 }
 main>div{
     padding-bottom: 50px;
@@ -640,7 +640,7 @@ footer p {
 }
 
 .prod-intro h3 {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: bold;
     margin-bottom: 10px;
 }
