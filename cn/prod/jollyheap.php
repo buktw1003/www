@@ -5,6 +5,7 @@
 $root = $_SERVER['DOCUMENT_ROOT'];
 $commVar = $root."/inc/comm_var.php";
 include_once($commVar);
+$header = $root."/inc/header_".$lng.".php";
 ?>
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
@@ -16,7 +17,11 @@ include_once($commVar);
 </head>
 
 <body class="lng-cn">
-    <header></header>
+    <header>
+        <?php
+            include_once($header);
+        ?>
+    </header>
     <main>
         <div class="width-limiter">
             <section class="block-figure clearfix">

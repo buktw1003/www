@@ -65,12 +65,12 @@ $header = $root."/inc/header_".$lng.".php";
                 <h2 class="top-products">Top Products</h2>
                 <div id="jollyheap" class="prod">
                     <div class="intro-bar clearfix">
-                        <h3><span class="short-intro">磁性布積木</span><span class="prod-name">JollyHeap</span></h3>
+                        <h3><span class="short-intro">磁性布积木</span><span class="prod-name">JollyHeap</span></h3>
                         <div class="btn-sp btn-video">
-                            <a href="#" vid="intro1">介紹影片 1</a>
-                            <a href="#" vid="intro2">介紹影片 2</a>
+                            <a href="#" vid="intro1">介绍影片 1</a>
+                            <a href="#" vid="intro2">介绍影片 2</a>
                         </div>
-                        <div class="btn-detail"><a href="/<?php echo $lng;?>/prod/jollyheap.php">詳細資訊</a></div>
+                        <div class="btn-detail"><a href="/<?php echo $lng;?>/prod/jollyheap.php">详细信息</a></div>
                     </div>
                     <div class="intro clearfix">
                         <div class="col-33 dk main-intro">
@@ -79,8 +79,8 @@ $header = $root."/inc/header_".$lng.".php";
                                     <img src="/images/index/prod-1-1.jpg" alt="">
                                 </div>
                                 <div class="text v-center">
-                                    <h4>JollyHeap - Smart Cube<br/>是一款專為孩童設計的益智玩具。</h4>
-                                    <p>顛覆過去布積木的玩法，Smart Cube創新的思維，讓孩子發展獨一無二的想像力及創造力;<br/>在玩樂的過程中孩子能夠長時間的專注其中，更有助於發展邏輯思考及社交能力！</p>
+                                    <h4>JollyHeap - Smart Cube<br/>是一款专为孩童设计的益智玩具。</h4>
+                                    <p>颠覆过去布积木的玩法，Smart Cube创新的思维，让孩子发展独一无二的想象力及创造力;<br/>在玩乐的过程中孩子能够长时间的专注其中，更有助于发展逻辑思考及社交能力！</p>
                                 </div>
                             </div>
                         </div>
@@ -93,8 +93,8 @@ $header = $root."/inc/header_".$lng.".php";
                                         </div>
                                         <div class="text v-center">
                                             <div class="icon"><img src="/images/index/icon-magnetism.png" alt=""></div>
-                                            <h4>完美連結</h4>
-                                            <p>Smart Cube內含軟磁鐵，便於積木的組合；完美連結孩子的大腦與建構能力。</p>
+                                            <h4>完美连结</h4>
+                                            <p>Smart Cube内含软磁铁，便于积木的组合；完美连结孩子的大脑与建构能力。</p>
                                         </div>
                                     </div>
                                 </li>
@@ -105,8 +105,8 @@ $header = $root."/inc/header_".$lng.".php";
                                         </div>
                                         <div class="text v-center">
                                             <div class="icon"><img src="/images/index/icon-light.png" alt=""></div>
-                                            <h4>好輕好玩</h4>
-                                            <p>各積木重量不超過150g<br/>讓各年齡層的孩子都能輕易拿取</p>
+                                            <h4>好轻好玩</h4>
+                                            <p>各积木重量不超过150g<br/>让各年龄层的孩子都能轻易拿取</p>
                                         </div>
                                     </div>
                                 </li>
@@ -118,7 +118,7 @@ $header = $root."/inc/header_".$lng.".php";
                                         <div class="text v-center">
                                             <div class="icon"><img src="/images/index/icon-safety.png" alt=""></div>
                                             <h4>安全第一</h4>
-                                            <p>Smart Cube全材質由柔軟無尖銳角度的軟材質製成</p>
+                                            <p>Smart Cube全材质由柔软无尖锐角度的软材质制成</p>
                                         </div>
                                     </div>
                                 </li>
@@ -130,7 +130,7 @@ $header = $root."/inc/header_".$lng.".php";
                                         <div class="text v-center">
                                             <div class="icon"><img src="/images/index/icon-multi.png" alt=""></div>
                                             <h4>一物多工</h4>
-                                            <p>不只是玩具，還是孩子的城堡、汽車；更是大人的沙發、茶几、踮腳凳！</p>
+                                            <p>不只是玩具，还是孩子的城堡、汽车；更是大人的沙发、茶几、踮脚凳！</p>
                                         </div>
                                     </div>
                                 </li>
@@ -141,8 +141,8 @@ $header = $root."/inc/header_".$lng.".php";
                                         </div>
                                         <div class="text v-center">
                                             <div class="icon"><img src="/images/index/icon-quiet.png" alt=""></div>
-                                            <h4>安靜無聲</h4>
-                                            <p>全材質由柔軟的材料製成，玩樂過程中只有孩子的笑聲，媽媽好開心！</p>
+                                            <h4>安静无声</h4>
+                                            <p>全材质由柔软的材料制成，玩乐过程中只有孩子的笑声，妈妈好开心！</p>                              
                                         </div>
                                     </div>
                                 </li>
@@ -153,8 +153,8 @@ $header = $root."/inc/header_".$lng.".php";
                                         </div>
                                         <div class="text v-center">
                                             <div class="icon"><img src="/images/index/icon-durability.png" alt=""></div>
-                                            <h4>經久耐用</h4>
-                                            <p>所有材料皆經過嚴格挑選，一物多工之外還可長時間使用，讓您物超所值！</p>
+                                            <h4>经久耐用</h4>
+                                            <p>所有材料皆经过严格挑选，一物多任务之外还可长时间使用，让您物超所值！</p>
                                         </div>
                                     </div>
                                 </li>
