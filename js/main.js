@@ -35,7 +35,7 @@ $(function() {
             var aHtml = $(this).html();
             console.log(aHtml)
             var iframeHtml = '';
-            console.log(prodName + vid)
+            console.log(prodName + vid);
             switch (thisVid) {
                 case "jollyheapintro1":
                     iframeHtml = '<iframe width="100%" src="https://www.youtube.com/embed/DiRS0OblqeY" frameborder="0" allowfullscreen></iframe>';

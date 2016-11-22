@@ -515,16 +515,16 @@ main .popular {
     transition: opacity 0.5s;
 }
 
-.prod .main-intro .text {
+.prod .brief-intro .text {
     color: #fff;
 }
 
-.prod .main-intro .text h4 {
+.prod .brief-intro .text h4 {
     font-size: 18px;
     margin-bottom: 0.5em;
     line-height: 1.25em;
 }
-.prod .main-intro .text p{
+.prod .brief-intro .text p{
     font-size: 15px;
 }
 .prod .grid .active .text {
@@ -645,7 +645,6 @@ footer p {
 .prod-intro h3 {
     font-size: 20px;
     font-weight: bold;
-    margin-bottom: 10px;
 }
 .prod-intro .col-xs-6 {
     width: 100%;
@@ -709,7 +708,81 @@ footer p {
     font-size: 18px;
     font-weight: bold;
 }
-
+.prod-intro .main-intro{
+    clear: both;
+}
+.prod-intro .main-intro .intro-text{
+    float: right;
+    width: 52%;
+    margin-right: 5px;
+}
+.prod-intro .image-show{
+    margin-left: 5px;
+    width: 43%;
+    float: left;
+}
+.prod-intro .image-show .slides{
+    max-width: 520px;
+    margin-bottom: 5px;
+}
+.prod-intro .image-show .slides-nav{
+    position: relative;padding-left: 30px;
+    padding-right: 25px;
+}
+.prod-intro .image-show .slides-nav ul{
+    
+    /* width: 465px; */
+}
+.prod-intro .image-show .slides-nav li{
+    width: 20%;
+    /* height: 66px; */
+    float: left;
+    padding-right: 5px;
+    /* margin-right: 5px; */
+}
+.prod-intro .image-show .slides-nav .arrow{
+    top: 0;
+}
+.prod-intro .image-show .slides-nav .arrow a{
+    border:1px solid #999999;
+    position: absolute;
+    width: 25px;
+    height: 100%;
+    font-size: 0;
+    top: 0;
+}
+.prod-intro .image-show .slides-nav .arrow a.slide-prev{
+    left: 0;
+}
+.prod-intro .image-show .slides-nav .arrow a.slide-next{
+    right: 0;
+}
+.prod-intro .image-show .slides-nav .arrow a.slide-prev:after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #999999;
+    border-left:2px solid #999999;
+    transform:rotate(-45deg);
+    top: 50%;
+    left: 50%;
+    margin-top: -5px;
+    margin-left: -2px;
+}
+.prod-intro .image-show .slides-nav .arrow a.slide-next:after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #999999;
+    border-left:2px solid #999999;
+    transform:rotate(135deg);
+    top: 50%;
+    left: 50%;
+    margin-top: -5px;
+    margin-left: -7px;
+}
 @media (max-width: 768px) {
     .prod.jollyheap .spl-33 .text .icon {
         display: none;

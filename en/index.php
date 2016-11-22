@@ -63,7 +63,7 @@ $header = $root."/inc/header_".$lng.".php";
                     <div class="btn-detail"><a href="/<?php echo $lng;?>/prod/jollyheap.html">DETAIL</a></div>
                 </div>
                 <div class="intro clearfix">
-                    <div class="col-33 dk main-intro">
+                    <div class="col-33 dk brief-intro">
                         <div class="intro-wrap clearfix">
                             <div class="img">
                                 <img src="/images/prod/cm/jh/index/prod-1-1.jpg" alt="">
@@ -163,17 +163,7 @@ $header = $root."/inc/header_".$lng.".php";
             <p>Copyright© 2016 Blumen und Katze. All rights reserved</p>
         </div>
     </footer>
-    <div class="overlay">
-        <div class="overlay-container">
-            <div class="top">
-                <h3>AAA</h3>
-                <a class="btn-close" href="#"><span>close</span></a>
-            </div>
-            <div class="video">
-
-            </div>
-        </div>
-    </div>
+    <?php include_once($root."/inc/overlay.inc"); ?>
 </body>
 
 </html>

@@ -71,7 +71,7 @@ $header = $root."/inc/header_".$lng.".php";
                         <div class="btn-detail"><a href="/<?php echo $lng;?>/prod/jollyheap.php">詳細資訊</a></div>
                     </div>
                     <div class="intro clearfix">
-                        <div class="col-33 dk main-intro">
+                        <div class="col-33 dk brief-intro">
                             <div class="intro-wrap clearfix">
                                 <div class="img">
                                     <img src="/images/prod/cm/jh/index/prod-1-1.jpg" alt="">

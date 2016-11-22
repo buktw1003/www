@@ -11,11 +11,8 @@
     $.getJSON("http://freegeoip.net/json/", function(data) {
         var country = data.country_name;
         var ip = data.ip;
-        if (country == "Taiwan") {
-            location.replace('/zh/')
-        } else{
-        	location.replace('/en/')
-        }
+            location.replace('/jp/')
+
     });
     </script>
 </head>
