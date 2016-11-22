@@ -206,6 +206,8 @@ header h1 a{
 }
 header h1 img {
     width: auto;
+    max-width: 100%;
+    max-height: 55px;
     
 }
 
@@ -233,6 +235,7 @@ header nav a {
     position: relative;
     color: #3e3a39;
     text-decoration: none;
+    transition: color 0.5s;
 }
 header nav a span{
     font-size: 13px;
@@ -438,7 +441,7 @@ main .popular {
     border-radius: 5px;
     box-sizing: border-box;
     margin-right: 10px;
-    background-image: url(/images/index/icons-prod.png);
+    background-image: url(/images/prod/cm/jh/icons/icons-prod.png);
     background-repeat: no-repeat;
 }
 
@@ -640,7 +643,7 @@ footer p {
 }
 
 .prod-intro h3 {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
 }

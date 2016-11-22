@@ -154,7 +154,109 @@ $header = $root."/inc/header_".$lng.".php";
                 </div>
             </div>
             <!-- /prod jollyheap -->
-
+			<div id="coppercup" class="prod">
+                <div class="intro-bar clearfix">
+                    <h3>
+                        <span class="prod-name">Copper Cup</span>
+                        <span class="short-intro"></span>
+                    </h3>
+                    <div class="btn-sp btn-video">
+                        <a href="#" vid="intro1">INTRO 1</a>
+                        <a href="#" vid="intro2">INTRO 2</a>
+                    </div>
+                    <div class="btn-detail"><a href="/<?php echo $lng;?>/prod/jollyheap.html">DETAIL</a></div>
+                </div>
+                <div class="intro clearfix">
+                    <div class="col-33 dk main-intro">
+                        <div class="intro-wrap clearfix">
+                            <div class="img">
+                                <img src="/images/prod/cm/jh/index/prod-1-1.jpg" alt="">
+                            </div>
+                            <div class="text v-center">
+                                <h4>Brand new and unique product</h4>
+                                <p>JollyHeap construction toy is not only safe and durable, it was designed so to develop a child's imagination and skills, logical and social.</p>
+                                <p>Construction of different structures takes children's attention for a long period of time.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-66 fl-l grid">
+                        <ul class="spl-33 clearfix">
+                            <li>
+                                <div class="intro-wrap">
+                                    <div class="img">
+                                        <img src="/images/prod/cm/jh/index/prod-2-1.jpg" alt="">
+                                    </div>
+                                    <div class="text v-center">
+                                        <div class="icon"><img src="/images/prod/cm/jh/icons/icon-magnetism.png" alt=""></div>
+                                        <h4>MAGNETISM</h4>
+                                        <p>Comfortable attraction, easy connection, stability of the constructed structures.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="intro-wrap">
+                                    <div class="img">
+                                        <img src="/images/prod/cm/jh/index/prod-2-2.jpg" alt="">
+                                    </div>
+                                    <div class="text v-center">
+                                        <div class="icon"><img src="/images/prod/cm/jh/icons/icon-light.png" alt=""></div>
+                                        <h4>LIGHTWEIGHT AND SOFTNESS</h4>
+                                        <p>All components of the product are soft, pleasant, comfortable and big enough to grip.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="intro-wrap">
+                                    <div class="img">
+                                        <img src="/images/prod/cm/jh/index/prod-2-3.jpg" alt="">
+                                    </div>
+                                    <div class="text v-center">
+                                        <div class="icon"><img src="/images/prod/cm/jh/icons/icon-safety.png" alt=""></div>
+                                        <h4>SAFETY</h4>
+                                        <p>JollyHeap blocks can’t cause any harm to children, because they are soft and don’t have sharp edges.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="intro-wrap">
+                                    <div class="img">
+                                        <img src="/images/prod/cm/jh/index/prod-2-4.jpg" alt="">
+                                    </div>
+                                    <div class="text v-center">
+                                        <div class="icon"><img src="/images/prod/cm/jh/icons/icon-multi.png" alt=""></div>
+                                        <h4>MULTIFUNCTIONALITY</h4>
+                                        <p>A variety of structures: houses, cars, towers, furniture, etc. Build your dream!</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="intro-wrap">
+                                    <div class="img">
+                                        <img src="/images/prod/cm/jh/index/prod-2-5.jpg" alt="">
+                                    </div>
+                                    <div class="text v-center">
+                                        <div class="icon"><img src="/images/prod/cm/jh/icons/icon-quiet.png" alt=""></div>
+                                        <h4>QUIET IN THE FUN</h4>
+                                        <p>Made of a soft material, that doesn’t make any noise. The only noise from the fun - is the children’s laugh!</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="intro-wrap">
+                                    <div class="img">
+                                        <img src="/images/prod/cm/jh/index/prod-2-6.jpg" alt="">
+                                    </div>
+                                    <div class="text v-center">
+                                        <div class="icon"><img src="/images/prod/cm/jh/icons/icon-durability.png" alt=""></div>
+                                        <h4>DURABILITY AND USABILITY</h4>
+                                        <p>Our blocks are made of a durable and safe material. JollyHeap will be interesting for children of all ages and their parents.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
     </div></main>
     <footer>

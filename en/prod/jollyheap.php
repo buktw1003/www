@@ -33,17 +33,20 @@ $header = $root."/inc/header_".$lng.".php";
                 </div>
             </section>
             <section class="prod-intro">
-                <div class="row-container">
+                <div class="row-container top">
                     <div class="row">
-                        <div class="col-xs-6">
-                            <h3>Game</h3>
+                        <div class="col-xs-4">
+                            <h3>Game </h3>
                             <p>Acquaintance with JollyHeap cubes starts with experiments (touching, rolling, throwing, etc.) Afterwards they are used to build different structures and serve as material to create role-playing games.</p>
-                            <p>Constructing - is the most important type of activity in early childhood and primary school. It is important for construction toys to give an opportunity for maximum expression of children’s imagination and to encourage exploring, experimentation and learning. A big amount of colorful blocks stimulates to play in all kinds of social roles and situations, while enjoying in group or individually.</p>
                         </div>
-                        <div class="col-xs-6">
+                        <div class="col-xs-4">
+                            <h3>Constructing</h3>
+                            <p>This is the most important type of activity in early childhood and primary school. It is important for construction toys to give an opportunity for maximum expression of children’s imagination and to encourage exploring, experimentation and learning. A big amount of colorful blocks stimulates to play in all kinds of social roles and situations, while enjoying in group or individually.</p>
+                        </div>
+                        <div class="col-xs-4">
                             <h3>Education</h3>
-                            <p>With the help of JollyHeap toy, the child learns: color, shape, magnetism, logical connection between blocks.</p>
-                            <p>During the game with magnetic construction toy, children not only create a variety of shapes and 2- or 3-dimensional structures, but also develop motor-visual skills, attention, accuracy and associative thinking, learn foundations of physics. To create some difficult structures they need to work in groups, this helps to build relationships with coevals.</p>
+                            <p>With the help of JollyHeap toy, the child learns: color, shape, magnetism, logical connection between blocks.
+During the game with magnetic construction toy, children not only create a variety of shapes and 2- or 3-dimensional structures, but also develop motor-visual skills, attention, accuracy and associative thinking, learn foundations of physics. To create some difficult structures they need to work in groups, this helps to build relationships with coevals.</p>
                         </div>
                     </div>
                 </div>
