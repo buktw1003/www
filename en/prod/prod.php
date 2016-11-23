@@ -14,7 +14,7 @@ $header = $root."/inc/header_".$lng.".php";
     <?php
     echo $css.$js;
     ?>
-    
+    <script src="/js/prod.js"></script>
 </head>
 
 <body class="lng-en">
@@ -48,13 +48,56 @@ $header = $root."/inc/header_".$lng.".php";
                     <div class="image-show">
                         <div class="slides"><img src="/images/prod/cm/jh/p1.jpg" alt=""></div>
                         <div class="slides-nav">
-                            <ul class="clearfix">
-                                <li><a href="javascript:;"><img src="/images/prod/cm/jh/p1.jpg" alt=""></a></li>
-                                <li><a href="javascript:;"><img src="/images/prod/cm/jh/p2.jpg" alt=""></a></li>
-                                <li><a href="javascript:;"><img src="/images/prod/cm/jh/p3.jpg" alt=""></a></li>
-                                <li><a href="javascript:;"><img src="/images/prod/cm/jh/p4.jpg" alt=""></a></li>
-                                <li><a href="javascript:;"><img src="/images/prod/cm/jh/p5.jpg" alt=""></a></li>
-                            </ul>
+                            <div class="slide-img">
+                                <ul class="img clearfix">
+                                    <li><a href="javascript:;"><img src="/images/prod/cm/jh/p1.jpg" alt=""></a></li>
+                                    <li><a href="javascript:;"><img src="/images/prod/cm/jh/p2.jpg" alt=""></a></li>
+                                    <li><a href="javascript:;"><img src="/images/prod/cm/jh/p3.jpg" alt=""></a></li>
+                                    <li><a href="javascript:;"><img src="/images/prod/cm/jh/p4.jpg" alt=""></a></li>
+                                    <li><a href="javascript:;"><img src="/images/prod/cm/jh/p5.jpg" alt=""></a></li>
+                                    <li><a href="javascript:;"><img src="/images/prod/cm/jh/p2.jpg" alt=""></a></li>
+                                    <li><a href="javascript:;"><img src="/images/prod/cm/jh/p3.jpg" alt=""></a></li>
+                                    <li><a href="javascript:;"><img src="/images/prod/cm/jh/p4.jpg" alt=""></a></li>
+                                    <li><a href="javascript:;"><img src="/images/prod/cm/jh/p4.jpg" alt=""></a></li>
+                                    <li><a href="javascript:;"><img src="/images/prod/cm/jh/p4.jpg" alt=""></a></li>
+                                    <li><a href="javascript:;"><img src="/images/prod/cm/jh/p4.jpg" alt=""></a></li>
+                                    <li><a href="javascript:;"><img src="/images/prod/cm/jh/p2.jpg" alt=""></a></li>
+                                    <li><a href="javascript:;"><img src="/images/prod/cm/jh/p3.jpg" alt=""></a></li>
+                                    <li><a href="javascript:;"><img src="/images/prod/cm/jh/p5.jpg" alt=""></a></li>
+                                </ul>
+                                
+                            </div>
+                            <div class="slide-img-assist">
+                                    <img src="/images/prod/main-img-assist.png" alt="">
+                                </div>
+                            <div class="arrow">
+                                <a class="slide-prev" href="javascript:;">Prev</a>
+                                <a class="slide-next" href="javascript:;">Next</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-show">
+                        <div class="slides"><img src="/images/prod/cm/jh/p1.jpg" alt=""></div>
+                        <div class="slides-nav">
+                            <div class="slide-img">
+                                <ul class="img clearfix">
+                                    <li><a href="javascript:;"><img src="/images/prod/cm/jh/p1.jpg" alt=""></a></li>
+                                    <li><a href="javascript:;"><img src="/images/prod/cm/jh/p2.jpg" alt=""></a></li>
+                                    <li><a href="javascript:;"><img src="/images/prod/cm/jh/p3.jpg" alt=""></a></li>
+                                    <li><a href="javascript:;"><img src="/images/prod/cm/jh/p4.jpg" alt=""></a></li>
+                                    <li><a href="javascript:;"><img src="/images/prod/cm/jh/p5.jpg" alt=""></a></li>
+                                    <li><a href="javascript:;"><img src="/images/prod/cm/jh/p2.jpg" alt=""></a></li>
+                                    <li><a href="javascript:;"><img src="/images/prod/cm/jh/p3.jpg" alt=""></a></li>
+                                    <li><a href="javascript:;"><img src="/images/prod/cm/jh/p4.jpg" alt=""></a></li>
+
+                                    <li><a href="javascript:;"><img src="/images/prod/cm/jh/p3.jpg" alt=""></a></li>
+                                    <li><a href="javascript:;"><img src="/images/prod/cm/jh/p5.jpg" alt=""></a></li>
+                                </ul>
+                                
+                            </div>
+                            <div class="slide-img-assist">
+                                    <img src="/images/prod/main-img-assist.png" alt="">
+                                </div>
                             <div class="arrow">
                                 <a class="slide-prev" href="javascript:;">Prev</a>
                                 <a class="slide-next" href="javascript:;">Next</a>

@@ -235,7 +235,7 @@ header nav a {
     position: relative;
     color: #3e3a39;
     text-decoration: none;
-    transition: color 0.5s;
+    transition: all 0.5s;
 }
 header nav a span{
     font-size: 13px;
@@ -731,14 +731,31 @@ footer p {
 }
 .prod-intro .image-show .slides-nav ul{
     
-    /* width: 465px; */
+/* width: 465px; */
+    
+position: relative;
+    
+left: 0;
 }
 .prod-intro .image-show .slides-nav li{
     width: 20%;
     /* height: 66px; */
     float: left;
     padding-right: 5px;
-    /* margin-right: 5px; */
+    position: absolute;
+    height: 100%;
+}
+.prod-intro .image-show .slide-img{
+    position: absolute;
+    margin-left: 30px;
+    margin-right: 25px;
+    overflow: hidden;
+    left: 0;
+    height: 100%;
+    width: calc(100% - 60px);
+}
+.prod-intro .image-show .slide-img-assist{
+    width: calc(20% - 5px);
 }
 .prod-intro .image-show .slides-nav .arrow{
     top: 0;
@@ -751,37 +768,45 @@ footer p {
     font-size: 0;
     top: 0;
 }
+.prod-intro .image-show .slides-nav .arrow a:hover{
+    background-color: #eeeeee;
+}
+.prod-intro .image-show .slides-nav .arrow a.inactive{
+    /*display: none;*/
+    cursor: default;
+    border:1px solid #eeeeee;
+    background-color: #ffffff;
+}
 .prod-intro .image-show .slides-nav .arrow a.slide-prev{
     left: 0;
 }
 .prod-intro .image-show .slides-nav .arrow a.slide-next{
     right: 0;
 }
-.prod-intro .image-show .slides-nav .arrow a.slide-prev:after{
+.prod-intro .image-show .slides-nav .arrow a:after{
     content: "";
     position: absolute;
-    width: 10px;
-    height: 10px;
     border-top: 2px solid #999999;
     border-left:2px solid #999999;
-    transform:rotate(-45deg);
+    width: 10px;
+    height: 10px;
     top: 50%;
-    left: 50%;
     margin-top: -5px;
+    left: 50%;
+}
+.prod-intro .image-show .slides-nav .arrow a.slide-prev:after{
+    transform:rotate(-45deg);
     margin-left: -2px;
 }
+
 .prod-intro .image-show .slides-nav .arrow a.slide-next:after{
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    border-top: 2px solid #999999;
-    border-left:2px solid #999999;
     transform:rotate(135deg);
-    top: 50%;
-    left: 50%;
-    margin-top: -5px;
     margin-left: -7px;
+}
+.prod-intro .image-show .slides-nav .arrow a.inactive:after{
+    border-top: 2px solid #eeeeee;
+    border-left:2px solid #eeeeee;
+
 }
 @media (max-width: 768px) {
     .prod.jollyheap .spl-33 .text .icon {

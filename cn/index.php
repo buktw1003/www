@@ -155,16 +155,6 @@
                 <p>Copyright© 2016 Blumen und Katze. All rights reserved</p>
             </div>
         </footer>
-        <div class="overlay">
-            <div class="overlay-container">
-                <div class="top">
-                    <h3>Intro 1 - jollyheap</h3>
-                    <a class="btn-close" href="#"><span>close</span></a>
-                </div>
-                <div class="video">
-
-                </div>
-            </div>
-        </div>
+        <?php include_once($root."/inc/overlay.inc"); ?>
     </body>
     </html>
