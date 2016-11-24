@@ -1,81 +1,81 @@
 $(function() {
-    function prodMainImage() {
-        var thumbsPerPage = 5;
-        var $imgShow = $(".image-show");
+    var thumbsPerPage = 5;
+    var $imgShow = $(".image-show");
+    var $img = $("img", $imgShow);
+    var $mainImg = $(".slides img")
+    $(window).resize(function() {
         $imgShow.each(function() {
             var that = $(this);
-            totalPics = that.find(".slides-nav li").length;
-            $arrowBtn = $(".arrow a", that);
-            $thumb = $(".img li a",that);
-            $ul = $(".img", that);
+            var totalPics = that.find(".slides-nav li").length;
+            var $ul = $(".img", that);
             var $li = $(".slide-img li", that);
             var liWidth = $li.width();
             var liPaddingRight = parseInt($li.css("paddingRight"));
-            liTotalWidth = Math.ceil(liWidth + liPaddingRight);
+            var liTotalWidth = Math.ceil(liWidth + liPaddingRight);
             var ulWidth = liTotalWidth * totalPics;
             var totalPages = parseInt(totalPics / thumbsPerPage);
-            allThumbsWidth = liTotalWidth * totalPics;
-            console.log(totalPages)
+            var valueArray = [0];
             currentPage = 1;
             var pos = -(liTotalWidth);
             $li.each(function() {
                 pos += liTotalWidth;
                 $(this).css({ "left": (pos) })
             });
-            console.log("aaa" + liTotalWidth);
-
-
-
+            return valueArray;
         });
-        if (totalPics <= thumbsPerPage) {
-            $arrowBtn.addClass("inactive");
-        }
-        $arrowBtn.not(".inactive").click(function(e) {
-            var $this = $(this);
-            var thisDirection = $this.attr("class").substr(6, 4);
-            var currentPos = parseInt($ul.css("left"));
-            var movingPos = liTotalWidth * thumbsPerPage;
-            var minLeftPos = -(liTotalWidth);
-            var maxLeftPos = -(allThumbsWidth - liTotalWidth * thumbsPerPage)
-            console.log("bbb" + liTotalWidth);
-
-
-            switch (thisDirection) {
-                case "next":
-                    var leftPos = currentPos - movingPos;
-                    if (leftPos < maxLeftPos) {
-                        leftPos = maxLeftPos
-                    }
-                    $ul.filter(":not(:animated)").animate({ "left": leftPos }, function() {
-                        currentPage++;
-                        if (leftPos == maxLeftPos) {
-                            $this.addClass("inactive");
-                        }
-                        $arrowBtn.not($this).removeClass("inactive");
-
-                    });
-                    break;
-                case "prev":
-                    var leftPos = currentPos + movingPos;
-                    if (leftPos > 0) {
-                        leftPos = 0;
-                    }
-                    $ul.filter(":not(:animated)").animate({ "left": (leftPos) }, function() {
-                        currentPage--;
-                        if (leftPos == 0) {
-                            $this.addClass("inactive");
-                        }
-                        $arrowBtn.not($this).removeClass("inactive");
-                    });
-                    break;
-            }
-        });
-        $thumb.click(function() {
-           var thisSrc = $("img",this).attr("src");
-        })
-    }
-    $(window).resize(function() {
-        prodMainImage();
     }).resize();
-    //$imgShow.find(".")
+    $(".arrow a", $imgShow).click(function() {
+        var that = $(this);
+        var thisDirection = that.attr("class").substr(6, 4);
+        var thisParent = that.parents(".image-show");
+        var $ul = $(".img", thisParent);
+        var $li = $(".slide-img li", thisParent);
+        var totalPics = $li.length;
+        var liTotalWidth = Math.ceil($li.width() + parseInt($li.css("paddingRight")));
+        var totalPages = parseInt(totalPics / thumbsPerPage);
+        var allThumbsWidth = liTotalWidth * totalPics;
+        var maxLeftPos = -(allThumbsWidth - liTotalWidth * thumbsPerPage);
+        var movingPos = liTotalWidth * thumbsPerPage;
+        var currentPos = parseInt($ul.css("left"));
+        switch (thisDirection) {
+            case "next":
+                slideNext(that, $ul, movingPos, maxLeftPos, currentPos);
+                break;
+            case "prev":
+                slidePrev(that, $ul, movingPos, currentPos);
+                break;
+        }
+    })
+    function slideNext(that, $ul, movingPos, maxLeftPos, currentPos) {
+        var leftPos = currentPos - movingPos;
+        console.log("lp" + leftPos)
+        if (leftPos < maxLeftPos) {
+            leftPos = maxLeftPos
+        }
+        $ul.filter(":not(:animated)").animate({ "left": leftPos }, function() {
+            currentPage++;
+            if (leftPos == maxLeftPos) {
+                that.addClass("inactive");
+            }
+            $(".arrow a").not(that).removeClass("inactive");
+        });
+    };
+
+    function slidePrev(that, $ul, movingPos, currentPos) {
+        var leftPos = currentPos + movingPos;
+        if (leftPos > 0) {
+            leftPos = 0;
+        }
+        $ul.filter(":not(:animated)").animate({ "left": leftPos }, function() {
+            currentPage++;
+            if (leftPos == 0) {
+                that.addClass("inactive");
+            }
+            $(".arrow a").not(that).removeClass("inactive");
+        });
+    };
+    $img.click(function() {
+        var thisSrc = $(this).attr("src");
+        $mainImg.attr("src", thisSrc)
+    });
 })

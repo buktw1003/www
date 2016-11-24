@@ -14,17 +14,16 @@ $header = $root."/inc/header_".$lng.".php";
     <?php
     echo $css.$js;
     ?>
-    <script src="/js/prod.js?v=2"></script>
+    
 </head>
 
 <body class="lng-en">
     <header>
         <?php
-        include_once($header);
+            include_once($header);
         ?>
     </header>
-    <main>
-        <div class="width-limiter">
+    <main><div class="width-limiter">
             <section class="block-figure clearfix">
                 <div class="img"><img src="/images/prod/cm/jh/figure.jpg" alt=""></div>
                 <div class="text onimg">
@@ -33,55 +32,7 @@ $header = $root."/inc/header_".$lng.".php";
                     <p>Construction of different structures takes children's attention for a long period of time.</p>
                 </div>
             </section>
-            <section class="prod-intro prod" id="jollyheap">
-                <div class="intro-bar clearfix">
-                    <h3>
-                        <span class="prod-name">JollyHeap</span>
-                        <span class="short-intro">Soft Magnetic Construction toy</span>
-                    </h3>
-                    <div class="btn-sp btn-video">
-                        <a href="#" vid="intro1">INTRO 1</a>
-                        <a href="#" vid="intro2">INTRO 2</a>
-                    </div>
-                </div>
-                <div class="main-intro clearfix">
-                    <div class="image-show">
-                        <div class="slides"><img src="/images/prod/cm/jh/p1.jpg" alt=""></div>
-                        <div class="slides-nav">
-                            <div class="slide-img">
-                                <ul class="img clearfix">
-                                    <li><a href="javascript:;"><img src="/images/prod/cm/jh/p1.jpg" alt=""></a></li>
-                                    <li><a href="javascript:;"><img src="/images/prod/cm/jh/p2.jpg" alt=""></a></li>
-                                    <li><a href="javascript:;"><img src="/images/prod/cm/jh/p3.jpg" alt=""></a></li>
-                                    <li><a href="javascript:;"><img src="/images/prod/cm/jh/p4.jpg" alt=""></a></li>
-                                    <li><a href="javascript:;"><img src="/images/prod/cm/jh/p5.jpg" alt=""></a></li>
-                                </ul>
-                                
-                            </div>
-                            <div class="slide-img-assist">
-                                    <img src="/images/prod/main-img-assist.png" alt="">
-                                </div>
-                            <div class="arrow">
-                                <a class="slide-prev" href="javascript:;">Prev</a>
-                                <a class="slide-next" href="javascript:;">Next</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="intro-text">
-                        <h3>JollyHeap develops:</h3>
-                        <ul class="features clearfix">
-                            <li>3D imagination</li>
-                            <li>Creativity</li>
-                            <li>Large and small motor skills</li>
-                            <li>Communication with coevals</li>
-                            <li>Logical thinking</li>
-                        </ul>
-                        <p class="right_40">
-                            Our construction toy will not only entertain, but also highly stimulate and evolve. Magnetic blocks JollyHeap help our children to develop their gumption. In addition, they also teach them to be more creative. Playing with our toy gives a lot of benefits: exercises visual - motor coordination, teaches shape recognition and foundations of physics, develops concentration, accuracy, logical thinking, helps in building relationships with coevals and in training flexibility and sportiness. Only advantages!
-                        </p>
-                    </div>
-                </div>
+            <section class="prod-intro">
                 <div class="row-container top">
                     <div class="row">
                         <div class="col-xs-4">
@@ -94,11 +45,31 @@ $header = $root."/inc/header_".$lng.".php";
                         </div>
                         <div class="col-xs-4">
                             <h3>Education</h3>
-                            <p>With the help of JollyHeap toy, the child learns: color, shape, magnetism, logical connection between blocks. During the game with magnetic construction toy, children not only create a variety of shapes and 2- or 3-dimensional structures, but also develop motor-visual skills, attention, accuracy and associative thinking, learn foundations of physics. To create some difficult structures they need to work in groups, this helps to build relationships with coevals.</p>
+                            <p>With the help of JollyHeap toy, the child learns: color, shape, magnetism, logical connection between blocks.
+During the game with magnetic construction toy, children not only create a variety of shapes and 2- or 3-dimensional structures, but also develop motor-visual skills, attention, accuracy and associative thinking, learn foundations of physics. To create some difficult structures they need to work in groups, this helps to build relationships with coevals.</p>
                         </div>
                     </div>
                 </div>
-
+                <div class="row-container">
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <h3>JollyHeap develops:</h3>
+                            <ul class="features clearfix">
+                                <li>3D imagination</li>
+                                <li>Creativity</li>
+                                <li>Large and small motor skills</li>
+                                <li>Communication with coevals</li>
+                                <li>Logical thinking</li>
+                            </ul>
+                            <p class="right_40">
+                                Our construction toy will not only entertain, but also highly stimulate and evolve. Magnetic blocks JollyHeap help our children to develop their gumption. In addition, they also teach them to be more creative. Playing with our toy gives a lot of benefits: exercises visual - motor coordination, teaches shape recognition and foundations of physics, develops concentration, accuracy, logical thinking, helps in building relationships with coevals and in training flexibility and sportiness. Only advantages!
+                            </p>
+                        </div>
+                        <div class="col-sm-5">
+                            <img src="/images/prod/cm/jh/photo-1.jpg" alt="JollyHeap Toys">
+                        </div>
+                    </div>
+                </div>
                 <div class="row-container">
                     <div class="row">
                         <div class="col-sm-6">
@@ -138,7 +109,7 @@ $header = $root."/inc/header_".$lng.".php";
                                 Our blocks have passed a strict quality control and comply with the European quality standards.
                             </p>
                             <br>
-
+                            
                         </div>
                     </div>
                 </div>
@@ -157,15 +128,13 @@ $header = $root."/inc/header_".$lng.".php";
                 <h4>International customers?</h4>
                 <p class="b-center">Please contact us by e-mail: <a href="mailto:info@buk.com.tw">info@buk.com.tw</a></p>
             </section>
-        </div>
-    </main>
+        </div></main>
     <footer>
         <div class="width-limiter">
             <a class="btn-fb" href="https://www.facebook.com/Blumen-und-Katze-1074003162719945/?fref=ts" target="_blank">Facebook</a>
             <p>Copyright© 2016 Blumen und Katze. All rights reserved</p>
         </div>
     </footer>
-    <?php include_once($root."/inc/overlay.inc"); ?>
 </body>
 
 </html>
