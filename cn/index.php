@@ -1,23 +1,23 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en">
 <?php 
-    $root = $_SERVER['DOCUMENT_ROOT'];
-    $commVar = $root."/inc/comm_var.php";
-    include_once($commVar);
-    $header = $root."/inc/header_".$lng.".php";
+$root = $_SERVER['DOCUMENT_ROOT'];
+$commVar = $root."/inc/comm_var.php";
+include_once($commVar);
+$header = $root."/inc/header_".$lng.".php";
 ?>
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?php echo "首頁 - ".$title;?></title>
     <?php
-        echo $css.$js;
+    echo $css.$js;
     ?>
 </head>
 <body class="lng-zh">
     <header>
         <?php
-            include_once($header);
+        include_once($header);
         ?>
     </header>
     <main>
@@ -45,10 +45,10 @@
                 </ul>
             </section>
             <section class="block-products">
-                <h2 class="top-products">Top Products</h2>[]
+                <h2 class="top-products">Top Products</h2>
                 <div id="jollyheap" class="prod">
                     <div class="intro-bar clearfix">
-                        <h3><span class="short-intro">磁性布积木</span><span class="prod-name">JollyHeap</span></h3>
+                        <h3 class="title"><span class="short-intro">磁性布积木</span><span class="prod-name">JollyHeap</span></h3>
                         <div class="btn-sp btn-video">
                             <a href="#" vid="intro1">介绍影片 1</a>
                             <a href="#" vid="intro2">介绍影片 2</a>

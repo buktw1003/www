@@ -6,6 +6,7 @@ $(function() {
     $(window).resize(function() {
         $imgShow.each(function() {
             var that = $(this);
+            var $arrowBtn = $(".arrow a", that);
             var totalPics = that.find(".slides-nav li").length;
             var $ul = $(".img", that);
             var $li = $(".slide-img li", that);
@@ -14,38 +15,43 @@ $(function() {
             var liTotalWidth = Math.ceil(liWidth + liPaddingRight);
             var ulWidth = liTotalWidth * totalPics;
             var totalPages = parseInt(totalPics / thumbsPerPage);
-            var valueArray = [0];
             currentPage = 1;
             var pos = -(liTotalWidth);
             $li.each(function() {
                 pos += liTotalWidth;
-                $(this).css({ "left": (pos) })
+                $(this).css({ "left": (pos) });
             });
-            return valueArray;
+            if (totalPics <= thumbsPerPage) {
+                $arrowBtn.addClass("inactive");
+            }
         });
     }).resize();
+    $(".slide-prev").addClass("inactive");
     $(".arrow a", $imgShow).click(function() {
-        var that = $(this);
-        var thisDirection = that.attr("class").substr(6, 4);
-        var thisParent = that.parents(".image-show");
-        var $ul = $(".img", thisParent);
-        var $li = $(".slide-img li", thisParent);
-        var totalPics = $li.length;
-        var liTotalWidth = Math.ceil($li.width() + parseInt($li.css("paddingRight")));
-        var totalPages = parseInt(totalPics / thumbsPerPage);
-        var allThumbsWidth = liTotalWidth * totalPics;
-        var maxLeftPos = -(allThumbsWidth - liTotalWidth * thumbsPerPage);
-        var movingPos = liTotalWidth * thumbsPerPage;
-        var currentPos = parseInt($ul.css("left"));
-        switch (thisDirection) {
-            case "next":
-                slideNext(that, $ul, movingPos, maxLeftPos, currentPos);
-                break;
-            case "prev":
-                slidePrev(that, $ul, movingPos, currentPos);
-                break;
+        if (!$(this).hasClass("inactive")) {
+            var that = $(this);
+            var thisDirection = that.attr("class").substr(6, 4);
+            var thisParent = that.parents(".image-show");
+            var $ul = $(".img", thisParent);
+            var $li = $(".slide-img li", thisParent);
+            var totalPics = $li.length;
+            var liTotalWidth = Math.ceil($li.width() + parseInt($li.css("paddingRight")));
+            var totalPages = parseInt(totalPics / thumbsPerPage);
+            var allThumbsWidth = liTotalWidth * totalPics;
+            var maxLeftPos = -(allThumbsWidth - liTotalWidth * thumbsPerPage);
+            var movingPos = liTotalWidth * thumbsPerPage;
+            var currentPos = parseInt($ul.css("left"));
+            switch (thisDirection) {
+                case "next":
+                    slideNext(that, $ul, movingPos, maxLeftPos, currentPos);
+                    break;
+                case "prev":
+                    slidePrev(that, $ul, movingPos, currentPos);
+                    break;
+            }
         }
     })
+
     function slideNext(that, $ul, movingPos, maxLeftPos, currentPos) {
         var leftPos = currentPos - movingPos;
         console.log("lp" + leftPos)
@@ -78,4 +84,16 @@ $(function() {
         var thisSrc = $(this).attr("src");
         $mainImg.attr("src", thisSrc)
     });
-})
+    var $tablist = $(".tablist a");
+    var $tabContent = $(".tabs .tab-content");
+    $tablist.click(function(){
+    	var that = $(this);
+    	var thisIndex = that.parent().index();
+    	$tablist.removeClass("active");
+    	that.addClass("active");
+    	$tabContent.removeClass("active");
+    	$tabContent.filter(":eq(" + thisIndex +")").addClass("active");
+    });
+    $tablist.filter(":eq(1)").click();
+    //$("")
+});

@@ -12,7 +12,7 @@ $header = $root."/inc/header_".$lng.".php";
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?php echo "Home - ".$title;?></title>
     <?php
-        echo $css.$js;
+    echo $css.$js;
     ?>
     
 </head>
@@ -20,9 +20,9 @@ $header = $root."/inc/header_".$lng.".php";
 <body class="lng-en">
     <header>
         <?php
-            include_once($header);
+        include_once($header);
         ?>
-    
+
     </header>
 
     <main><div class="width-limiter">
@@ -52,15 +52,15 @@ $header = $root."/inc/header_".$lng.".php";
             <h2 class="top-products">Top Products</h2>
             <div id="jollyheap" class="prod">
                 <div class="intro-bar clearfix">
-                    <h3>
+                    <h3 class="title">
                         <span class="prod-name">JollyHeap</span>
                         <span class="short-intro">Soft Magnetic Construction toy</span>
                     </h3>
                     <div class="btn-sp btn-video">
-                        <a href="#" vid="intro1">INTRO 1</a>
-                        <a href="#" vid="intro2">INTRO 2</a>
+                        <a href="#" vid="intro1" type="video">INTRO 1</a>
+                        <a href="#" vid="intro2" type="video">INTRO 2</a>
                     </div>
-                    <div class="btn-detail"><a href="/<?php echo $lng;?>/prod/jollyheap.html">DETAIL</a></div>
+                    <div class="btn-detail"><a href="/<?php echo $lng;?>/prod/cm/jollyheap.html">DETAIL</a></div>
                 </div>
                 <div class="intro clearfix">
                     <div class="col-33 dk brief-intro">

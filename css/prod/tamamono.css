@@ -1,0 +1,124 @@
+main,.overlay {
+    font-family: "Hiragino Mingcho Pro", "MS PMincho";
+}
+
+@media (min-width: 768px) {
+    .block-figure .onimg.text {
+        text-align: left;
+        position: absolute;
+        font-family: "Hiragino Mincho Pro", "MS PMincho";
+        color: #946601;
+        text-shadow: none;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        overflow: hidden;
+    }
+    .block-figure .onimg.text p {
+        font-size: 13px;
+        opacity: 0;
+        font-weight: bold;
+    }
+    .block-figure .onimg.text .left {
+        position: absolute;
+        left: -400px;
+        transition: all 2s;
+    }
+    .block-figure .onimg.text .right {
+        position: absolute;
+        top: 50px;
+        right: -300px;
+        transition: all 4s;
+
+    }
+    .block-figure .onimg.text.active .left {
+        top: 40%;
+        left: 40px;
+        opacity: 1;
+    }
+    .block-figure .onimg.text.active .right {
+        position: absolute;
+        top: 50px;
+        right: 10px;
+        opacity: 1;
+    }
+}
+
+.content h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #9c782b;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.content h4 {
+    color: #9c782b;
+    border-bottom: 1px solid #9c782b;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.content p {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.content ol {
+    list-style-type: decimal;
+    padding-left: 1em;
+}
+
+.content li h4 {
+    margin-bottom: 5px;
+    border: none;
+}
+
+.content li p {
+    margin-bottom: 10px;
+}
+.content p.feature{
+    text-align: center;
+    font-weight: bold;
+}
+.sozai-info table{
+    background: #ffffff;
+    width: 95%;
+    margin: 0 auto;
+    border: #f4ede0 solid 5px;
+    outline: #decca4 solid 1px;
+    max-width: 950px;
+    margin-bottom: 50px;
+}
+.sozai-info td{
+    border-left: #decca4 solid 1px;
+    border-bottom: #decca4 solid 1px;
+    text-align: left;
+    padding: 10px;
+}
+.content .sozai-info th{
+    padding: 10px;
+    border-left: #decca4 solid 1px;
+    border-bottom: #decca4 solid 1px;
+}
+.prod-intro .items a .text{
+}
+.prod-intro .items a .text:after{
+    background-color: #bfaa7c;
+}
+.overlay .overlay-container{
+    background: #bfaa7c;
+    width: 95%;
+
+}
+.overlay .content{
+    background-color: #fff;
+    padding: 0 2.5%;
+    max-height: 500px;
+    overflow: auto;
+}
+.overlay h3{
+    box-shadow: inset 0px 0px 10px #8d743e;
+}
+
+

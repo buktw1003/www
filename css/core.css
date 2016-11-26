@@ -45,6 +45,9 @@ section {
 
 .v-center {
     top: 50%;
+    position: absolute;
+    left: 0;
+    width: 100%;
 }
 
 .b-strong {
@@ -130,14 +133,14 @@ section {
 }
 
 .overlay h3 {
-    font-size: 30px;
-    line-height: 1.5em;
+    font-size: 24px;
+    line-height: 45px;
     text-transform: uppercase;
     background-color: #ffffff;
     margin-bottom: 10px;
-    text-indent: 0.5em;
-    box-shadow: 0px 0px 10px inset;
-    width: calc(100% - 5.5em);
+    box-shadow: inset 0px 0px 10px #000000;
+    padding-left: 0.5em;
+    width: calc(100% - 45px);
 }
 
 .overlay .btn-close {
@@ -412,17 +415,17 @@ main .popular {
     padding: 10px;
 }
 
-.intro-bar h3 {
+.intro-bar .title {
     float: left;
     margin-right: 20px;
 }
 
-.intro-bar h3 .short-intro {
+.intro-bar .title .short-intro {
     font-size: 13px;
     display: block;
 }
 
-.intro-bar h3 .prod-name {
+.intro-bar .title .prod-name {
     font-size: 15px;
     font-weight: bold;
 }
@@ -441,7 +444,7 @@ main .popular {
     border-radius: 5px;
     box-sizing: border-box;
     margin-right: 10px;
-    background-image: url(/images/prod/cm/jh/icons/icons-prod.png);
+    background-image: url(/images/prod/icons-prod.png);
     background-repeat: no-repeat;
 }
 
@@ -614,7 +617,7 @@ footer p {
     width: 100%;
 }
 
-.block-figure .text h2 {
+.block-figure .text h3 {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 0.25em;
@@ -638,7 +641,7 @@ footer p {
     background-color: #f7f7f7;
 }
 
-.prod-intro .top h3 {
+.prod-intro .features h3 {
     text-align: center;
 }
 
@@ -708,6 +711,9 @@ footer p {
     font-size: 18px;
     font-weight: bold;
 }
+.prod-intro>.top{
+    margin-bottom: 50px;
+}
 .prod-intro .main-intro{
     clear: both;
 }
@@ -715,6 +721,8 @@ footer p {
     float: right;
     width: 52%;
     margin-right: 5px;
+    line-height: 1.5;
+
 }
 .prod-intro .image-show{
     margin-left: 5px;
@@ -807,6 +815,115 @@ left: 0;
     border-top: 2px solid #eeeeee;
     border-left:2px solid #eeeeee;
 
+}
+.prod-intro .content{
+    /*padding: 0 2.5%;*/
+    width: calc(100% - 10px);
+    margin: 0 auto;
+}
+.prod-intro .content .tablist{
+    border-bottom: 10px solid #a0a0a0;
+    margin-bottom: 20px;
+}
+.prod-intro .content .tablist li{
+    float: left;
+}
+.prod-intro .content .tablist a{
+    display: block;
+    border: 1px solid #a0a0a0;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #a0a0a0;
+    font-weight: bold;
+    text-decoration: none;
+}
+.prod-intro .content .tablist a.active{
+    background-color: #a0a0a0;
+    color: #ffffff;
+}
+.prod-intro .content .tab-content{
+    display: none;
+}
+.prod-intro .content .tab-content.active{
+    display: block;
+}
+.prod-intro .content .section{
+    margin-bottom: 40px;
+}
+.prod-intro .content .img{
+    margin: 0 auto 30px;
+    max-width: 460px;
+}
+.prod-intro .content .img.b-center img{
+}
+.prod-intro .items{
+    overflow: hidden;
+}
+.prod-intro .items a{
+    position: relative;
+    display: block;
+    border: 1px solid #bfaa7c;
+    
+}
+.prod-intro .items a .text-wrap{
+    height: 100%;
+}
+.prod-intro .items a .img:after{
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background-color: rgba(189,173,139,.5);
+    transition: all 0.5s;
+
+}
+.prod-intro .items a .text{
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 30px;
+    width: 100%;
+    color: #6b4b08;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+.prod-intro .items a:hover .text,.prod-intro .items a:hover .img:after{
+    opacity: 0;
+}
+.prod-intro .items a .text:after{
+    display: block;
+    content:"+";
+    background-color: #000000;
+    width: 20px;
+    height: 20px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #ffffff;
+    line-height: 20px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.prod-intro .items a .text .title{
+    display: block;
+}
+.prod-intro .items a .text .intro{
+    font-weight: normal;
+    font-size: 15px;
+    color: #000000;
+}
+.backtop{
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    bottom: 10%;
+    right: 0%;
+    margin-right: 20px;
 }
 @media (max-width: 768px) {
     .prod.jollyheap .spl-33 .text .icon {

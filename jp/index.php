@@ -17,9 +17,11 @@ $header = $root."/inc/header_".$lng.".php";
     
 </head>
 <body class="lng-jp">
-    <header><?php
-            include_once($header);
-        ?></header>
+    <header>
+        <?php 
+        include_once($header); 
+        ?>
+    </header>
     <main>
         <div class="width-limiter">
             <section class="block-promo clearfix">
@@ -54,12 +56,15 @@ $header = $root."/inc/header_".$lng.".php";
                 <h2 class="top-products">Top Products</h2>
                 <div id="jollyheap" class="prod">
                     <div class="intro-bar clearfix">
-                        <h3><span class="short-intro">ソフト磁性建設のおもちゃ</span><span class="prod-name">JollyHeap</span></h3>
-                        <div class="btn-sp btn-video">
-                            <a href="#" vid="intro1">紹介動画 1</a>
-                            <a href="#" vid="intro2">紹介動画 2</a>
+                        <h3 class="title">
+                            <span class="short-intro">ソフト磁性建設のおもちゃ</span>
+                            <span class="prod-name">JollyHeap</span>
+                        </h3>
+                        <div class="btn-sp">
+                            <a href="#" vid="intro1" type="video">紹介動画 1</a>
+                            <a href="#" vid="intro2" type="video">紹介動画 2</a>
                         </div>
-                        <div class="btn-detail"><a href="/<?php echo $lng;?>/prod/jollyheap.php">詳細情報</a></div>
+                        <div class="btn-detail"><a href="/<?php echo $lng;?>/prod/cm/jollyheap.php">詳細情報</a></div>
                     </div>
                     <div class="intro clearfix">
                         <div class="col-33 dk brief-intro">
@@ -152,7 +157,7 @@ $header = $root."/inc/header_".$lng.".php";
                     </div>
                 </div>
                 <!-- /prod jollyheap -->
-                
+
             </section>
         </div></main>
         <footer>

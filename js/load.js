@@ -46,19 +46,26 @@ $(function() {
         }
 
     });
-    $(".sub-1>li").each(function() {
+    $(".submenu .cat").each(function(){
         var that = $(this);
-        var thisIndex = that.index() + 1;
-        var thisClass = that.attr("cat");
-
-        function checkimg(src, success, fail) {
-            var img = new Image();
-            img.onload = success;
-            img.onerror = fail;
-            img.src = src;
-        };
-    });
+        var thisParent = that.parents(".nav-categories");
+        that.find(".prod a").hover(function() {
+            var thisCat = $(this).parents(".cat").attr("cat");
+            var prodName = $(this).attr("prodname");
+            $(".rightside img",thisParent).attr("src", "/images/prod/" + thisCat +"/nav-figure/" + prodName +".jpg")
+        });
+    })
+    /*.hover(function() {
+        var that = $(this);
+        var thisCat = that.attr("cat");
+        console.log(thisCat);
+        that.find(".prod a").hover(function() {
+            var prodName = $(this).attr("prodname");
+            console.log(prodName);
+        });
+    });*/
     //$(".nav-categories .rightside img").attr("src","/images/prod/" + thisClass + "/cat-sub-1.jpg");
-
-    $("header").load(headerHTML, function() {});
+    $(".backtop").click(function(){
+        $("body","html").animate({"scrollTop" : 0});
+    })
 })

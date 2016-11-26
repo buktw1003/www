@@ -22,16 +22,16 @@
     header h1 a {
         display: table-cell;
         width: 100%;
-        padding-right: 10px;
+        padding-left: 10px;
         height: 80px;
         line-height: 80px;
-        text-align: right;
+        text-align: left;
         vertical-align: middle;
     }
     header h1 img {
         display: inline;
         vertical-align: middle;
-        max-width: calc(100% - 60px);
+        max-width: calc(100% - 100px);
     }
     header nav {
         margin-top: 0;
@@ -55,7 +55,7 @@
         /* color: #333333; */
         display: block;
         top: -65px;
-        left: 0;
+        right: 0;
     }
     header nav .menu {
         clear: both;
@@ -151,6 +151,10 @@
         width: calc(50% - 10px);
         margin: 0 5px;
     }
+    .prod-intro .content{
+        padding: 0 2.5%;
+
+    }
     .prod .main-intro {
         width: 100%;
         margin-bottom: 10px;
@@ -163,8 +167,17 @@
     .prod .text {
         padding: 0 3%;
     }
-    .prod .text h4 {
+    .prod .brief-intro{
+        margin-bottom: 20px;
+    }
+    .prod .brief-intro .text{
+        line-height: 1.5;
+    }
+    .prod .brief-intro .text h4 {
         font-size: 13px;
+    }
+    .prod .brief-intro .text p {
+        font-size: 12px;
     }
     .prod .grid .text {
         font-size: 12px;
@@ -193,6 +206,9 @@
         font-size: 12px;
         line-height: 1.5em;
     }
+    .col-33{
+        width: 100%;
+    }
     .col-66.grid {
         width: 100%;
     }
@@ -205,7 +221,11 @@
     }
     .overlay h3 {
         width: calc(100% - 30px);
-        font-size: 18px;
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .overlay .content{
+        font-size: 15px;
     }
     .overlay .btn-close {
         width: 30px;
@@ -228,5 +248,25 @@
     }
     .prod-intro h3 {
         font-size: 18px;
+    }
+    .prod-intro .image-show{
+        float: none;
+        width: 100%;
+        margin: 0;
+        padding: 0 2.5%;
+        margin-bottom: 20px;
+    }
+    .prod-intro .image-show .slides{
+        max-width: 100%;
+    }
+    .prod-intro .main-intro .intro-text{
+        float: none;
+        width: 100%;
+        padding: 0 2.5%;
+        margin: 0;
+        text-align: center;
+    }
+    .backtop{
+        margin-right: 10px;
     }
 }
