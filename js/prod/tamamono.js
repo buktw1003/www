@@ -1,3 +1,3 @@
 $(function() {
-    $(".onimg.text").addClass("active");
+    $(".onimg.text p").addClass("active");
 });

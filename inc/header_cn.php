@@ -13,12 +13,12 @@
                     <ul class="width-limiter clearfix">
                         <li class="leftside col-33">
                             <ul>
-                                <li cat="cm">
+                                <li cat="cm" class="cat">
                                     <a href="javascript:;">婴童与母亲<span class="bar"></span></a>
-                                    <div class="submenu">
-                                        <ul>
-                                            <li><a prodname="jollyheap" href="/cn/prod/cm/jollyheap.php">JollyHeap</a></li>
-                                            <li><a prodname="tamamono" href="/cn/prod/cm/tamamono.php">Tamamono</a></li>
+                                    <div class="submenu prod">
+                                        <ul class="sub-2">
+                                            <li><a prodname="jh" href="/cn/prod/cm/jollyheap.php">JollyHeap</a></li>
+                                            <!-- <li><a prodname="tm" href="/cn/prod/cm/tamamono.php">Tamamono</a></li> -->
 
                                         </ul>
                                     </div>
@@ -29,7 +29,7 @@
                             </ul>
                         </li>
                         <li class="rightside col-66">
-                            <img src="/images/prod/cm/jh/cat-sub-1.jpg" alt="">
+                            <img src="/images/prod/cm/nav-figure/jh.jpg" alt="">
                         </li>
                     </ul>
                 </div>

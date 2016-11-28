@@ -1,5 +1,15 @@
+body{
+}
 main,.overlay {
+
     font-family: "Hiragino Mingcho Pro", "MS PMincho";
+    text-rendering: optimizeLegibility;
+    text-rendering: geometricPrecision;
+    font-smooth: always;
+    font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: subpixel-antialiased;
 }
 
 @media (min-width: 768px) {
@@ -31,12 +41,12 @@ main,.overlay {
         transition: all 4s;
 
     }
-    .block-figure .onimg.text.active .left {
+    .block-figure .onimg.text .left.active {
         top: 40%;
         left: 40px;
         opacity: 1;
     }
-    .block-figure .onimg.text.active .right {
+    .block-figure .onimg.text .right.active {
         position: absolute;
         top: 50px;
         right: 10px;
@@ -109,7 +119,7 @@ main,.overlay {
 .overlay .overlay-container{
     background: #bfaa7c;
     width: 95%;
-
+    max-width: 1200px;
 }
 .overlay .content{
     background-color: #fff;

@@ -1,6 +1,5 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en">
-
 <?php 
 $prodName = "JollyHeap";
 $root = $_SERVER['DOCUMENT_ROOT'];
@@ -15,10 +14,7 @@ $header = $root."/inc/header_".$lng.".php";
     <?php
     echo $css.$js;
     ?>
-    <script src="/js/prod.js?v=2"></script>
-
 </head>
-
 <body class="lng-cn">
     <header>
         <?php
@@ -37,13 +33,16 @@ $header = $root."/inc/header_".$lng.".php";
                     </p>
                 </div>
             </section>
-            <section class="prod-intro prod">
+            <section class="prod-intro prod" id="jollyheap">
                 <div class="top">
                     <div class="intro-bar clearfix">
-                        <h2 class="title"><span class="short-intro">磁性布積木</span><span class="prod-name">JollyHeap</span></h2>
+                        <h2 class="title">
+                            <span class="prod-name">JollyHeap</span>
+                            <span class="short-intro">磁性布積木</span>
+                        </h2>
                         <div class="btn-sp btn-video">
-                            <a href="#" vid="intro1">INTRO 1</a>
-                            <a href="#" vid="intro2">INTRO 2</a>
+                            <a href="#" vid="intro1" type="video">INTRO 1</a>
+                            <a href="#" vid="intro2" type="video">INTRO 2</a>
                         </div>
                     </div>
                     <!-- /intro-bar -->

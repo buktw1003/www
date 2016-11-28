@@ -1,6 +1,5 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="zh">
-
 <?php 
 $prodName = "JollyHeap";
 $root = $_SERVER['DOCUMENT_ROOT'];
@@ -11,13 +10,11 @@ $header = $root."/inc/header_".$lng.".php";
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title><?php echo "JollyHeap < Product - ".$title;?></title>
+    <title><?php echo $prodName." < Product - ".$title;?></title>
     <?php
     echo $css.$js;
     ?>
-    <script src="/js/prod.js?v=2"></script>
 </head>
-
 <body class="lng-zh">
     <header>
         <?php
@@ -37,12 +34,13 @@ $header = $root."/inc/header_".$lng.".php";
                 <section class="prod-intro prod" id="jollyheap">
                     <div class="top">
                         <div class="intro-bar clearfix">
-                            <h2 class="title"><span class="prod-name">JollyHeap</span><span class="short-intro">磁性布積木</span></h2 class="title">
+                            <h2 class="title"><span class="prod-name">JollyHeap</span><span class="short-intro">磁性布積木</span></h2>
                             <div class="btn-sp btn-video">
-                                <a href="#" vid="intro1">介紹影片 1</a>
-                                <a href="#" vid="intro2">介紹影片 2</a>
+                                <a href="#" vid="intro1" type="video">介紹影片 1</a>
+                                <a href="#" vid="intro2" type="video">介紹影片 2</a>
                             </div>
                         </div>
+                        
                         <!-- /intro-bar -->
                         <div class="main-intro clearfix">
                             <div class="image-show">

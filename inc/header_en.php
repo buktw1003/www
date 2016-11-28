@@ -18,7 +18,7 @@
                                     <div class="submenu prod">
                                         <ul>
                                             <li><a prodname="jh" href="/en/prod/cm/jollyheap.php">JollyHeap</a></li>
-                                            <li><a prodname="tm" href="/en/prod/cm/tamamono.php">Tamamono</a></li>
+                                            <!-- <li><a prodname="tm" href="/en/prod/cm/tamamono.php">Tamamono</a></li> -->
                                         </ul>
                                     </div>
                                 </li>

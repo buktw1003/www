@@ -1,12 +1,10 @@
+
 $(function() {
+    var $body = $("body");
     var $overlay = $(".overlay");
     var $overlayContainer = $(".overlay .overlay-container")
     var $overlayContent = $(".overlay .content");
     var ratioWide = 16 / 9;
-
-
-
-
 
     $(window).on("resize scroll", function() {
         var $vCenter = $(".v-center");
@@ -20,10 +18,9 @@ $(function() {
         })
 
         $overlay.css({ "top": currentTop })
-        resizeContent();
+        resizeVideo();
     }).resize();
-
-    function resizeContent() {
+    function resizeVideo() {
         $(".overlay .content iframe").height($overlayContent.width() / ratioWide);
         $overlayContainer.css({ "marginTop": -(($overlayContainer.height() + parseInt($overlayContainer.css("paddingTop")) + parseInt($overlayContainer.css("paddingBottom"))) / 2) });
     }
@@ -33,14 +30,17 @@ $(function() {
             var that = $(this);
             var thisType = that.attr("type");
             var prodName = $(this).parents(".prod").attr("id");
+            var thisIndex = $(this).parent().index()+1;
             $overlayContainer.addClass(thisType);
+            $body.addClass("overlay-enabled");
             var overlayHtml = '';
+            console.log(thisType)
             switch (thisType) {
                 case "video":
                     var vid = $(this).attr("vid");
                     var thisVid = prodName + vid;
+
                     var title = $(this).html();
-                    
                     switch (thisVid) {
                         case "jollyheapintro1":
                             overlayHtml = '<iframe width="100%" src="https://www.youtube.com/embed/DiRS0OblqeY" frameborder="0" allowfullscreen></iframe>';
@@ -48,16 +48,17 @@ $(function() {
                         case "jollyheapintro2":
                             overlayHtml = '<iframe width="100%" src="https://www.youtube.com/embed/Yi5gi8pEWWg" frameborder="0" allowfullscreen></iframe>';
                     }
-                    $overlayContent.html(overlayHtml);
+                    
 
                     break;
                 case "item":
                     var title = $(".title",that).html();
-
+                    overlayHtml = $("#ov-item" + thisIndex,".prod-items-html").html();
             }
+            $overlayContent.html(overlayHtml);
             $("h3", $overlay).html(title + " - " + prodName)
-            setTimeout(resizeContent, 500);
-            setTimeout(resizeContent, 1000);
+            setTimeout(resizeVideo, 500);
+            setTimeout(resizeVideo, 1000);
             $overlay.css({ "display": "block" }).fadeTo("fast", "1");
             $overlayContainer.css({ "display": "block" });
 
@@ -65,11 +66,12 @@ $(function() {
     });
     $overlayContainer.click(function(e) {
         e.stopPropagation();
-    })
+    });
     $(".btn-close").click(function(e) {
         e.preventDefault();
         closeOverlay();
-        $overlayContainer.removeClass("item")
+        $overlayContainer.removeClass("item");
+        $body.removeClass("overlay-enabled");
     });
 
     function closeOverlay() {
@@ -77,8 +79,8 @@ $(function() {
             $overlay.css({ "display": "none" });
             $overlayContainer.css({ "display": "none" });
             $overlayContent.html("");
-        })
-
-    }
+        });
+    };
     //$overlay.click(closeOverlay)
-})
+
+});

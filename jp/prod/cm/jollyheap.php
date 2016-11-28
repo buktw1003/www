@@ -1,6 +1,5 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en">
-
 <?php 
 $prodName = "JollyHeap";
 $root = $_SERVER['DOCUMENT_ROOT'];
@@ -15,9 +14,7 @@ $header = $root."/inc/header_".$lng.".php";
     <?php
     echo $css.$js;
     ?>
-    <script src="/js/prod.js?v=2"></script>
 </head>
-
 <body class="lng-zh">
     <header>
         <?php
@@ -42,7 +39,7 @@ $header = $root."/inc/header_".$lng.".php";
                 <div class="top">
                     <div class="intro-bar clearfix">
                         <h2 class="title"><span class="short-intro">磁性布積木</span><span class="prod-name">JollyHeap</span></h2>
-                        <div class="btn-sp">
+                        <div class="btn-sp btn-video">
                             <a href="#" vid="intro1" type="video">紹介動画 1</a>
                             <a href="#" vid="intro2" type="video">紹介動画 2</a>
                         </div>

@@ -1,6 +1,5 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="zh">
-
 <?php 
 $prodName = "TAMAMONO";
 $root = $_SERVER['DOCUMENT_ROOT'];
@@ -15,9 +14,7 @@ $header = $root."/inc/header_".$lng.".php";
     <?php
     echo $css.$js;
     ?>
-    <script src="/js/prod.js?v=2"></script>
 </head>
-
 <body class="lng-zh">
     <header>
         <?php
@@ -248,6 +245,7 @@ $header = $root."/inc/header_".$lng.".php";
             <p>Copyright© 2016 Blumen und Katze. All rights reserved</p>
         </div>
     </footer>
+    <?php include_once($root."/inc/prod/tamamono.inc"); ?>
     <?php include_once($root."/inc/overlay.inc"); ?>
 </body>
 </html>

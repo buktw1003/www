@@ -93,7 +93,12 @@ section {
     margin-bottom: 10px;
     position: relative;
 }
-
+.prod-items-html{
+    display: none;
+}
+.overlay-enabled{
+    overflow: hidden;
+}
 .overlay {
     position: absolute;
     left: 0;

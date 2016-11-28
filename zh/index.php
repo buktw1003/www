@@ -65,8 +65,8 @@ $header = $root."/inc/header_".$lng.".php";
                     <div class="intro-bar clearfix">
                         <h3 class="title"><span class="short-intro">磁性布積木</span><span class="prod-name">JollyHeap</span></h3>
                         <div class="btn-sp btn-video">
-                            <a href="#" vid="intro1">介紹影片 1</a>
-                            <a href="#" vid="intro2">介紹影片 2</a>
+                            <a href="#" vid="intro1" type="video">介紹影片 1</a>
+                            <a href="#" vid="intro2" type="video">介紹影片 2</a>
                         </div>
                         <div class="btn-detail"><a href="/<?php echo $lng;?>/prod/jollyheap.php">詳細資訊</a></div>
                     </div>
