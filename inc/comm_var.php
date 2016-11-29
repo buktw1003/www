@@ -2,14 +2,18 @@
 $url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
 $path = $_SERVER["SCRIPT_NAME"];
 $lng = substr($path, 1,2);
-$prodCss = '/css/prod/'.strtolower($prodName).'.css';
-$prodJs = '/js/prod/'.strtolower($prodName).'.js';
+$prodCondition = "strpos($url,'prod') !== false";
+if($prodCondition){
+  $prodCss = '/css/prod/'.strtolower($prodName).'.css';
+  $prodJs = '/js/prod/'.strtolower($prodName).'.js';
+};
+
 $css = '<link rel="stylesheet" href="/css/bootstrap.min.css">
         <link rel="stylesheet" href="/css/reset.css">
         <link rel="stylesheet" href="/css/core.css?v=2">
         <link rel="stylesheet" href="/css/slider.css">
         <link rel="stylesheet" href="/css/m.css?v=2">';
-        if(strpos($url,'prod') !== false && file_exists($root.$prodCss)){
+        if($prodCondition && file_exists($root.$prodCss)){
           $css .= '<link rel="stylesheet" href="'.$prodCss.'">';
         };
 $js = '<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
@@ -24,4 +28,6 @@ $js = '<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
           };
        };
 $title = "Blumen und Katze";
+$header = $root."/inc/header_".$lng.".php";
+
 ?>

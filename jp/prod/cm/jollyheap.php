@@ -169,6 +169,7 @@ $header = $root."/inc/header_".$lng.".php";
             <p>Copyright© 2016 Blumen und Katze. All rights reserved</p>
         </div>
     </footer>
+    <?php include_once($root."/inc/prod/".$prodName.".inc"); ?>
     <?php include_once($root."/inc/overlay.inc"); ?>
 </body>
 </html>

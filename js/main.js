@@ -55,7 +55,8 @@ $(function() {
                     break;
                 case "item":
                     var title = $(".title",that).html();
-                    overlayHtml = $("#ov-item" + thisIndex,".prod-items-html").html();
+                    console.log(thisIndex+lng);
+                    overlayHtml = $("#ov-item" + thisIndex,".prod-items-html."+lng).html();
             }
             $overlayContent.html(overlayHtml);
             $("h3", $overlay).html(title + " - " + prodName)

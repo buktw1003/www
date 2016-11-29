@@ -92,6 +92,6 @@ $(function() {
     	$tabContent.removeClass("active");
     	$tabContent.filter(":eq(" + thisIndex +")").addClass("active");
     });
-    $tablist.filter(":eq(1)").click();
+    $tablist.filter(":eq(0)").click();
     //$("")
 });
