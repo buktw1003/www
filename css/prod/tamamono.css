@@ -3,13 +3,8 @@ body{
 main,.overlay {
 
     font-family: "Hiragino Mingcho Pro", "MS PMincho";
-    text-rendering: optimizeLegibility;
-    text-rendering: geometricPrecision;
-    font-smooth: always;
-    font-smoothing: antialiased;
-    -moz-font-smoothing: antialiased;
     -webkit-font-smoothing: antialiased;
-    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 @media (min-width: 768px) {

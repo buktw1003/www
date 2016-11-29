@@ -1,5 +1,7 @@
 
 $(function() {
+    console.log("aaa" + lng)
+    var sitename = document.location.hostname;
     var $body = $("body");
     var $overlay = $(".overlay");
     var $overlayContainer = $(".overlay .overlay-container")

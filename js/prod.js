@@ -54,7 +54,6 @@ $(function() {
 
     function slideNext(that, $ul, movingPos, maxLeftPos, currentPos) {
         var leftPos = currentPos - movingPos;
-        console.log("lp" + leftPos)
         if (leftPos < maxLeftPos) {
             leftPos = maxLeftPos
         }
@@ -66,7 +65,6 @@ $(function() {
             $(".arrow a").not(that).removeClass("inactive");
         });
     };
-
     function slidePrev(that, $ul, movingPos, currentPos) {
         var leftPos = currentPos + movingPos;
         if (leftPos > 0) {

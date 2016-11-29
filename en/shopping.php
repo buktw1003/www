@@ -10,7 +10,13 @@ $header = $root."/inc/header_".$lng.".php";
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <title><?php echo "Online Shop - ".$title; ?></title>
     <?php
-    echo $css.$js;
+    echo $css;
+    ?>
+    <script>
+        var lng = "<?= $lng ?>";
+    </script>
+    <?php
+    echo $js;
     ?>
 </head>
 

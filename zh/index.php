@@ -12,7 +12,13 @@ $header = $root."/inc/header_".$lng.".php";
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?php echo "首頁 - ".$title;?></title>
     <?php
-    echo $css.$js;
+    echo $css;
+    ?>
+    <script>
+        var lng = "<?= $lng ?>";
+    </script>
+    <?php
+    echo $js;
     ?>
     
 </head>
