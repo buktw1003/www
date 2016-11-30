@@ -393,6 +393,7 @@ main{
 main>div{
     padding-bottom: 50px;
     background-color: #ffffff;
+    margin-top: 125px !important;
 }
 main .popular {
     width: 100%;
@@ -715,6 +716,16 @@ footer p {
 .block-info h3 {
     font-size: 18px;
     font-weight: bold;
+    margin-top: 20px;
+}
+.block-info h4{
+	font-weight: bold;
+}
+.block-info h4:before{
+	content:"．";
+}
+.block-info li li{
+	margin-left: 2em;
 }
 .prod-intro>.top{
     margin-bottom: 50px;

@@ -1,6 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en">
 <?php 
+$prodName = "index";
 $root = $_SERVER['DOCUMENT_ROOT'];
 $commVar = $root."/inc/comm_var.php";
 
@@ -158,7 +159,82 @@ $header = $root."/inc/header_".$lng.".php";
                     </div>
                 </div>
                 <!-- /prod jollyheap -->
-                
+                <div id="jollyheap" class="prod">
+                    <div class="intro-bar clearfix">
+                        <h3 class="title"><span class="short-intro">磁性布積木</span><span class="prod-name">JollyHeap</span></h3>
+                        <div class="btn-sp btn-video">
+                            <a href="#" vid="intro1" type="video">介紹影片 1</a>
+                            <a href="#" vid="intro2" type="video">介紹影片 2</a>
+                        </div>
+                        <div class="btn-detail"><a href="/<?php echo $lng;?>/prod/cm/jollyheap.php">詳細資訊</a></div>
+                    </div>
+                    <div class="intro clearfix">
+                        <div class="col-33 dk brief-intro">
+                            <div class="intro-wrap clearfix">
+                                <div class="img">
+                                    <img src="/images/prod/cm/jh/index/prod-1-1.jpg" alt="">
+                                </div>
+                                <div class="text v-center">
+                                    <h4>JollyHeap - Smart Cube<br/>是一款專為孩童設計的益智玩具。</h4>
+                                    <p>顛覆過去布積木的玩法，Smart Cube創新的思維，讓孩子發展獨一無二的想像力及創造力;<br/>在玩樂的過程中孩子能夠長時間的專注其中，更有助於發展邏輯思考及社交能力！</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-66 fl-l grid">
+                            <ul class="spl-33 cycle clearfix">
+                                <li>
+                                    <div class="intro-wrap">
+                                        <div class="img">
+                                            <img src="/images/prod/cm/jh/index/prod-2-1.jpg" alt="">
+                                        </div>
+                                        
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="intro-wrap">
+                                        <div class="img">
+                                            <img src="/images/prod/cm/jh/index/prod-2-2.jpg" alt="">
+                                        </div>
+                                        
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="intro-wrap">
+                                        <div class="img">
+                                            <img src="/images/prod/cm/jh/index/prod-2-3.jpg" alt="">
+                                        </div>
+                                        
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="intro-wrap">
+                                        <div class="img">
+                                            <img src="/images/prod/cm/jh/index/prod-2-4.jpg" alt="">
+                                        </div>
+                                        
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="intro-wrap">
+                                        <div class="img">
+                                            <img src="/images/prod/cm/jh/index/prod-2-5.jpg" alt="">
+                                        </div>
+                                        
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="intro-wrap">
+                                        <div class="img">
+                                            <img src="/images/prod/cm/jh/index/prod-2-6.jpg" alt="">
+                                        </div>
+                                        
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- /prod tamamono
             </section>
         </div></main>
         <footer>
