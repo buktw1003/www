@@ -34,7 +34,7 @@
                     </ul>
                 </div>
             </li>
-            <li class="nav-shop"><a href="/cn/shopping.php"><span>在线购物</span><span class="bar"></span></a></li>
+            <li class="nav-shop"><a href="<?php echo $bukShopUrl; ?>"><span>在线购物</span><span class="bar"></span></a></li>
             <li class="nav-contact"><a href="/cn/contact.php"><span>联络我们</span><span class="bar"></span></a></li>
         </ul>
         <?php

@@ -91,6 +91,7 @@ $(function() {
     	that.addClass("active");
     	$tabContent.removeClass("active");
     	$tabContent.filter(":eq(" + thisIndex +")").addClass("active");
+        
     });
     $tablist.filter(":eq(0)").click();
     //$("")

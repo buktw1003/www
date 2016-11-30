@@ -33,7 +33,7 @@
                     </ul>
                 </div>
             </li>
-            <li class="nav-shop"><a href="/en/shopping.php"><span>Online Shop</span><span class="bar"></span></a></li>
+            <li class="nav-shop"><a href="<?php echo $bukShopUrl; ?>"><span>Online Shop</span><span class="bar"></span></a></li>
             <li class="nav-contact"><a href="/en/contact.php"><span>Contact Us</span><span class="bar"></span></a></li>
         </ul>
         <?php

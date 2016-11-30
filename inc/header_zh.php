@@ -17,7 +17,8 @@
                                     <a href="javascript:;">嬰童與母親<span class="bar"></span></a>
                                     <div class="submenu prod">
                                         <ul>
-                                        <li><a prodname="jh" href="/zh/prod/cm/jollyheap.php">JollyHeap</a></li>
+                                            <li><a prodname="jh" href="/<?php echo "$lng";?>/prod/cm/jollyheap.php">JollyHeap</a></li>
+                                            <li><a prodname="tm" href="/<?php echo "$lng";?>/prod/cm/tamamono.php">Tamamono</a></li>
                                         </ul>
                                     </div>
                                 </li>
@@ -32,7 +33,7 @@
                     </ul>
                 </div>
             </li>
-            <li class="nav-shop"><a href="/zh/shopping.php"><span>線上購物</span><span class="bar"></span></a></li>
+            <li class="nav-shop"><a href="<?php echo $bukShopUrl; ?>"><span>線上購物</span><span class="bar"></span></a></li>
             <li class="nav-contact"><a href="/zh/contact.php"><span>聯絡我們</span><span class="bar"></span></a></li>
         </ul>
         <?php

@@ -32,18 +32,9 @@ $header = $root."/inc/header_".$lng.".php";
             <section class="block-promo clearfix">
                 <div class="slider">
                     <ul class="img">
-                        <li>
-                            <a href=""><img src="/images/prod/cm/jh/banner/slider1.jpg" alt=""></a>
-                        </li>
-                        <li>
-                            <a href=""><img src="/images/prod/cm/jh/banner/slider2.jpg" alt=""></a>
-                        </li>
-                        <li>
-                            <a href=""><img src="/images/prod/cm/jh/banner/slider3.jpg" alt=""></a>
-                        </li>
-                        <li>
-                            <a href=""><img src="/images/prod/cm/jh/banner/slider4.jpg" alt=""></a>
-                        </li>
+                    <?php
+                        echo $indexSliders;
+                    ?>
                     </ul>
                     <ul class="pager"></ul>
                 </div>
@@ -74,7 +65,7 @@ $header = $root."/inc/header_".$lng.".php";
                             <a href="#" vid="intro1" type="video">介紹影片 1</a>
                             <a href="#" vid="intro2" type="video">介紹影片 2</a>
                         </div>
-                        <div class="btn-detail"><a href="/<?php echo $lng;?>/prod/jollyheap.php">詳細資訊</a></div>
+                        <div class="btn-detail"><a href="/<?php echo $lng;?>/prod/cm/jollyheap.php">詳細資訊</a></div>
                     </div>
                     <div class="intro clearfix">
                         <div class="col-33 dk brief-intro">

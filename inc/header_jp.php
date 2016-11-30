@@ -33,7 +33,7 @@
                     </ul>
                 </div>
             </li>
-            <li class="nav-shop"><a href="/<?php echo "$lng";?>/shopping.php"><span>オンラインショップ</span><span class="bar"></span></a></li>
+            <li class="nav-shop"><a href="<?php echo $bukShopUrl; ?>"><span>オンラインショップ</span><span class="bar"></span></a></li>
             <li class="nav-contact"><a href="/<?php echo "$lng";?>/contact.php"><span>お問い合わせ</span><span class="bar"></span></a></li>
         </ul>
         <?php

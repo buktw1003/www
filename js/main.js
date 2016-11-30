@@ -1,6 +1,5 @@
 
 $(function() {
-    console.log("aaa" + lng)
     var sitename = document.location.hostname;
     var $body = $("body");
     var $overlay = $(".overlay");
@@ -11,13 +10,16 @@ $(function() {
     $(window).on("resize scroll", function() {
         var $vCenter = $(".v-center");
         var currentTop = $(window).scrollTop();
-        $vCenter.each(function() {
-            var $thisParent = $(this).parent();
-            var thisHeight = $(this).height() + (parseInt($(this).css("paddingTop")) * 2);
-            var outerHeight = $thisParent.height()+parseInt($thisParent.css("paddingTop"))+parseInt($thisParent.css("paddingBottom"));
-            //console.log(thisHeight)
-            $(this).css({ "top": (outerHeight - thisHeight) / 2 })
-        })
+        function middleCenter(){
+            $vCenter.each(function() {
+                var $thisParent = $(this).parent();
+                var thisHeight = $(this).height() + (parseInt($(this).css("paddingTop")) * 2);
+                var outerHeight = $thisParent.height()+parseInt($thisParent.css("paddingTop"))+parseInt($thisParent.css("paddingBottom"));
+                //console.log(thisHeight)
+                $(this).css({ "top": (outerHeight - thisHeight) / 2 })
+            });
+        };
+        middleCenter()
 
         $overlay.css({ "top": currentTop })
         resizeVideo();

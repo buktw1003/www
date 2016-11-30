@@ -10,7 +10,7 @@ $header = $root."/inc/header_".$lng.".php";
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title><?php echo "JollyHeap < Product - ".$title;?></title>
+    <title><?php echo $prodName." < Category - ".$title;?></title>
     <?php
     echo $css;
     ?>

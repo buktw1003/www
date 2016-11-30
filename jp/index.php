@@ -33,10 +33,9 @@ $header = $root."/inc/header_".$lng.".php";
             <section class="block-promo clearfix">
                 <div class="slider">
                     <ul class="img">
-                        <li><a href=""><img src="/images/prod/cm/jh/banner/slider1.jpg" alt=""></a></li>
-                        <li><a href=""><img src="/images/prod/cm/jh/banner/slider2.jpg" alt=""></a></li>
-                        <li><a href=""><img src="/images/prod/cm/jh/banner/slider3.jpg" alt=""></a></li>
-                        <li><a href=""><img src="/images/prod/cm/jh/banner/slider4.jpg" alt=""></a></li>
+                        <?php
+                        echo $indexSliders;
+                        ?>
                     </ul>
                     <ul class="pager"></ul>
                 </div>
