@@ -10,7 +10,7 @@ if($prodCondition){
 
 $css = '<link rel="stylesheet" href="/css/bootstrap.min.css">
         <link rel="stylesheet" href="/css/reset.css">
-        <link rel="stylesheet" href="/css/core.css?v=2">
+        <link rel="stylesheet" href="/css/core.css?v=3">
         <link rel="stylesheet" href="/css/slider.css">
         <link rel="stylesheet" href="/css/m.css?v=2">';
         if($prodCondition && file_exists($root.$prodCss)){

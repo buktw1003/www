@@ -15,7 +15,7 @@
     header .width-limiter {
         width: 100%;
     }
-    header h1{
+    header h1 {
         padding-top: 0;
         display: table;
     }
@@ -77,8 +77,8 @@
         padding-top: 1em;
         padding-bottom: 1em;
     }
-    header nav .menu>li>a{
-    	height: auto;
+    header nav .menu>li>a {
+        height: auto;
     }
     header nav a span {
         font-size: 16px;
@@ -137,8 +137,7 @@
         right: 10px;
         top: 10px;
     }
-    .intro-bar h3 {
-    }
+    .intro-bar h3 {}
     .intro-bar a {
         font-size: 13px;
     }
@@ -151,26 +150,24 @@
         width: calc(50% - 10px);
         margin: 0 5px;
     }
-    .prod-intro .content{
+    .prod-intro .content {
         padding: 0 2.5%;
-
     }
     .prod .main-intro {
         width: 100%;
         margin-bottom: 10px;
-        
     }
-    .prod .main-intro .intro-wrap{
-    	padding-bottom: 5px;
+    .prod .main-intro .intro-wrap {
+        padding-bottom: 5px;
         border-bottom: 1px solid silver;
     }
     .prod .text {
         padding: 0 3%;
     }
-    .prod .brief-intro{
+    .prod .brief-intro {
         margin-bottom: 20px;
     }
-    .prod .brief-intro .text{
+    .prod .brief-intro .text {
         line-height: 1.5;
     }
     .prod .brief-intro .text h4 {
@@ -184,7 +181,6 @@
         padding: 0;
         line-height: 1.25em;
     }
-
     .prod .dk .img {
         float: left;
         width: 40%;
@@ -206,7 +202,7 @@
         font-size: 12px;
         line-height: 1.5em;
     }
-    .col-33{
+    .col-33 {
         width: 100%;
     }
     .col-66.grid {
@@ -224,9 +220,9 @@
         font-size: 16px;
         line-height: 30px;
     }
-    .overlay .content{
+    .overlay .content {
         font-size: 15px;
-        max-height: 460px;
+        max-height: 420px;
     }
     .overlay .btn-close {
         width: 30px;
@@ -250,29 +246,41 @@
     .prod-intro h3 {
         font-size: 18px;
     }
-    .image-show{
+    .prod-intro .items a .img:after {
+        display: none;
+    }
+    .prod-intro .items a:hover .text,
+    .prod-intro .items a:hover .img:after {
+        opacity: 1;
+    }
+    .prod-intro .items a .text{
+        position: static;
+    }
+    .prod-intro .items a .text .intro{
+        display: block;
+    }
+    .image-show {
         float: none;
         width: 100%;
         margin: 0 auto;
         padding: 0 2.5%;
         margin-bottom: 20px;
     }
-
-    .prod-intro .image-show .slides{
+    .prod-intro .image-show .slides {
         max-width: 100%;
     }
-    .prod-intro .main-intro .intro-text{
+    .prod-intro .main-intro .intro-text {
         float: none;
         width: 100%;
         padding: 0 2.5%;
         margin: 0;
         text-align: center;
     }
-    .overlay .content .spec{
-    	width: 100%;
-    	float: none;
+    .overlay .content .spec {
+        width: 100%;
+        float: none;
     }
-    .backtop{
+    .backtop {
         margin-right: 10px;
     }
 }
