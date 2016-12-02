@@ -95,16 +95,18 @@ main,.overlay {
     max-width: 950px;
     margin-bottom: 50px;
 }
-.sozai-info td{
+.overlay .content .sozai-info td{
     border-left: #decca4 solid 1px;
     border-bottom: #decca4 solid 1px;
     text-align: left;
     padding: 10px;
 }
-.content .sozai-info th{
+.overlay .content .sozai-info th{
     padding: 10px;
     border-left: #decca4 solid 1px;
     border-bottom: #decca4 solid 1px;
+    color: #000000;
+    background-color: #ffffff;
 }
 .prod-intro .items a .text{
 }
@@ -115,12 +117,12 @@ main,.overlay {
     background: #bfaa7c;
     width: 95%;
     max-width: 1200px;
+    height: 80%;
 }
 .overlay .content{
-    background-color: #fff;
-    padding: 0 2.5%;
-    max-height: 500px;
+
     overflow: auto;
+    height: calc(100% - 55px);
 }
 .overlay h3{
     box-shadow: inset 0px 0px 10px #8d743e;

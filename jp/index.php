@@ -45,7 +45,7 @@ $header = $root."/inc/header_".$lng.".php";
             </section>
             <section class="block-categories">
                 <ul class="clearfix">
-                    <li><a href="/<?php echo $lng;?>/prod/jollyheap.php"><img src="/images/index/it1.jpg" alt="Most Popular"></a></li>
+                    <li><a href="/<?php echo $lng;?>/prod/cm/jollyheap.php"><img src="/images/index/it1.jpg" alt="Most Popular"></a></li>
                     <li>
                         <a href=""><img src="/images/index/it2.jpg" alt="Kitchen"></a>
                     </li>
@@ -162,16 +162,89 @@ $header = $root."/inc/header_".$lng.".php";
                     </div>
                 </div>
                 <!-- /prod jollyheap -->
+                <div id="tamamono" class="prod">
+                    <div class="intro-bar clearfix">
+                        <h3 class="title"><span class="short-intro">寶寶蠶絲衣</span><span class="prod-name">TAMAMONO</span></h3>
+                        <div class="btn-detail"><a href="/<?php echo $lng;?>/prod/cm/tamamono.php">詳細情報</a></div>
+                    </div>
+                    <div class="intro clearfix">
+                        <div class="col-33 dk brief-intro">
+                            <div class="intro-wrap clearfix">
+                                <div class="img">
+                                    <img src="/images/prod/cm/tm/index/prod-1-1.jpg" alt="">
+                                </div>
+                                <div class="text v-center">
+                                
+                                    <p>「お母さんの胎内に宿ってから永遠の眠りにつくまで、
+いつも一番側に寄り添うお守りのような肌着でありたい。」
+という願いを込めた「TAMAMONO」</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-66 fl-l grid">
+                                <ul class="spl-33 clearfix">
+                                    <li>
+                                        <div class="intro-wrap">
+                                            <div class="img">
+                                                <img src="/images/prod/cm/tm/index/prod-2-1.jpg" alt="">
+                                            </div>
 
-            </section>
-        </div></main>
-        <footer>
-            <div class="width-limiter">
-                <a class="btn-fb" href="https://www.facebook.com/Blumen-und-Katze-1074003162719945/?fref=ts" target="_blank">Facebook</a>
-                <p>Copyright© 2016 Blumen und Katze. All rights reserved</p>
-            </div>
-        </footer>
-        <?php include_once($root."/inc/overlay.inc"); ?>
-    </body>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="intro-wrap">
+                                            <div class="img">
+                                                <img src="/images/prod/cm/tm/index/prod-2-2.jpg" alt="">
+                                            </div>
 
-    </html>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="intro-wrap">
+                                            <div class="img">
+                                                <img src="/images/prod/cm/tm/index/prod-2-3.jpg" alt="">
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="intro-wrap">
+                                            <div class="img">
+                                                <img src="/images/prod/cm/tm/index/prod-2-4.jpg" alt="">
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="intro-wrap">
+                                            <div class="img">
+                                                <img src="/images/prod/cm/tm/index/prod-2-5.jpg" alt="">
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="intro-wrap">
+                                            <div class="img">
+                                                <img src="/images/prod/cm/tm/index/prod-2-6.jpg" alt="">
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /prod tamamono -->
+                </section>
+            </div></main>
+            <footer>
+                <div class="width-limiter">
+                    <a class="btn-fb" href="https://www.facebook.com/Blumen-und-Katze-1074003162719945/?fref=ts" target="_blank">Facebook</a>
+                    <p>Copyright© 2016 Blumen und Katze. All rights reserved</p>
+                </div>
+            </footer>
+            <?php include_once($root."/inc/overlay.inc"); ?>
+        </body>
+
+        </html>

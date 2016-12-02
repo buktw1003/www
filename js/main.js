@@ -28,16 +28,18 @@ $(function() {
         $(".overlay .content iframe").height($overlayContent.width() / ratioWide);
         $overlayContainer.css({ "marginTop": -(($overlayContainer.height() + parseInt($overlayContainer.css("paddingTop")) + parseInt($overlayContainer.css("paddingBottom"))) / 2) });
     }
+    var overlayHtml = $(".prod-items-html."+lng).html();
+    $overlayContent.html(overlayHtml);
     $(".btn-sp a").each(function() {
         $(this).click(function(e) {
             e.preventDefault();
+            var currentTop = $(window).scrollTop();
             var that = $(this);
             var thisType = that.attr("type");
             var prodName = $(this).parents(".prod").attr("id");
             var thisIndex = $(this).parent().index()+1;
             $overlayContainer.addClass(thisType);
             $body.addClass("overlay-enabled");
-            var overlayHtml = '';
             console.log(thisType)
             switch (thisType) {
                 case "video":
@@ -52,20 +54,24 @@ $(function() {
                         case "jollyheapintro2":
                             overlayHtml = '<iframe width="100%" src="https://www.youtube.com/embed/Yi5gi8pEWWg" frameborder="0" allowfullscreen></iframe>';
                     }
-                    
+                    $overlayContent.html(overlayHtml);
 
                     break;
                 case "item":
                     var title = $(".title",that).html();
                     console.log(thisIndex+lng);
-                    overlayHtml = $("#ov-item" + thisIndex,".prod-items-html."+lng).html();
+
+                    $("#ov-item" + thisIndex).addClass("active");
             }
-            $overlayContent.html(overlayHtml);
+            //$overlayContent.html(overlayHtml);
+            //imgRearrange();
+            $(window).scrollTop(currentTop+1);
             $("h3", $overlay).html(title + " - " + prodName)
             setTimeout(resizeVideo, 500);
             setTimeout(resizeVideo, 1000);
             $overlay.css({ "display": "block" }).fadeTo("fast", "1");
             $overlayContainer.css({ "display": "block" });
+            $overlayContent.scrollTop(0);
 
         });
     });
@@ -83,9 +89,11 @@ $(function() {
         $overlay.fadeTo("fast", "0", function() {
             $overlay.css({ "display": "none" });
             $overlayContainer.css({ "display": "none" });
-            $overlayContent.html("");
+            $overlayContent.find(">div").removeClass("active");
+
+            $body.removeClass("overlay-enabled");
         });
     };
-    //$overlay.click(closeOverlay)
+    $overlay.click(closeOverlay)
 
 });

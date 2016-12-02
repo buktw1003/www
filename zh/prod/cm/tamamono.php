@@ -10,7 +10,7 @@ $header = $root."/inc/header_".$lng.".php";
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title><?php echo $prodName." < カテゴリ - ".$title;?></title>
+    <title><?php echo $prodName." < 產品類別 - ".$title;?></title>
     <?php
     echo $css;
     ?>
@@ -40,7 +40,6 @@ $header = $root."/inc/header_".$lng.".php";
                 <div class="top">
                     <div class="intro-bar clearfix">
                         <h2 class="title"><span class="short-intro">寶寶蠶絲衣</span><span class="prod-name">TAMAMONO</span></h2>
-
                     </div>
                     <!-- /intro-bar -->
                     <div class="intro-text">
@@ -50,15 +49,9 @@ $header = $root."/inc/header_".$lng.".php";
                                 <div class="slides-nav">
                                     <div class="slide-img">
                                         <ul class="img clearfix">
-                                            <li><a href="javascript:;"><img src="/images/prod/cm/tm/p1.jpg" alt=""></a></li>
-                                            <li><a href="javascript:;"><img src="/images/prod/cm/tm/p2.jpg" alt=""></a></li>
-                                            <li><a href="javascript:;"><img src="/images/prod/cm/tm/p3.jpg" alt=""></a></li>
-                                            <li><a href="javascript:;"><img src="/images/prod/cm/tm/p4.jpg" alt=""></a></li>
-                                            <li><a href="javascript:;"><img src="/images/prod/cm/tm/p5.jpg" alt=""></a></li>
-                                            <li><a href="javascript:;"><img src="/images/prod/cm/tm/p6.jpg" alt=""></a></li>
-                                            <li><a href="javascript:;"><img src="/images/prod/cm/tm/p7.jpg" alt=""></a></li>
-                                            <li><a href="javascript:;"><img src="/images/prod/cm/tm/p8.jpg" alt=""></a></li>
-                                            <li><a href="javascript:;"><img src="/images/prod/cm/tm/p9.jpg" alt=""></a></li>
+                                            <?php
+                                                include_once($root."/inc/prod/slideimgs/".strtolower($prodName).".inc");
+                                            ?>
                                         </ul>
 
                                     </div>
@@ -91,7 +84,7 @@ $header = $root."/inc/header_".$lng.".php";
                         </ul>
                         <div class="tab-content">
                             <div class="section">
-                                <h3>＝「TAMAMONO」ができるまで ＝</h3>
+                                <h3>＝「TAMAMONO」 契機・轉折・誕生 ＝</h3>
                                 <h4>契機 – 一個被蠶絲拯救的異味性皮膚炎患者</h4>
                                 <p>
                                     用蠶絲來製作貼身衣物的契機，是來自公司代表加藤在幼兒及青春期時的異位性皮膚炎經歷。在試過各種治療方式及改變生活習慣仍不見改善後，她發現最重要的就是那件最貼近身上的貼身衣物。既使穿上材質柔軟的棉製衣物，在手肘活動時仍會產生摩擦導致肌膚紅腫發炎發癢，不斷惡性循環發炎-抓癢-破皮。<br/>
@@ -242,7 +235,6 @@ $header = $root."/inc/header_".$lng.".php";
             <p>Copyright© 2016 Blumen und Katze. All rights reserved</p>
         </div>
     </footer>
-    <?php include_once($root."/inc/prod/tamamono.inc"); ?>
-    <?php include_once($root."/inc/overlay.inc"); ?>
+    <?php include_once($root."/inc/prod/tamamono_overlay.inc"); ?>
 </body>
 </html>

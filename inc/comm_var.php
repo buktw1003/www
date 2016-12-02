@@ -35,4 +35,9 @@ $indexSliders = '<li><a href="/'.$lng.'/prod/cm/tamamono.php"><img src="/images/
                 <li><a href="/'.$lng.'/prod/cm/jollyheap.php"><img src="/images/prod/cm/jh/banner/slider2.jpg" alt=""></a></li>
                 <li><a href="/'.$lng.'/prod/cm/jollyheap.php"><img src="/images/prod/cm/jh/banner/slider3.jpg" alt=""></a></li>
                 <li><a href="/'.$lng.'/prod/cm/jollyheap.php"><img src="/images/prod/cm/jh/banner/slider4.jpg" alt=""></a></li>';
+if($lng == "zh"){
+    $fbLink = "https://www.facebook.com/blumenundkatze/";
+} elseif ($lng == "jp"){
+    $fbLink = "https://www.facebook.com/Blumen-und-Katze-Japan-1214712065283831/?fref=ts";
+};
 ?>

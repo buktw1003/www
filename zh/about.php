@@ -44,7 +44,7 @@ $header = $root."/inc/header_".$lng.".php";
         </div></main>
     <footer>
         <div class="width-limiter">
-            <a class="btn-fb" href="https://www.facebook.com/Blumen-und-Katze-1074003162719945/?fref=ts" target="_blank">Facebook</a>
+            <a class="btn-fb" href="<?php echo $fbLink; ?>" target="_blank">Facebook</a>
             <p>Copyright© 2016 Blumen und Katze. All rights reserved</p>
         </div>
     </footer>

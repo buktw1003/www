@@ -22,7 +22,14 @@
                                         </ul>
                                     </div>
                                 </li>
-                                <li cat="kt" class="cat"><a href="javascript:;">キッチン<span class="bar"></span></a></li>
+                                <li cat="kt" class="cat">
+                                <a href="javascript:;">キッチン<span class="bar"></span></a>
+                                <div class="submenu prod">
+                                    <ul class="sub-2">
+                                        <li><a prodname="kn" href="/<?php echo "$lng";?>/prod/kt/kakuni.php">KAKUNI</a></li>
+                                    </ul>
+                                </div>
+                                </li>
                                 <li cat="hd" class="cat"><a href="javascript:;">室内装飾<span class="bar"></span></a></li>
                                 <li cat="st" class="cat"><a href="javascript:;">文具<span class="bar"></span></a></li>
                             </ul>

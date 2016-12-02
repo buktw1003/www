@@ -55,15 +55,9 @@ include_once($commVar);
                                 <div class="slides-nav">
                                     <div class="slide-img">
                                         <ul class="img clearfix">
-                                            <li><a href="javascript:;"><img src="/images/prod/cm/tm/p1.jpg" alt=""></a></li>
-                                            <li><a href="javascript:;"><img src="/images/prod/cm/tm/p2.jpg" alt=""></a></li>
-                                            <li><a href="javascript:;"><img src="/images/prod/cm/tm/p3.jpg" alt=""></a></li>
-                                            <li><a href="javascript:;"><img src="/images/prod/cm/tm/p4.jpg" alt=""></a></li>
-                                            <li><a href="javascript:;"><img src="/images/prod/cm/tm/p5.jpg" alt=""></a></li>
-                                            <li><a href="javascript:;"><img src="/images/prod/cm/tm/p6.jpg" alt=""></a></li>
-                                            <li><a href="javascript:;"><img src="/images/prod/cm/tm/p7.jpg" alt=""></a></li>
-                                            <li><a href="javascript:;"><img src="/images/prod/cm/tm/p8.jpg" alt=""></a></li>
-                                            <li><a href="javascript:;"><img src="/images/prod/cm/tm/p9.jpg" alt=""></a></li>
+                                            <?php
+                                                include_once($root."/inc/prod/slideimgs/".strtolower($prodName).".inc");
+                                            ?>
                                         </ul>
 
                                     </div>
@@ -251,7 +245,7 @@ include_once($commVar);
             <p>Copyright© 2016 Blumen und Katze. All rights reserved</p>
         </div>
     </footer>
-    <?php include_once($root."/inc/prod/tamamono.inc"); ?>
+    <?php include_once($root."/inc/prod/tamamono_overlay.inc"); ?>
     <?php include_once($root."/inc/overlay.inc"); ?>
 </body>
 </html>

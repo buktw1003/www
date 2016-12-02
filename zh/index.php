@@ -45,7 +45,7 @@ $header = $root."/inc/header_".$lng.".php";
             </section>
             <section class="block-categories">
                 <ul class="clearfix">
-                    <li><a href="/<?php echo $lng;?>/prod/jollyheap.php"><img src="/images/index/it1.jpg" alt="Most Popular"></a></li>
+                    <li><a href="/<?php echo $lng;?>/prod/cm/jollyheap.php"><img src="/images/index/it1.jpg" alt="Most Popular"></a></li>
                     <li>
                         <a href=""><img src="/images/index/it2.jpg" alt="Kitchen"></a>
                     </li>
@@ -159,33 +159,32 @@ $header = $root."/inc/header_".$lng.".php";
                     </div>
                 </div>
                 <!-- /prod jollyheap -->
-                <div id="jollyheap" class="prod">
+                <div id="tamamono" class="prod">
                     <div class="intro-bar clearfix">
-                        <h3 class="title"><span class="short-intro">磁性布積木</span><span class="prod-name">JollyHeap</span></h3>
-                        <div class="btn-sp btn-video">
-                            <a href="#" vid="intro1" type="video">介紹影片 1</a>
-                            <a href="#" vid="intro2" type="video">介紹影片 2</a>
-                        </div>
-                        <div class="btn-detail"><a href="/<?php echo $lng;?>/prod/cm/jollyheap.php">詳細資訊</a></div>
+                        <h3 class="title"><span class="short-intro">寶寶蠶絲衣</span><span class="prod-name">TAMAMONO</span></h3>
+                        <div class="btn-detail"><a href="/<?php echo $lng;?>/prod/cm/tamamono.php">詳細資訊</a></div>
                     </div>
                     <div class="intro clearfix">
                         <div class="col-33 dk brief-intro">
                             <div class="intro-wrap clearfix">
                                 <div class="img">
-                                    <img src="/images/prod/cm/jh/index/prod-1-1.jpg" alt="">
+                                    <img src="/images/prod/cm/tm/index/prod-1-1.jpg" alt="">
                                 </div>
                                 <div class="text v-center">
-                                    <h4>JollyHeap - Smart Cube<br/>是一款專為孩童設計的益智玩具。</h4>
-                                    <p>顛覆過去布積木的玩法，Smart Cube創新的思維，讓孩子發展獨一無二的想像力及創造力;<br/>在玩樂的過程中孩子能夠長時間的專注其中，更有助於發展邏輯思考及社交能力！</p>
+                                    <h4>TAMAMONO，溫柔守護，<br/>來自一個身為母親最真切的願望。</h4>
+                                    <p>為了讓寶寶可以每天使用乾淨的蠶絲貼身衣物，
+我們開發了可機洗蠶絲衣，即使丟進洗衣機、烘乾機也不變形，依然保有蠶絲的柔軟質感。<br/>
+我們採用全程日本加工製造的SHIDORI®絲線。
+多道工序費時生產，確保製作出made in japan的高品質。</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-66 fl-l grid">
-                            <ul class="spl-33 cycle clearfix">
+                            <ul class="spl-33 clearfix">
                                 <li>
                                     <div class="intro-wrap">
                                         <div class="img">
-                                            <img src="/images/prod/cm/jh/index/prod-2-1.jpg" alt="">
+                                            <img src="/images/prod/cm/tm/index/prod-2-1.jpg" alt="">
                                         </div>
                                         
                                     </div>
@@ -193,7 +192,7 @@ $header = $root."/inc/header_".$lng.".php";
                                 <li>
                                     <div class="intro-wrap">
                                         <div class="img">
-                                            <img src="/images/prod/cm/jh/index/prod-2-2.jpg" alt="">
+                                            <img src="/images/prod/cm/tm/index/prod-2-2.jpg" alt="">
                                         </div>
                                         
                                     </div>
@@ -201,7 +200,7 @@ $header = $root."/inc/header_".$lng.".php";
                                 <li>
                                     <div class="intro-wrap">
                                         <div class="img">
-                                            <img src="/images/prod/cm/jh/index/prod-2-3.jpg" alt="">
+                                            <img src="/images/prod/cm/tm/index/prod-2-3.jpg" alt="">
                                         </div>
                                         
                                     </div>
@@ -209,7 +208,7 @@ $header = $root."/inc/header_".$lng.".php";
                                 <li>
                                     <div class="intro-wrap">
                                         <div class="img">
-                                            <img src="/images/prod/cm/jh/index/prod-2-4.jpg" alt="">
+                                            <img src="/images/prod/cm/tm/index/prod-2-4.jpg" alt="">
                                         </div>
                                         
                                     </div>
@@ -217,7 +216,7 @@ $header = $root."/inc/header_".$lng.".php";
                                 <li>
                                     <div class="intro-wrap">
                                         <div class="img">
-                                            <img src="/images/prod/cm/jh/index/prod-2-5.jpg" alt="">
+                                            <img src="/images/prod/cm/tm/index/prod-2-5.jpg" alt="">
                                         </div>
                                         
                                     </div>
@@ -225,7 +224,7 @@ $header = $root."/inc/header_".$lng.".php";
                                 <li>
                                     <div class="intro-wrap">
                                         <div class="img">
-                                            <img src="/images/prod/cm/jh/index/prod-2-6.jpg" alt="">
+                                            <img src="/images/prod/cm/tm/index/prod-2-6.jpg" alt="">
                                         </div>
                                         
                                     </div>
@@ -234,7 +233,7 @@ $header = $root."/inc/header_".$lng.".php";
                         </div>
                     </div>
                 </div>
-                <!-- /prod tamamono
+                <!-- /prod tamamono -->
             </section>
         </div></main>
         <footer>

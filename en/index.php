@@ -47,7 +47,7 @@ $header = $root."/inc/header_".$lng.".php";
         </section>
         <section class="block-categories">
             <ul class="clearfix">
-                <li><a href="/<?php echo $lng;?>/prod/jollyheap.php"><img src="/images/index/it1.jpg" alt="Most Popular"></a></li>
+                <li><a href="/<?php echo $lng;?>/prod/cm/jollyheap.php"><img src="/images/index/it1.jpg" alt="Most Popular"></a></li>
                 <li><a href=""><img src="/images/index/it2.jpg" alt="Kitchen"></a></li>
                 <li><a href=""><img src="/images/index/it3.jpg" alt="Home Decor"></a></li>
                 <li><a href=""><img src="/images/index/it4.jpg" alt="Stationery"></a></li>

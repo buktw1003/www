@@ -2,9 +2,9 @@ $(function() {
     var thumbsPerPage = 5;
     var $imgShow = $(".image-show");
     var $img = $("img", $imgShow);
-    var $mainImg = $(".slides img")
-    $(window).resize(function() {
+    function imgRearrange(){
         $imgShow.each(function() {
+            //var this  
             var that = $(this);
             var $arrowBtn = $(".arrow a", that);
             var totalPics = that.find(".slides-nav li").length;
@@ -25,7 +25,9 @@ $(function() {
                 $arrowBtn.addClass("inactive");
             }
         });
-    }).resize();
+    };
+    $(window).on("resize scroll",imgRearrange).resize();
+
     $(".slide-prev").addClass("inactive");
     $(".arrow a", $imgShow).click(function() {
         if (!$(this).hasClass("inactive")) {
@@ -51,11 +53,10 @@ $(function() {
             }
         }
     })
-
     function slideNext(that, $ul, movingPos, maxLeftPos, currentPos) {
         var leftPos = currentPos - movingPos;
         if (leftPos < maxLeftPos) {
-            leftPos = maxLeftPos
+            leftPos = maxLeftPos;
         }
         $ul.filter(":not(:animated)").animate({ "left": leftPos }, function() {
             currentPage++;
@@ -69,7 +70,7 @@ $(function() {
         var leftPos = currentPos + movingPos;
         if (leftPos > 0) {
             leftPos = 0;
-        }
+        };
         $ul.filter(":not(:animated)").animate({ "left": leftPos }, function() {
             currentPage++;
             if (leftPos == 0) {
@@ -79,20 +80,24 @@ $(function() {
         });
     };
     $img.click(function() {
+        var thisParent = $(this).parents(".image-show");
+        var $mainImg = $(".slides img",thisParent);
         var thisSrc = $(this).attr("src");
-        $mainImg.attr("src", thisSrc)
+        $mainImg.attr("src", thisSrc);
     });
     var $tablist = $(".tablist a");
     var $tabContent = $(".tabs .tab-content");
-    $tablist.click(function(){
-    	var that = $(this);
-    	var thisIndex = that.parent().index();
-    	$tablist.removeClass("active");
-    	that.addClass("active");
-    	$tabContent.removeClass("active");
-    	$tabContent.filter(":eq(" + thisIndex +")").addClass("active");
-        
+    $tablist.click(function() {
+        //var currentTop = $(window).scrollTop();
+        var that = $(this);
+        var thisIndex = that.parent().index();
+        $tablist.removeClass("active");
+        that.addClass("active");
+        $tabContent.removeClass("active");
+        $tabContent.filter(":eq(" + thisIndex + ")").addClass("active");
+        $("body","html").animate({"scrollTop" : $tablist.offset().top-130});
     });
-    $tablist.filter(":eq(0)").click();
+    $tablist.filter(":eq(0)").addClass("active");
+    $tabContent.filter(":eq(0)").addClass("active");
     //$("")
 });

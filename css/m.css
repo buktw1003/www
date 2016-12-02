@@ -212,7 +212,7 @@
     .col-66.grid {
         width: 100%;
     }
-    .cycle.spl-33 li {
+    .grid .spl-33 li {
         width: 50%;
     }
     .overlay .overlay-container {
@@ -226,6 +226,7 @@
     }
     .overlay .content{
         font-size: 15px;
+        max-height: 460px;
     }
     .overlay .btn-close {
         width: 30px;
@@ -249,13 +250,14 @@
     .prod-intro h3 {
         font-size: 18px;
     }
-    .prod-intro .image-show{
+    .image-show{
         float: none;
         width: 100%;
-        margin: 0;
+        margin: 0 auto;
         padding: 0 2.5%;
         margin-bottom: 20px;
     }
+
     .prod-intro .image-show .slides{
         max-width: 100%;
     }
@@ -265,6 +267,10 @@
         padding: 0 2.5%;
         margin: 0;
         text-align: center;
+    }
+    .overlay .content .spec{
+    	width: 100%;
+    	float: none;
     }
     .backtop{
         margin-right: 10px;

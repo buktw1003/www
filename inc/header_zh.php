@@ -18,11 +18,18 @@
                                     <div class="submenu prod">
                                         <ul>
                                             <li><a prodname="jh" href="/<?php echo "$lng";?>/prod/cm/jollyheap.php">JollyHeap</a></li>
-                                            <li><a prodname="tm" href="/<?php echo "$lng";?>/prod/cm/tamamono.php">Tamamono</a></li>
+                                            <li><a prodname="tm" href="/<?php echo "$lng";?>/prod/cm/tamamono.php">TAMAMONO</a></li>
                                         </ul>
                                     </div>
                                 </li>
-                                <li cat="kt" class="cat"><a href="javascript:;">廚房用品<span class="bar"></span></a></li>
+                                <li cat="kt" class="cat">
+                                    <a href="javascript:;">廚房用品<span class="bar"></span></a>
+                                    <div class="submenu prod">
+                                        <ul>
+                                            <li><a prodname="kn" href="/<?php echo "$lng";?>/prod/kt/kakuni.php">KAKUNI</a></li>
+                                            </ul>
+                                    </div>
+                                </li>
                                 <li cat="hd" class="cat"><a href="javascript:;">家飾裝潢<span class="bar"></span></a></li>
                                 <li cat="st" class="cat"><a href="javascript:;">文具禮品<span class="bar"></span></a></li>
                             </ul>

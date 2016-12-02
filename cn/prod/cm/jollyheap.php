@@ -59,11 +59,9 @@ $header = $root."/inc/header_".$lng.".php";
                                 <div class="slides-nav">
                                     <div class="slide-img">
                                         <ul class="img clearfix">
-                                            <li><a href="javascript:;"><img src="/images/prod/cm/jh/p1.jpg" alt=""></a></li>
-                                            <li><a href="javascript:;"><img src="/images/prod/cm/jh/p2.jpg" alt=""></a></li>
-                                            <li><a href="javascript:;"><img src="/images/prod/cm/jh/p3.jpg" alt=""></a></li>
-                                            <li><a href="javascript:;"><img src="/images/prod/cm/jh/p4.jpg" alt=""></a></li>
-                                            <li><a href="javascript:;"><img src="/images/prod/cm/jh/p5.jpg" alt=""></a></li>
+                                            <?php
+                                                include_once($root."/inc/prod/slideimgs/".strtolower($prodName).".inc");
+                                            ?>
                                         </ul>
 
                                     </div>
