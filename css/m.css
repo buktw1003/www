@@ -255,6 +255,9 @@
     }
     .prod-intro .items a .text{
         position: static;
+        display: block;
+        padding: 5%;
+        background-color: #eeeeee;
     }
     .prod-intro .items a .text .intro{
         display: block;
