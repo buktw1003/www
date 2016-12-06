@@ -1,5 +1,5 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html lang="zh">
+<html lang="en">
 <?php 
 $prodName = "tamamono";
 $root = $_SERVER['DOCUMENT_ROOT'];
@@ -9,12 +9,12 @@ include_once($commVar);
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title><?php echo $prodName." < カテゴリ - ".$title;?></title>
+    <title><?php echo $prodName." < 子ども・マタニティ - ".$title;?></title>
     <?php
     echo $css;
     ?>
     <script>
-        var lng = "<?= $lng ?>";
+        var lng = "jp";
     </script>
     <?php
     echo $js;
@@ -226,17 +226,7 @@ include_once($commVar);
                 <!-- /content -->
             </section>
             <!--/prod-intro-->
-            <section class="prod-mall">
-                <h3>いますぐ注文します</h3>
-                <ul class="mall-list">
-                    <li>
-                        <a href="https://tw.search.bid.yahoo.com/search/auction/product?ei=utf-8&seller=Y3281589851&cat=&p=%E5%B8%83%E7%A9%8D%E6%9C%A8"><img src="/images/common/yahoobid.png" alt=""></a>
-                    </li>
-                    <li>
-                        <a href="https://shopee.tw/shop/11241638/?tab=product"><img src="/images/common/shopee.png" alt=""></a>
-                    </li>
-                </ul>
-            </section>
+            
         </div>
     </main>
     <footer>
@@ -246,6 +236,5 @@ include_once($commVar);
         </div>
     </footer>
     <?php include_once($root."/inc/prod/tamamono_overlay.inc"); ?>
-    <?php include_once($root."/inc/overlay.inc"); ?>
 </body>
 </html>

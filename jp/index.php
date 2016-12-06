@@ -15,7 +15,7 @@ $header = $root."/inc/header_".$lng.".php";
     echo $css;
     ?>
     <script>
-        var lng = "<?= $lng ?>";
+        var lng = "jp";
     </script>
     <?php
     echo $js;

@@ -1,5 +1,5 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html lang="zh">
+<html lang="en">
 <?php 
 $prodName = "JollyHeap";
 $root = $_SERVER['DOCUMENT_ROOT'];
@@ -10,7 +10,7 @@ $header = $root."/inc/header_".$lng.".php";
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title><?php echo $prodName." < 產品類別 - ".$title;?></title>
+    <title><?php echo $prodName." < 嬰童與母親 - ".$title;?></title>
     <?php
     echo $css;
     ?>

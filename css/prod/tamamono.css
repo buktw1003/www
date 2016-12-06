@@ -107,16 +107,22 @@ main,.overlay {
     color: #000000;
     background-color: #ffffff;
 }
+.prod-intro .items a{
+   border: 1px solid #bfaa7c; 
+}
 .prod-intro .items a .text{
+    color: #6b4b08;
 }
 .prod-intro .items a .text:after{
     background-color: #bfaa7c;
+}
+.prod-intro .items a .img:after{
+    background-color: rgba(189,173,139,.5);
 }
 .overlay .overlay-container{
     background: #bfaa7c;
     width: 95%;
     max-width: 1200px;
-    height: 80%;
 }
 .overlay .content{
 

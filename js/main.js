@@ -30,6 +30,8 @@ $(function() {
     }
     var overlayHtml = $(".prod-items-html."+lng).html();
     $overlayContent.html(overlayHtml);
+
+    //show overlay
     $(".btn-sp a").each(function() {
         $(this).click(function(e) {
             e.preventDefault();
@@ -40,12 +42,11 @@ $(function() {
             var thisIndex = $(this).parent().index()+1;
             $overlayContainer.addClass(thisType);
             $body.addClass("overlay-enabled");
-            console.log(thisType)
             switch (thisType) {
                 case "video":
                     var vid = $(this).attr("vid");
                     var thisVid = prodName + vid;
-
+                    
                     var title = $(this).html();
                     switch (thisVid) {
                         case "jollyheapintro1":
@@ -59,19 +60,23 @@ $(function() {
                     break;
                 case "item":
                     var title = $(".title",that).html();
-                    console.log(thisIndex+lng);
-
                     $("#ov-item" + thisIndex).addClass("active");
             }
             //$overlayContent.html(overlayHtml);
             //imgRearrange();
+            $(window).scrollTop(currentTop-1);
+            var currentTop = $(window).scrollTop();
             $(window).scrollTop(currentTop+1);
+
+            
+
             $("h3", $overlay).html(title + " - " + prodName)
             setTimeout(resizeVideo, 500);
             setTimeout(resizeVideo, 1000);
             $overlay.css({ "display": "block" }).fadeTo("fast", "1");
             $overlayContainer.css({ "display": "block" });
             $overlayContent.scrollTop(0);
+
 
         });
     });

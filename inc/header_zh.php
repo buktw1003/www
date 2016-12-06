@@ -27,6 +27,7 @@
                                     <div class="submenu prod">
                                         <ul>
                                             <li><a prodname="kn" href="/<?php echo "$lng";?>/prod/kt/kakuni.php">KAKUNI</a></li>
+                                            <li><a prodname="kh" href="/<?php echo "$lng";?>/prod/kt/kihara.php">KIHARA</a></li>
                                             </ul>
                                     </div>
                                 </li>

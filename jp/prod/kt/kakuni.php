@@ -1,7 +1,9 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html lang="zh">
+<html lang="en">
 <?php 
 $prodName = "KAKUNI";
+$prodSn = "kn";
+$prodCat = "kt";
 $root = $_SERVER['DOCUMENT_ROOT'];
 $commVar = $root."/inc/comm_var.php";
 include_once($commVar);
@@ -10,7 +12,7 @@ $header = $root."/inc/header_".$lng.".php";
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title><?php echo $prodName." < カテゴリ - ".$title;?></title>
+    <title><?php echo $prodName." < キッチン - ".$title;?></title>
     <?php
     echo $css;
     ?>
@@ -88,7 +90,143 @@ $header = $root."/inc/header_".$lng.".php";
                     <!-- /main-intro -->
                 </div>
                 <!-- /top -->
-                <div class="content"></div>
+                <div class="content">
+
+                    <div class="items">
+                        <ul class="row btn-sp">
+                            <li class="col-xs-4">
+                                <a href="javascript:;" type="item">
+                                    <span class="img"><img src="/images/prod/kt/<?php echo $prodSn ;?>/items/it1.jpg" alt=""></span>
+                                    <span class="text v-center" style="top: 65.75px;">
+                                        <span class="title">Mug - HOPE</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="col-xs-4">
+                                <a href="javascript:;" type="item">
+                                    <span class="img"><img src="/images/prod/kt/<?php echo $prodSn ;?>/items/it2.jpg" alt=""></span>
+                                    <span class="text v-center" style="top: 65.75px;">
+                                        <span class="title">Mug - MOOD</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="col-xs-4">
+                                <a href="javascript:;" type="item">
+                                    <span class="img"><img src="/images/prod/kt/<?php echo $prodSn ;?>/items/it3.jpg" alt=""></span>
+                                    <span class="text v-center" style="top: 77.75px;">
+                                        <span class="title">Mug -鳥居</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="col-xs-4">
+                                <a href="javascript:;" type="item">
+                                    <span class="img"><img src="/images/prod/kt/<?php echo $prodSn ;?>/items/it4.jpg" alt=""></span>
+                                    <span class="text v-center" style="top: 77.75px;">
+                                        <span class="title">Mug -富士山 MT.FUJI</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="col-xs-4">
+                                <a href="javascript:;" type="item">
+                                    <span class="img"><img src="/images/prod/kt/<?php echo $prodSn ;?>/items/it5.jpg" alt=""></span>
+                                    <span class="text v-center" style="top: 65.75px;">
+                                        <span class="title">Mug -BOY &GIRL</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="col-xs-4">
+                                <a href="javascript:;" type="item">
+                                    <span class="img"><img src="/images/prod/kt/<?php echo $prodSn ;?>/items/it6.jpg" alt=""></span>
+                                    <span class="text v-center" style="top: 65.75px;">
+                                        <span class="title">耳付スープ -BOY &GIRL</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="col-xs-4">
+                                <a href="javascript:;" type="item">
+                                    <span class="img"><img src="/images/prod/kt/<?php echo $prodSn ;?>/items/it7.jpg" alt=""></span>
+                                    <span class="text v-center" style="top: 65.75px;">
+                                        <span class="title">YUMMYPOT</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="col-xs-4">
+                                <a href="javascript:;" type="item">
+                                    <span class="img"><img src="/images/prod/kt/<?php echo $prodSn ;?>/items/it8.jpg" alt=""></span>
+                                    <span class="text v-center" style="top: 65.75px;">
+                                        <span class="title">Je pense a toi POT</span>
+                                    </span>
+                                </a>
+                        </li>
+                            <li class="col-xs-4">
+                                <a href="javascript:;" type="item">
+                                    <span class="img"><img src="/images/prod/kt/<?php echo $prodSn ;?>/items/it9.jpg" alt=""></span>
+                                    <span class="text v-center" style="top: 65.75px;">
+                                        <span class="title">je pense a toi 茶壺組-杯</span>
+                                        <span class="intro">je pense a toi專用馬克杯。可收納於茶壺底部。</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="col-xs-4">
+                                <a href="javascript:;" type="item">
+                                    <span class="img"><img src="/images/prod/kt/<?php echo $prodSn ;?>/items/it10.jpg" alt=""></span>
+                                    <span class="text v-center" style="top: 65.75px;">
+                                        <span class="title">海洋風杯盤組- 杯</span>
+                                        <span class="intro">
+                                            星期天專用天藍色杯盤組！<br/>
+                                            舒適的天藍色，適合週末早晨的第一杯咖啡！
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="col-xs-4">
+                                <a href="javascript:;" type="item">
+                                    <span class="img"><img src="/images/prod/kt/<?php echo $prodSn ;?>/items/it11.jpg" alt=""></span>
+                                    <span class="text v-center" style="top: 65.75px;">
+                                        <span class="title">海洋風杯盤組- 盤</span>
+                                        <span class="intro">
+                                            星期天專用天藍色杯盤組！<br/>
+                                            舒適的天藍色，適合週末早晨的第一餐！
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="col-xs-4">
+                                <a href="javascript:;" type="item">
+                                    <span class="img"><img src="/images/prod/kt/<?php echo $prodSn ;?>/items/it12.jpg" alt=""></span>
+                                    <span class="text v-center" style="top: 65.75px;">
+                                        <span class="title">法國風情瓷器</span>
+                                        <span class="intro">
+                                            還在用美耐皿餐盤嗎？快點丟掉吧！<br/>
+                                            bonne journee瓷盤，穩重的色調，環保的材質，是您餐桌上的好朋友！
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="col-xs-4">
+                                <a href="javascript:;" type="item">
+                                    <span class="img"><img src="/images/prod/kt/<?php echo $prodSn ;?>/items/it13.jpg" alt=""></span>
+                                    <span class="text v-center" style="top: 65.75px;">
+                                        <span class="title">黑備前冷酒器</span>
+                                        <span class="intro">
+                                            酒瓶上方特殊設計可放置冰塊，可保冷、冷酒。<br/>
+                                            特殊設計倒酒時不會把冰塊灑出來喔！
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="col-xs-4">
+                                <a href="javascript:;" type="item">
+                                    <span class="img"><img src="/images/prod/kt/<?php echo $prodSn ;?>/items/it14.jpg" alt=""></span>
+                                    <span class="text v-center" style="top: 65.75px;">
+                                        <span class="title">達摩酒杯</span>
+                                        <span class="intro">達摩造型小酒杯。</span>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
                 <!-- /content -->
             </section>
             <!--/prod-intro-->
@@ -101,7 +239,7 @@ $header = $root."/inc/header_".$lng.".php";
             <p>Copyright© 2016 Blumen und Katze. All rights reserved</p>
         </div>
     </footer>
-    <?php include_once($root."/inc/overlay.inc"); ?>
+    <?php include_once($root."/inc/prod/kakuni_overlay.php"); ?>
 </body>
 
 </html>

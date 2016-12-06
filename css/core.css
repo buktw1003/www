@@ -167,6 +167,12 @@ section {
     float: right;
     margin-right: 10px;
 }
+.overlay .content .spec .intro{
+    margin-bottom: 20px;
+}
+.overlay .content .spec .intro h4{
+    font-weight: bold;
+}
 .overlay .content .spec table{
     width: 100%;
 }
@@ -291,6 +297,9 @@ header nav li a .bar {
     transition: width 0.254s;
 }
 
+header nav li.cat.active{
+    /*border-right:1px dotted #aaa;*/
+}
 header nav li.active>a .bar {
     width: 100%;
 }
@@ -375,7 +384,9 @@ header nav .submenu .leftside {
     float: left;
     overflow: hidden;
 }
-
+header nav .submenu .leftside>ul{
+    /*border-right: 1px dotted #aaaaaa;*/
+}
 header nav .submenu .leftside .submenu {
     position: absolute;
     z-index: 1;
@@ -402,7 +413,7 @@ header nav .submenu .leftside>ul>li {
 header nav .submenu a {
     color: #666666;
     display: inline-block;
-    line-height: 2em;
+    line-height: 3em;
 }
 
 header nav .submenu .submenu a {
@@ -914,8 +925,8 @@ left: 0;
 .prod-intro .items a{
     position: relative;
     display: block;
-    border: 1px solid #bfaa7c;
-    
+    /* border: 1px solid #bfaa7c; */
+    border: 1px solid #cccccc;
 }
 .prod-intro .items a .text-wrap{
     height: 100%;
@@ -928,7 +939,8 @@ left: 0;
     left: 0;
     top: 0;
     position: absolute;
-    background-color: rgba(189,173,139,.5);
+    background-color: rgba(255,255,255,.5);
+    /*background-color: rgba(189,173,139,.5);*/
     transition: all 0.5s;
 
 }
@@ -938,7 +950,7 @@ left: 0;
     top: 0;
     padding: 30px;
     width: 100%;
-    color: #6b4b08;
+    color: #333333;
     text-align: center;
     font-size: 18px;
     font-weight: bold;
