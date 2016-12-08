@@ -18,7 +18,7 @@
                                     <div class="submenu prod">
                                         <ul>
                                             <li><a prodname="jh" href="/<?php echo "$lng";?>/prod/cm/jollyheap.php">JollyHeap</a></li>
-                                            <li><a prodname="tm" href="/<?php echo "$lng";?>/prod/cm/tamamono.php">TAMAMONO</a></li>
+                                            <!-- <li><a prodname="tm" href="/<?php echo "$lng";?>/prod/cm/tamamono.php">TAMAMONO</a></li> -->
                                         </ul>
                                     </div>
                                 </li>
@@ -26,8 +26,9 @@
                                     <a href="javascript:;">廚房用品<span class="bar"></span></a>
                                     <div class="submenu prod">
                                         <ul>
-                                            <li><a prodname="kn" href="/<?php echo "$lng";?>/prod/kt/kakuni.php">KAKUNI</a></li>
+                                            <!-- <li><a prodname="kn" href="/<?php echo "$lng";?>/prod/kt/kakuni.php">KAKUNI</a></li> -->
                                             <li><a prodname="kh" href="/<?php echo "$lng";?>/prod/kt/kihara.php">KIHARA</a></li>
+                                            <!-- <li><a prodname="ts" href="/<?php echo "$lng";?>/prod/kt/coppercups.php">銅杯</a></li> -->
                                             </ul>
                                     </div>
                                 </li>

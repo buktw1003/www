@@ -30,8 +30,7 @@ $js = '<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
 $title = "Blumen und Katze";
 $header = $root."/inc/header_".$lng.".php";
 $bukShopUrl = "http://buk1003.shoplineapp.com/";
-$indexSliders = '<li><a href="/'.$lng.'/prod/cm/tamamono.php"><img src="/images/prod/cm/tm/banner/slider1.jpg" alt=""></a></li>
-                <li><a href="/'.$lng.'/prod/cm/jollyheap.php"><img src="/images/prod/cm/jh/banner/slider1.jpg" alt=""></a></li>
+$indexSliders = '<li><a href="/'.$lng.'/prod/cm/jollyheap.php"><img src="/images/prod/cm/jh/banner/slider1.jpg" alt=""></a></li>
                 <li><a href="/'.$lng.'/prod/cm/jollyheap.php"><img src="/images/prod/cm/jh/banner/slider2.jpg" alt=""></a></li>
                 <li><a href="/'.$lng.'/prod/cm/jollyheap.php"><img src="/images/prod/cm/jh/banner/slider3.jpg" alt=""></a></li>
                 <li><a href="/'.$lng.'/prod/cm/jollyheap.php"><img src="/images/prod/cm/jh/banner/slider4.jpg" alt=""></a></li>';

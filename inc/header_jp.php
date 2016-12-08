@@ -18,7 +18,7 @@
                                     <div class="submenu prod">
                                         <ul class="sub-2">
                                             <li><a prodname="jh" href="/<?php echo "$lng";?>/prod/cm/jollyheap.php">JollyHeap</a></li>
-                                            <li><a prodname="tm" href="/<?php echo "$lng";?>/prod/cm/tamamono.php">たまもの</a></li>
+                                            <!-- <li><a prodname="tm" href="/<?php echo "$lng";?>/prod/cm/tamamono.php">たまもの</a></li> -->
                                         </ul>
                                     </div>
                                 </li>
@@ -26,7 +26,7 @@
                                 <a href="javascript:;">キッチン<span class="bar"></span></a>
                                 <div class="submenu prod">
                                     <ul class="sub-2">
-                                        <li><a prodname="kn" href="/<?php echo "$lng";?>/prod/kt/kakuni.php">KAKUNI</a></li>
+                                        <!-- <li><a prodname="kn" href="/<?php echo "$lng";?>/prod/kt/kakuni.php">KAKUNI</a></li> -->
                                     </ul>
                                 </div>
                                 </li>
