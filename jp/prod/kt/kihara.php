@@ -66,83 +66,81 @@ $header = $root."/inc/header_".$lng.".php";
                         </div>
 
                         <div class="intro-text">
-                            <h3>「瓷器・日常。」</h3>
-                            <p>總是默默的替你承載各式各樣的生活軌跡<br/>
-                                瓷器像個不多話的好朋友，靜靜的陪伴在每一個你需要的時刻<br/>
-                            </p>
-                            <p>跳脫傳統，日本KIHARA為您帶來便利生活的日常瓷器。</p>
+                            <h3>有田・波佐見の伝統産業を未来へつなぐ</h3>
+                            <p>1616年、日本で初めて磁器生産を始めた有田。</p>
+                            <p>株式会社キハラは、有田焼・波佐見焼の産地商社として、この400年の伝統技術と先人たちの想いを胸に、現代の生活に合わせた商品開発を行い、末永く愛される器をお届けします。</p>
+                            </div>
+                        </div>
+                        <!-- /main-intro -->
+                    </div>
+                    <!-- /top -->
+                    <div class="content">
+                        <div class="items">
+                            <ul class="row btn-sp">
+                                <li class="col-xs-4">
+                                    <a href="javascript:;" type="item">
+                                        <span class="img"><img src="/images/prod/kt/<?php echo $prodSn ;?>/items/it1.jpg" alt=""></span>
+                                        <span class="text v-center" style="top: 65.75px;">
+                                            <span class="title">鍋島様式  髙橋正</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="col-xs-4">
+                                    <a href="javascript:;" type="item">
+                                        <span class="img"><img src="/images/prod/kt/<?php echo $prodSn ;?>/items/it2.jpg" alt=""></span>
+                                        <span class="text v-center" style="top: 65.75px;">
+                                            <span class="title">古伊万里様式 金襴手</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="col-xs-4">
+                                    <a href="javascript:;" type="item">
+                                        <span class="img"><img src="/images/prod/kt/<?php echo $prodSn ;?>/items/it3.jpg" alt=""></span>
+                                        <span class="text v-center" style="top: 77.75px;">
+                                            <span class="title">初期伊万里様式 佐藤晃一</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="col-xs-4">
+                                    <a href="javascript:;" type="item">
+                                        <span class="img"><img src="/images/prod/kt/<?php echo $prodSn ;?>/items/it4.jpg" alt=""></span>
+                                        <span class="text v-center" style="top: 77.75px;">
+                                            <span class="title">KIHARA - HANA</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="col-xs-4">
+                                    <a href="javascript:;" type="item">
+                                        <span class="img"><img src="/images/prod/kt/<?php echo $prodSn ;?>/items/it5.jpg" alt=""></span>
+                                        <span class="text v-center" style="top: 65.75px;">
+                                            <span class="title">KIHARA - 古白磁</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="col-xs-4">
+                                    <a href="javascript:;" type="item">
+                                        <span class="img"><img src="/images/prod/kt/<?php echo $prodSn ;?>/items/it6.jpg" alt=""></span>
+                                        <span class="text v-center" style="top: 65.75px;">
+                                            <span class="title">KIHARA - SITAKU</span>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    <!-- /main-intro -->
-                </div>
-                <!-- /top -->
-                <div class="content">
-                    <div class="items">
-                        <ul class="row btn-sp">
-                            <li class="col-xs-4">
-                                <a href="javascript:;" type="item">
-                                    <span class="img"><img src="/images/prod/kt/<?php echo $prodSn ;?>/items/it1.jpg" alt=""></span>
-                                    <span class="text v-center" style="top: 65.75px;">
-                                        <span class="title">鍋島様式  髙橋正</span>
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="col-xs-4">
-                                <a href="javascript:;" type="item">
-                                    <span class="img"><img src="/images/prod/kt/<?php echo $prodSn ;?>/items/it2.jpg" alt=""></span>
-                                    <span class="text v-center" style="top: 65.75px;">
-                                        <span class="title">古伊万里様式 金襴手</span>
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="col-xs-4">
-                                <a href="javascript:;" type="item">
-                                    <span class="img"><img src="/images/prod/kt/<?php echo $prodSn ;?>/items/it3.jpg" alt=""></span>
-                                    <span class="text v-center" style="top: 77.75px;">
-                                        <span class="title">初期伊万里様式 佐藤晃一</span>
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="col-xs-4">
-                                <a href="javascript:;" type="item">
-                                    <span class="img"><img src="/images/prod/kt/<?php echo $prodSn ;?>/items/it4.jpg" alt=""></span>
-                                    <span class="text v-center" style="top: 77.75px;">
-                                        <span class="title">KIHARA - HANA</span>
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="col-xs-4">
-                                <a href="javascript:;" type="item">
-                                    <span class="img"><img src="/images/prod/kt/<?php echo $prodSn ;?>/items/it5.jpg" alt=""></span>
-                                    <span class="text v-center" style="top: 65.75px;">
-                                        <span class="title">KIHARA - 古白磁</span>
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="col-xs-4">
-                                <a href="javascript:;" type="item">
-                                    <span class="img"><img src="/images/prod/kt/<?php echo $prodSn ;?>/items/it6.jpg" alt=""></span>
-                                    <span class="text v-center" style="top: 65.75px;">
-                                        <span class="title">KIHARA - SITAKU</span>
-                                    </span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- /content -->
-            </section>
-            <!--/prod-intro-->
-            <section class="prod-mall"></section>
-        </div>
-    </main>
-    <footer>
-        <div class="width-limiter">
-            <a class="btn-fb" href="https://www.facebook.com/Blumen-und-Katze-1074003162719945/?fref=ts" target="_blank">Facebook</a>
-            <p>Copyright© 2016 Blumen und Katze. All rights reserved</p>
-        </div>
-    </footer>
-    <?php include_once($root."/inc/prod/kihara_overlay.php"); ?>
-</body>
+                    <!-- /content -->
+                </section>
+                <!--/prod-intro-->
+                <section class="prod-mall"></section>
+            </div>
+        </main>
+        <footer>
+            <div class="width-limiter">
+                <a class="btn-fb" href="https://www.facebook.com/Blumen-und-Katze-1074003162719945/?fref=ts" target="_blank">Facebook</a>
+                <p>Copyright© 2016 Blumen und Katze. All rights reserved</p>
+            </div>
+        </footer>
+        <?php include_once($root."/inc/prod/kihara_overlay.php"); ?>
+    </body>
 
-</html>
+    </html>

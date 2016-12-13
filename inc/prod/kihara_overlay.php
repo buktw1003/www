@@ -453,6 +453,12 @@
 				</div>
 			</div>
 			<!-- /jp -->
+
+
+
+
+
+
 			<div class="prod-items-html zh">
 				<div id="ov-item1">
 					<div class="clearfix">
@@ -490,7 +496,7 @@
 								<p>木原製陶精選四種代表樣式「初期伊万里樣式」、「柿右衛門樣式」、「鍋島樣式」、「古伊万里樣式」，與四位設計師「永井一正」、「佐藤晃一」、「吉澤美香」、「高橋正」合作，將傳統有田燒四個樣式融合創新設計，為有田四樣注入不一樣的生命。</p>
 							</div>
 							<table>
-								<tbody><tr>
+								<tr>
 									<th>型號</th>
 									<th>顏色</th>
 									<th>尺寸</th>
@@ -526,8 +532,9 @@
 									<td>不可</td>
 								</tr>
 
-							</tbody></table>
+							</table>
 							*手工繪製，花色皆有若干差異。
+							<a class="btn-shop" href="http://buk1003.shoplineapp.com/categories/kihara-%E9%8D%8B%E5%B3%B6%E6%A7%98%E5%BC%8F" target="_blank">立即訂購</a>
 						</div>
 					</div>
 				</div>
@@ -568,7 +575,7 @@
 							</div>
 
 							<table>
-								<tbody><tr>
+								<tr>
 									<th>型號</th>
 									<th>顏色</th>
 									<th>尺寸</th>
@@ -604,7 +611,8 @@
 									<td>不可</td>
 								</tr>
 
-							</tbody></table>
+							</table>
+							<a class="btn-shop" href="http://buk1003.shoplineapp.com/categories/%E5%8F%A4%E4%BC%8A%E4%B8%87%E9%87%8C%E6%A8%A3%E5%BC%8F-%E9%87%91%E8%A5%B4%E6%89%8B" target="_blank">立即訂購</a>
 						</div>
 					</div>
 				</div>
@@ -636,7 +644,7 @@
 							</div>
 
 							<table>
-								<tbody><tr>
+								<tr>
 									<th>型號</th>
 									<th>顏色</th>
 									<th>尺寸</th>
@@ -657,7 +665,9 @@
 									<td>可</td>
 									<td>可</td>
 								</tr>
-							</tbody></table>
+							</table>
+							<a class="btn-shop" href="http://buk1003.shoplineapp.com/categories/kihara-%E5%88%9D%E6%9C%9F%E4%BC%8A%E8%90%AC%E9%87%8C%E6%A8%A3%E5%BC%8F" target="_blank">立即訂購</a>
+
 						</div>
 					</div>
 				</div>
@@ -695,7 +705,7 @@
 							</div>
 
 							<table>
-								<tbody><tr>
+								<tr>
 									<th>型號</th>
 									<th>顏色</th>
 									<th>尺寸</th>
@@ -767,7 +777,9 @@
 									<td>可</td>
 									<td>可</td>
 								</tr>
-							</tbody></table>
+							</table>
+							<a class="btn-shop" href="http://buk1003.shoplineapp.com/categories/kihara-hana%E7%B3%BB%E5%88%97" target="_blank">立即訂購</a>
+
 						</div>
 					</div>
 				</div>
@@ -800,7 +812,7 @@
 							</div>
 
 							<table>
-								<tbody><tr>
+								<tr>
 									<th>型號</th>
 									<th>品名</th>
 									<th>尺寸</th>
@@ -828,7 +840,9 @@
 									<td>可</td>
 									<td>可</td>
 								</tr>
-							</tbody></table>
+							</table>
+							<a class="btn-shop" href="http://buk1003.shoplineapp.com/categories/kihara-%E5%8F%A4%E7%99%BD%E7%A3%81" target="_blank">立即訂購</a>
+
 						</div>
 					</div>
 				</div>
@@ -865,7 +879,7 @@
 							</div>
 
 							<table>
-								<tbody><tr>
+								<tr>
 									<th>型號</th>
 									<th>品名</th>
 									<th>尺寸</th>
@@ -897,7 +911,7 @@
 									<td>可</td>
 									<td>可</td>
 								</tr>
-							</tbody></table>
+							</table>
 						</div>
 					</div>
 				</div>

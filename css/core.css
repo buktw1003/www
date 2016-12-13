@@ -993,3 +993,18 @@ left: 0;
         display: none;
     }
 }
+.btn-shop{
+    display: block;
+    background-color: #666;
+    line-height: 2em;
+    border: 1px solid #999;
+    width: 20%;
+    text-align: center;
+    color: #fff;
+    border-radius: 3px;
+    margin: 10px auto;
+}
+.btn-shop:hover{
+    color: #ffffff;
+    background-color: #999;
+}
