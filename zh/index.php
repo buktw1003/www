@@ -232,7 +232,7 @@ $header = $root."/inc/header_".$lng.".php";
                                 </div>
                             </div>
                         </div>
-                        <!-- /prod tamamono -->
+                        <!-- /prod kihara -->
                     </section>
                 </div></main>
                 <footer>
