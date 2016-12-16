@@ -6,8 +6,10 @@ $(function() {
     var $overlayContainer = $(".overlay .overlay-container")
     var $overlayContent = $(".overlay .content");
     var ratioWide = 16 / 9;
+    
 
     $(window).on("resize scroll", function() {
+        windowHeight = $(window).height();
         var $vCenter = $(".v-center");
         var currentTop = $(window).scrollTop();
         function middleCenter(){
@@ -42,25 +44,29 @@ $(function() {
             var thisIndex = $(this).parent().index()+1;
             $overlayContainer.addClass(thisType);
             $body.addClass("overlay-enabled");
+            console.log(thisType);
             switch (thisType) {
                 case "video":
                     var vid = $(this).attr("vid");
                     var thisVid = prodName + vid;
                     
                     var title = $(this).html();
-                    switch (thisVid) {
-                        case "jollyheapintro1":
-                            overlayHtml = '<iframe width="100%" src="https://www.youtube.com/embed/DiRS0OblqeY" frameborder="0" allowfullscreen></iframe>';
-                            break;
-                        case "jollyheapintro2":
-                            overlayHtml = '<iframe width="100%" src="https://www.youtube.com/embed/Yi5gi8pEWWg" frameborder="0" allowfullscreen></iframe>';
-                    }
+                    overlayHtml = $(this).attr("vidsrc");
+                    
                     $overlayContent.html(overlayHtml);
 
                     break;
                 case "item":
                     var title = $(".title",that).html();
                     $("#ov-item" + thisIndex).addClass("active");
+                    break;
+                case "gallery":
+                    var imgSrc = that.find("img").attr("src");
+                    var title = 'Gallery';
+                    var path = imgSrc.replace('gallery/s/','gallery/');
+                    overlayHtml = '<img src="'+path+'" />';
+                    $overlayContent.html(overlayHtml);
+
             }
             //$overlayContent.html(overlayHtml);
             //imgRearrange();
@@ -73,11 +79,17 @@ $(function() {
             $("h3", $overlay).html(title + " - " + prodName)
             setTimeout(resizeVideo, 500);
             setTimeout(resizeVideo, 1000);
-            $overlay.css({ "display": "block" }).fadeTo("fast", "1");
-            $overlayContainer.css({ "display": "block" });
+            $overlay.css({ "display": "inline-block" }).fadeTo("fast", "1",function(){
+                
+                console.log($(".overlay h3").height())
+
+                $(".overlay img").css({"maxHeight" : windowHeight*0.8 - ($(".overlay h3").height()+20)});
+                $(".overlay img").css({"maxHeight" : windowHeight*0.8 - ($(".overlay h3").height()+20)});
+
+                
+            });
+            $overlayContainer.css({ "display": "inline-block" });
             $overlayContent.scrollTop(0);
-
-
         });
     });
     $overlayContainer.click(function(e) {

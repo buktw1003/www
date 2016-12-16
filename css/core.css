@@ -111,10 +111,16 @@ section {
     z-index: 99999;
     opacity: 0;
     display: none;
+    text-align: center;
 }
-
+.overlay img{
+    width: auto;
+    max-width: 100%;
+}
 .overlay .overlay-container {
-    width: 65%;
+    text-align: left;
+    max-width: 65%;
+    max-height: 80%;
     display: none;
     margin: 0 auto;
     position: relative;
@@ -134,15 +140,24 @@ section {
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#000000', GradientType=1);
     /* IE6-9 fallback on horizontal gradient */
 }
-
+.overlay .overlay-container.video{
+    width: 65%;
+}
 .overlay .top {
     position: relative;
 }
 .overlay .content{
     background-color: #fff;
-    padding: 0 2.5% 10px;
      /*max-height: 500px; */
+}
+
+.overlay .item .content{
+    padding: 0 2.5% 10px;
     overflow: auto;
+
+}
+.overlay .gallery h3{
+
 }
 .overlay .video .content{
     padding: 0;
@@ -432,7 +447,7 @@ header nav .submenu .submenu a:hover {
 }
 main{
     /* background-color: #fafafa; */
-    margin-top: 125px;
+    margin-top: 0;
 }
 main>div{
     padding-bottom: 50px;
@@ -469,7 +484,10 @@ main .popular {
     float: left;
     margin-right: 20px;
 }
-
+.prod-intro .intro-bar .title{
+    float: none;
+    text-align: center;
+}
 .intro-bar .title .short-intro {
     font-size: 13px;
     display: block;
@@ -556,7 +574,7 @@ main .popular {
 }
 
 .prod .dk .img img {
-    opacity: 0.7;
+    /*opacity: 0.7;*/
 }
 
 .prod .text {
@@ -566,6 +584,7 @@ main .popular {
     box-sizing: border-box;
     width: calc(100% - 10px);
     transition: opacity 0.5s;
+    z-index: 9999;
 }
 
 .prod .brief-intro .text {
@@ -684,7 +703,6 @@ footer p {
 
 .prod-intro .row-container {
     padding: 40px 20px;
-    border-bottom: 2px solid #ccc;
 }
 
 .prod-intro .row-container.gray {
@@ -774,8 +792,24 @@ footer p {
 .prod-intro>.top{
     margin-bottom: 50px;
 }
+.prod-intro .galleryvideo{
+    padding-bottom: 15px;
+}
+.prod-intro .videoWrapper{
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+.prod-intro .videoWrapper iframe{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+}
 .prod-intro .main-intro{
     clear: both;
+    margin-bottom: 20px;
 }
 .prod-intro .main-intro .intro-text{
     float: right;
@@ -825,6 +859,9 @@ left: 0;
 }
 .image-show .slide-img-assist{
     width: calc(20% - 5px);
+}
+.image-show .slide-img-assist img{
+    width: 100%;
 }
 .image-show .slides-nav .arrow{
     top: 0;
@@ -883,11 +920,17 @@ left: 0;
     margin: 0 auto;
 }
 .prod-intro .content .tablist{
-    border-bottom: 10px solid #a0a0a0;
+    border-bottom: 1px solid #a0a0a0;
     margin-bottom: 20px;
+    text-align: center;
+}
+.prod-intro .content .tablist.bottom{
+    border-top: 1px solid #a0a0a0;
+    border-bottom: none;
+    margin-top: 20px;
 }
 .prod-intro .content .tablist li{
-    float: left;
+    display:inline-block;
 }
 .prod-intro .content .tablist a{
     display: block;
@@ -899,6 +942,17 @@ left: 0;
     color: #a0a0a0;
     font-weight: bold;
     text-decoration: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: none;
+}
+.prod-intro .content .tablist.bottom a{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top: none;
+    border-bottom: 1px solid #a0a0a0;
 }
 .prod-intro .content .tablist a.active{
     background-color: #a0a0a0;
@@ -982,6 +1036,42 @@ left: 0;
     font-weight: normal;
     font-size: 15px;
     color: #000000;
+}
+.prod-intro .content .gallery li{
+    width: 25%;
+    float: left;
+    padding: 1px;
+    position: relative;
+}
+.prod-intro .content .gallery li a:after{
+    display: block;
+    content:"+";
+    opacity: 0;
+    font-family: Arial;
+
+    font-weight: bold;
+    border-radius: 50%;
+    color: #ffffff;
+    line-height: 20px;
+    text-shadow: none;
+    margin: -10px 0 0 -10px;
+    position: absolute;
+    left: 50%;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    background-color: #000000;
+    transition: opacity 0.5s;
+}
+.prod-intro .content .gallery li a:hover:after{
+    opacity: 1;
+}
+.prod-intro .content .gallery li a img{
+    transition: opacity 0.5s;
+}
+.prod-intro .content .gallery li a:hover img{
+    opacity: 0.5;
 }
 .backtop{
     width: 30px;

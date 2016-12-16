@@ -17,7 +17,7 @@
                                     <a href="javascript:;">嬰童與母親<span class="bar"></span></a>
                                     <div class="submenu prod">
                                         <ul>
-                                            <li><a prodname="jh" href="/<?php echo "$lng";?>/prod/cm/jollyheap.php">JollyHeap</a></li>
+                                            <li><a prodname="jh" href="/<?php echo "$lng";?>/prod/cm/jh/prod.php">JollyHeap</a></li>
                                             <!-- <li><a prodname="tm" href="/<?php echo "$lng";?>/prod/cm/tamamono.php">TAMAMONO</a></li> -->
                                         </ul>
                                     </div>

@@ -38,22 +38,22 @@ $header = $root."/inc/header_".$lng.".php";
                             ?>
                         </ul>
                         <ul class="pager"></ul>
-                    </div>
-                    <div class="popular">
-                        <img src="/images/index/slider-assist.png" alt="">
+                        <div class="popular">
+                            <img src="/images/index/slider-assist.png" alt="">
+                        </div>
                     </div>
                 </section>
                 <section class="block-categories">
                     <ul class="clearfix">
-                        <li><a href="/<?php echo $lng;?>/prod/cm/jollyheap.php"><img src="/images/index/it1.jpg" alt="Most Popular"></a></li>
+                    <li><a href="/<?php echo $lng;?>/prod/cm/jh/prod.php"><img src="/images/index/it1-zh.jpg" alt="Most Popular"></a></li>
                         <li>
-                            <a href="/<?php echo $lng;?>/prod/kt/kihara.php"><img src="/images/index/it2-2.jpg" alt="Kitchen"></a>
+                            <a href="/<?php echo $lng;?>/prod/kt/kihara.php"><img src="/images/index/it2-zh.jpg" alt="Kitchen"></a>
                         </li>
                         <li>
-                            <a href=""><img src="/images/index/it3.jpg" alt="Home Decor"></a>
+                            <a href=""><img src="/images/index/it3-zh.jpg" alt="Home Decor"></a>
                         </li>
                         <li>
-                            <a href=""><img src="/images/index/it4.jpg" alt="Stationery"></a>
+                            <a href=""><img src="/images/index/it4-zh.jpg" alt="Stationery"></a>
                         </li>
                     </ul>
                 </section>
@@ -63,10 +63,10 @@ $header = $root."/inc/header_".$lng.".php";
                         <div class="intro-bar clearfix">
                             <h3 class="title"><span class="short-intro">磁性布積木</span><span class="prod-name">JollyHeap</span></h3>
                             <div class="btn-sp btn-video">
-                                <a href="#" vid="intro1" type="video">介紹影片 1</a>
-                                <a href="#" vid="intro2" type="video">介紹影片 2</a>
+                                <a href="#" vid="intro1" type="video" vidsrc='<iframe width="100%" src="https://www.youtube.com/embed/DiRS0OblqeY" frameborder="0" allowfullscreen></iframe>'>介紹影片 1</a>
+                                <a href="#" vid="intro2" type="video" vidsrc='<iframe width="100%" src="https://www.youtube.com/embed/Yi5gi8pEWWg" frameborder="0" allowfullscreen></iframe>'>介紹影片 2</a>
                             </div>
-                            <div class="btn-detail"><a href="/<?php echo $lng;?>/prod/cm/jollyheap.php">詳細資訊</a></div>
+                            <div class="btn-detail"><a href="/<?php echo $lng;?>/prod/cm/jh/prod.php">詳細資訊</a></div>
                         </div>
                         <div class="intro clearfix">
                             <div class="col-33 dk brief-intro">
@@ -74,9 +74,9 @@ $header = $root."/inc/header_".$lng.".php";
                                     <div class="img">
                                         <img src="/images/prod/cm/jh/index/prod-1-1.jpg" alt="">
                                     </div>
-                                    <div class="text v-center">
-                                        <h4>JollyHeap - Smart Cube<br/>是一款專為孩童設計的益智玩具。</h4>
-                                        <p>顛覆過去布積木的玩法，Smart Cube創新的思維，讓孩子發展獨一無二的想像力及創造力;<br/>在玩樂的過程中孩子能夠長時間的專注其中，更有助於發展邏輯思考及社交能力！</p>
+                                    <div class="text v-center" style="top: 134.531px;">
+                                        <h4>JollyHeap - Smart Cube<br>是一款專為孩童設計的益智玩具。</h4>
+                                        <p>顛覆過去布積木的玩法，Smart Cube創新的思維，讓孩子發展獨一無二的想像力及創造力;<br>在玩樂的過程中孩子能夠長時間的專注其中，更有助於發展邏輯思考及社交能力！</p>
                                     </div>
                                 </div>
                             </div>

@@ -2,7 +2,8 @@ $(function() {
     var thumbsPerPage = 5;
     var $imgShow = $(".image-show");
     var $img = $("img", $imgShow);
-    function imgRearrange(){
+
+    function imgRearrange() {
         $imgShow.each(function() {
             //var this  
             var that = $(this);
@@ -26,7 +27,7 @@ $(function() {
             }
         });
     };
-    $(window).on("resize scroll",imgRearrange).resize();
+    $(window).on("resize scroll", imgRearrange).resize();
 
     $(".slide-prev").addClass("inactive");
     $(".arrow a", $imgShow).click(function() {
@@ -53,6 +54,7 @@ $(function() {
             }
         }
     })
+
     function slideNext(that, $ul, movingPos, maxLeftPos, currentPos) {
         var leftPos = currentPos - movingPos;
         if (leftPos < maxLeftPos) {
@@ -66,6 +68,7 @@ $(function() {
             $(".arrow a").not(that).removeClass("inactive");
         });
     };
+
     function slidePrev(that, $ul, movingPos, currentPos) {
         var leftPos = currentPos + movingPos;
         if (leftPos > 0) {
@@ -81,7 +84,7 @@ $(function() {
     };
     $img.click(function() {
         var thisParent = $(this).parents(".image-show");
-        var $mainImg = $(".slides img",thisParent);
+        var $mainImg = $(".slides img", thisParent);
         var thisSrc = $(this).attr("src");
         $mainImg.attr("src", thisSrc);
     });
@@ -92,10 +95,14 @@ $(function() {
         var that = $(this);
         var thisIndex = that.parent().index();
         $tablist.removeClass("active");
-        that.addClass("active");
+        $tablist.each(function() {
+            if ($(this).parent().index() == thisIndex) {
+                $(this).addClass("active");
+            }
+        });
         $tabContent.removeClass("active");
         $tabContent.filter(":eq(" + thisIndex + ")").addClass("active");
-        $("body","html").animate({"scrollTop" : $tablist.offset().top-130});
+        $("body", "html").animate({ "scrollTop": $tablist.offset().top - 130 });
     });
     $tablist.filter(":eq(0)").addClass("active");
     $tabContent.filter(":eq(0)").addClass("active");
