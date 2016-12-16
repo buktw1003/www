@@ -77,7 +77,22 @@ $header = $root."/inc/header_".$lng.".php";
                                     <li>邏輯思考能力</li>
                                 </ul>
                                 <p class="right_40">Smart cube益智布積木組不只是玩具，同時兼具教育功能。smart cube幫助孩子開發腦力，陪同孩子一起成長，啟發孩子的手眼協調能力、空間、物理概念、專注力、邏輯思考能力；還有更多更多好處，等你來發現！</p>
-                                
+                                <div class="pricelist">
+                                    <table>
+                                        <tr>
+                                            <td>12pcs</td>
+                                            <td>27pcs</td>
+                                            <td>50pcs</td>
+                                            <td>100pcs</td>
+                                        </tr>
+                                        <tr>
+                                            <td>$11800</td>
+                                            <td>$21800</td>
+                                            <td>$36800</td>
+                                            <td>100pcs</td>
+                                        </tr>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                         

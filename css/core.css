@@ -452,6 +452,9 @@ main{
 main>div{
     padding-bottom: 50px;
     background-color: #ffffff;
+    
+}
+main>div:first-child{
     margin-top: 125px !important;
 }
 main .popular {
