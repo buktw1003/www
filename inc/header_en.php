@@ -22,7 +22,7 @@
                                         </ul>
                                     </div>
                                 </li>
-                                <li cat="kt" class="cat"><a href="javascript:;">KITCHEN<span class="bar"></span></a></li>
+                                <li cat="kt" class="cat"><a href="javascript:;">KITCHEN WARE<span class="bar"></span></a></li>
                                 <li cat="hd" class="cat"><a href="javascript:;">HOME DECOR<span class="bar"></span></a></li>
                                 <li cat="st" class="cat"><a href="javascript:;">STATIONERY<span class="bar"></span></a></li>
                             </ul>
