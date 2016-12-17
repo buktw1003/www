@@ -143,16 +143,17 @@ section {
 .overlay .overlay-container.video{
     width: 65%;
 }
+
 .overlay .top {
     position: relative;
 }
 .overlay .content{
     background-color: #fff;
-     /*max-height: 500px; */
 }
 
 .overlay .item .content{
     padding: 0 2.5% 10px;
+     max-height: 500px; 
     overflow: auto;
 
 }
@@ -181,7 +182,7 @@ section {
     width: calc(100% - 45px);
 }
 .overlay .content .spec{
-    width: 52%;
+    width: 45%;
     float: right;
     margin-right: 10px;
 }
@@ -247,7 +248,7 @@ section {
 .overlay .video {}
 
 header {
-    box-shadow: 0px 2px 2px #ccc;
+    /*box-shadow: 0px 2px 2px #ccc;*/
     /* padding-bottom: 10px; */
     position: fixed;
     z-index: 10000;
@@ -450,12 +451,12 @@ main{
     margin-top: 0;
 }
 main>div{
-    padding-bottom: 50px;
+    /*padding-bottom: 50px;*/
     background-color: #ffffff;
     
 }
 main>div:first-child{
-    margin-top: 125px !important;
+    margin-top: 120px !important;
 }
 main .popular {
     width: 100%;
@@ -670,6 +671,7 @@ footer p {
 .block-figure {
     position: relative;
     max-width: 1200px;
+    margin: 0 auto;
 }
 
 .block-figure.short {
@@ -816,19 +818,32 @@ footer p {
 }
 .prod-intro .main-intro .intro-text{
     float: right;
-    width: 52%;
+    width: 45%;
     margin-right: 5px;
     line-height: 1.5;
 
 }
+
+.prod-intro .main-intro .intro-text .pricelist{
+    margin-top: 20px;
+}
+.prod-intro .main-intro .intro-text .pricelist table{
+    width: 100%;
+}
+.prod-intro .main-intro .intro-text .pricelist th{
+    background-color: #eee;
+}
+.prod-intro .main-intro .intro-text .pricelist th,.prod-intro .main-intro .intro-text .pricelist td{
+    text-align: center;
+    border: 1px solid gray;
+}
 .image-show{
     margin-left: 5px;
-    width: 43%;
-    max-width: 520px;
+    width: 50%;
+    max-width: 600px;
     float: left;
 }
 .image-show .slides{
-    max-width: 520px;
     margin-bottom: 5px;
 }
 .image-show .slides-nav{

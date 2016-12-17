@@ -21,7 +21,7 @@ $(function() {
                 $(this).css({ "top": (outerHeight - thisHeight) / 2 })
             });
         };
-        middleCenter()
+        middleCenter();
 
         $overlay.css({ "top": currentTop })
         resizeVideo();
@@ -44,7 +44,7 @@ $(function() {
             var thisIndex = $(this).parent().index()+1;
             $overlayContainer.addClass(thisType);
             $body.addClass("overlay-enabled");
-            console.log(thisType);
+            console.log("source");
             switch (thisType) {
                 case "video":
                     var vid = $(this).attr("vid");
@@ -80,9 +80,6 @@ $(function() {
             setTimeout(resizeVideo, 500);
             setTimeout(resizeVideo, 1000);
             $overlay.css({ "display": "inline-block" }).fadeTo("fast", "1",function(){
-                
-                console.log($(".overlay h3").height())
-
                 $(".overlay img").css({"maxHeight" : windowHeight*0.8 - ($(".overlay h3").height()+20)});
                 $(".overlay img").css({"maxHeight" : windowHeight*0.8 - ($(".overlay h3").height()+20)});
 

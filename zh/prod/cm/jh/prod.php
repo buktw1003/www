@@ -28,107 +28,122 @@ $header = $root."/inc/header_".$lng.".php";
         ?>
     </header>
     <main>
+        <div class="video">
+            <div class="video-container">
+
+                <!-- <video autoplay="autoplay" loop="loop" width="100%" ><source src="video/video.mp4" type="video/mp4"></video> -->
+                <iframe width="100%" src="https://www.youtube.com/embed/pxRoFYlS6EY?rel=0&amp;controls=0&amp;loop=1&amp;playlist=FKryFcf4b4k&amp;showinfo=0&amp;autoplay=1" frameborder="0" allowfullscreen=""></iframe>
+
+                <div class="wrapp">
+                    <div class="container"><div class="caption"><h1>Soft Magnetic Construction toy JollyHeap</h1></div></div>
+                </div>
+
+            </div>
+        </div>
+        <div class="block-figure clearfix">
+            <div class="img"><img src="/images/prod/cm/jh/figure.jpg" alt=""></div>
+            <div class="text onimg">
+                <h3>JollyHeap - Smart Cube是一款專為孩童設計的益智玩具。</h3>
+                <p>顛覆過去布積木的玩法，Smart Cube創新的思維，讓孩子發展獨一無二的想像力及創造力;
+                    <br/>在玩樂的過程中孩子能夠長時間的專注其中，更有助於發展邏輯思考及社交能力！
+                </p>
+            </div>
+        </div>
         <div class="width-limiter">
-            <section class="block-figure clearfix">
-                <div class="img"><img src="/images/prod/cm/jh/figure.jpg" alt=""></div>
-                <div class="text onimg">
-                    <h3>JollyHeap - Smart Cube是一款專為孩童設計的益智玩具。</h3>
-                    <p>顛覆過去布積木的玩法，Smart Cube創新的思維，讓孩子發展獨一無二的想像力及創造力;
-                        <br/>在玩樂的過程中孩子能夠長時間的專注其中，更有助於發展邏輯思考及社交能力！</p>
+
+            <section class="prod-intro prod" id="jollyheap">
+                <div class="top">
+                    <div class="intro-bar clearfix">
+                        <h2 class="title"><span class="prod-name">JollyHeap</span><span class="short-intro">磁性布積木</span></h2>
+
                     </div>
-                </section>
-                <section class="prod-intro prod" id="jollyheap">
-                    <div class="top">
-                        <div class="intro-bar clearfix">
-                            <h2 class="title"><span class="prod-name">JollyHeap</span><span class="short-intro">磁性布積木</span></h2>
-                            
-                        </div>
-                        
-                        <!-- /intro-bar -->
-                        <div class="main-intro clearfix">
-                            <div class="image-show">
-                                <div class="slides"><img src="/images/prod/cm/jh/p1.jpg" alt=""></div>
-                                <div class="slides-nav">
-                                    <div class="slide-img">
-                                        <ul class="img clearfix">
-                                            <?php
-                                            include_once($root."/inc/prod/slideimgs/".strtolower($prodName).".inc");
-                                            ?>
-                                        </ul>
 
-                                    </div>
-                                    <div class="slide-img-assist">
-                                        <img src="/images/prod/main-img-assist.png" alt="">
-                                    </div>
-                                    <div class="arrow">
-                                        <a class="slide-prev" href="javascript:;">Prev</a>
-                                        <a class="slide-next" href="javascript:;">Next</a>
-                                    </div>
+                    <!-- /intro-bar -->
+                    <div class="main-intro clearfix">
+                        <div class="image-show">
+                            <div class="slides"><img src="/images/prod/cm/jh/p1.jpg" alt=""></div>
+                            <div class="slides-nav">
+                                <div class="slide-img">
+                                    <ul class="img clearfix">
+                                        <?php
+                                        include_once($root."/inc/prod/slideimgs/".strtolower($prodName).".inc");
+                                        ?>
+                                    </ul>
+
                                 </div>
-                            </div>
-
-                            <div class="intro-text">
-                                <h3>一組積木 多種功能<br/>jollyheap益智布積木組訓練孩子：</h3>
-                                <ul class="features clearfix">
-                                    <li>立體概念建構</li>
-                                    <li>創意發想能力</li>
-                                    <li>手眼協調能力</li>
-                                    <li>人際溝通能力</li>
-                                    <li>邏輯思考能力</li>
-                                </ul>
-                                <p class="right_40">Smart cube益智布積木組不只是玩具，同時兼具教育功能。smart cube幫助孩子開發腦力，陪同孩子一起成長，啟發孩子的手眼協調能力、空間、物理概念、專注力、邏輯思考能力；還有更多更多好處，等你來發現！</p>
-                                <div class="pricelist">
-                                    <table>
-                                        <tr>
-                                            <td>12pcs</td>
-                                            <td>27pcs</td>
-                                            <td>50pcs</td>
-                                            <td>100pcs</td>
-                                        </tr>
-                                        <tr>
-                                            <td>$11800</td>
-                                            <td>$21800</td>
-                                            <td>$36800</td>
-                                            <td>100pcs</td>
-                                        </tr>
-                                    </table>
+                                <div class="slide-img-assist">
+                                    <img src="/images/prod/main-img-assist.png" alt="">
+                                </div>
+                                <div class="arrow">
+                                    <a class="slide-prev" href="javascript:;">Prev</a>
+                                    <a class="slide-next" href="javascript:;">Next</a>
                                 </div>
                             </div>
                         </div>
-                        
-                        
-                        <!-- /main-intro -->
+
+                        <div class="intro-text">
+                            <h3>一組積木 多種功能<br/>jollyheap益智布積木組訓練孩子：</h3>
+                            <ul class="features clearfix">
+                                <li>立體概念建構</li>
+                                <li>創意發想能力</li>
+                                <li>手眼協調能力</li>
+                                <li>人際溝通能力</li>
+                                <li>邏輯思考能力</li>
+                            </ul>
+                            <p class="right_40">Smart cube益智布積木組不只是玩具，同時兼具教育功能。smart cube幫助孩子開發腦力，陪同孩子一起成長，啟發孩子的手眼協調能力、空間、物理概念、專注力、邏輯思考能力；還有更多更多好處，等你來發現！</p>
+                            <div class="pricelist">
+                                <table>
+                                    <tr><th colspan="4">建議售價</th></tr>
+                                    <tr>
+                                        <td>12pcs</td>
+                                        <td>27pcs</td>
+                                        <td>50pcs</td>
+                                        <td>100pcs</td>
+                                    </tr>
+                                    <tr>
+                                        <td>$11800</td>
+                                        <td>$21800</td>
+                                        <td>$36800</td>
+                                        <td>$65800</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
                     </div>
-                    <!-- /top -->
-                    <div class="content">
-                        <div class="tabs">
-                            <ul class="tablist clearfix">
+
+
+                    <!-- /main-intro -->
+                </div>
+                <!-- /top -->
+                <div class="content">
+                    <div class="tabs">
+                            <!-- <ul class="tablist clearfix">
                                 <li><a href="javascript:void(0);" class="">產品介紹</a></li>
                                 <li><a href="javascript:void(0);" class="">圖片集</a></li>
-                            </ul>
+                            </ul> -->
                             <div class="tab-content">
-                            <div class="row videos">
-                                <div class="col-md-6 col-sm-6 galleryvideo">
-                                    <div class="videoWrapper">
-                                        <iframe width="100%" src="https://www.youtube.com/embed/Yi5gi8pEWWg?rel=0&amp;showinfo=0&amp;autoplay=0" frameborder="0" allowfullscreen=""></iframe>
+                                <div class="row videos">
+                                    <div class="col-md-6 col-sm-6 galleryvideo">
+                                        <div class="videoWrapper">
+                                            <iframe width="100%" src="https://www.youtube.com/embed/Yi5gi8pEWWg?rel=0&amp;showinfo=0&amp;autoplay=0" frameborder="0" allowfullscreen=""></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 galleryvideo">
+                                        <div class="videoWrapper">
+                                            <iframe width="100%" src="https://www.youtube.com/embed/DiRS0OblqeY?rel=0&amp;showinfo=0&amp;autoplay=0" frameborder="0" allowfullscreen=""></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 galleryvideo">
+                                        <div class="videoWrapper">
+                                            <iframe width="100%" src="https://www.youtube.com/embed/C1d_Dc8B_5Q?rel=0&amp;showinfo=0&amp;autoplay=0" frameborder="0" allowfullscreen=""></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 galleryvideo">
+                                        <div class="videoWrapper">
+                                            <iframe width="100%" src="https://www.youtube.com/embed/e4-NQl8QSdw?rel=0&amp;showinfo=0&amp;autoplay=0" frameborder="0" allowfullscreen=""></iframe>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-md-6 col-sm-6 galleryvideo">
-                                    <div class="videoWrapper">
-                                        <iframe width="100%" src="https://www.youtube.com/embed/DiRS0OblqeY?rel=0&amp;showinfo=0&amp;autoplay=0" frameborder="0" allowfullscreen=""></iframe>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-sm-6 galleryvideo">
-                                    <div class="videoWrapper">
-                                        <iframe width="100%" src="https://www.youtube.com/embed/C1d_Dc8B_5Q?rel=0&amp;showinfo=0&amp;autoplay=0" frameborder="0" allowfullscreen=""></iframe>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-sm-6 galleryvideo">
-                                    <div class="videoWrapper">
-                                        <iframe width="100%" src="https://www.youtube.com/embed/e4-NQl8QSdw?rel=0&amp;showinfo=0&amp;autoplay=0" frameborder="0" allowfullscreen=""></iframe>
-                                    </div>
-                                </div>
-                            </div>
                                 <div class="row-container features">
                                     <div class="row">
                                         <div class="col-xs-4">
@@ -185,25 +200,25 @@ $header = $root."/inc/header_".$lng.".php";
                                         </div>
                                     </div>
                                 </div>
-                                
-                            </div>
-                            <!--/tab-content-->
-                            <div class="tab-content">
                                 <div class="gallery">
                                     <ul class="btn-sp clearfix">
-                                    <?php
-                                    for($g = 1; $g < 41; $g++){
-                                        echo '<li><a type="gallery" href="javascript:void(0);"><img src="/images/prod/cm/jh/gallery/s/'.$g.'.jpg" alt=""></a></li>';
-                                    }
-                                    ?>
+                                        <?php
+                                        for($g = 40; $g > 0; $g--){
+                                            echo '<li><a type="gallery" href="javascript:void(0);"><img src="/images/prod/cm/jh/gallery/s/'.$g.'.jpg" alt=""></a></li>';
+                                        }
+                                        ?>
                                     </ul>
                                 </div>
                             </div>
                             <!--/tab-content-->
-                            <ul class="tablist bottom clearfix">
+                            <div class="tab-content">
+
+                            </div>
+                            <!--/tab-content-->
+                            <!-- <ul class="tablist bottom clearfix">
                                 <li><a href="javascript:void(0);" class="">產品介紹</a></li>
                                 <li><a href="javascript:void(0);" class="">圖片集</a></li>
-                            </ul>
+                            </ul> -->
                         </div>
                         <!--/tabs-->
                     </div>
