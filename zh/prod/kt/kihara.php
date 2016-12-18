@@ -46,6 +46,7 @@ $header = $root."/inc/header_".$lng.".php";
                     <div class="main-intro clearfix">
                         <div class="image-show">
                             <div class="slides"><img src="/images/prod/kt/<?php echo $prodSn ;?>/p1.jpg" alt=""></div>
+                            <div class="slider-assist"><img src="/images/slider_assist_4.3.png" alt=""></div>
                             <div class="slides-nav">
                                 <div class="slide-img">
                                     <ul class="img clearfix">

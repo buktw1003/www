@@ -35,13 +35,13 @@ $header = $root."/inc/header_".$lng.".php";
                 <iframe width="100%" src="https://www.youtube.com/embed/pxRoFYlS6EY?rel=0&amp;controls=0&amp;loop=1&amp;playlist=FKryFcf4b4k&amp;showinfo=0&amp;autoplay=1" frameborder="0" allowfullscreen=""></iframe>
 
                 <div class="wrapp">
-                    <div class="container"><div class="caption"><h1>Soft Magnetic Construction toy JollyHeap</h1></div></div>
+                    <div class="container"><div class="caption"><h1>JollyHeap - 磁性益智布積木</h1></div></div>
                 </div>
 
             </div>
         </div>
         <div class="block-figure clearfix">
-            <div class="img"><img src="/images/prod/cm/jh/figure.jpg" alt=""></div>
+            <div class="img"><img src="/images/prod/cm/jh/figure1.jpg" alt=""><img src="/images/prod/cm/jh/figure2.png" alt="" class="m-hide"></div>
             <div class="text onimg">
                 <h3>JollyHeap - Smart Cube是一款專為孩童設計的益智玩具。</h3>
                 <p>顛覆過去布積木的玩法，Smart Cube創新的思維，讓孩子發展獨一無二的想像力及創造力;
@@ -61,7 +61,8 @@ $header = $root."/inc/header_".$lng.".php";
                     <!-- /intro-bar -->
                     <div class="main-intro clearfix">
                         <div class="image-show">
-                            <div class="slides"><img src="/images/prod/cm/jh/p1.jpg" alt=""></div>
+                            <div class="slides btn-sp"><a type="gallery" href="javascript:void(0);"><img src="/images/prod/cm/jh/p1.jpg" alt=""></a></div>
+                            <div class="slider-assist"><img src="/images/slider_assist_4.3.png" alt=""></div>
                             <div class="slides-nav">
                                 <div class="slide-img">
                                     <ul class="img clearfix">
@@ -108,6 +109,9 @@ $header = $root."/inc/header_".$lng.".php";
                                     </tr>
                                 </table>
                             </div>
+                            <div class="btn-buy">
+                                <a href="http://buk1003.shoplineapp.com/categories/jollyheap" target="_blank"><span class="t1">立</span><span class="t2">即</span><span class="t3">購</span><span class="t4">買</span></a>
+                            </div>
                         </div>
                     </div>
 
@@ -125,7 +129,7 @@ $header = $root."/inc/header_".$lng.".php";
                                 <div class="row videos">
                                     <div class="col-md-6 col-sm-6 galleryvideo">
                                         <div class="videoWrapper">
-                                            <iframe width="100%" src="https://www.youtube.com/embed/Yi5gi8pEWWg?rel=0&amp;showinfo=0&amp;autoplay=0" frameborder="0" allowfullscreen=""></iframe>
+                                            <iframe width="100%" src="https://www.youtube.com/embed/PyftOwa-FRg?rel=0&amp;showinfo=0&amp;autoplay=0" frameborder="0" allowfullscreen=""></iframe>
                                         </div>
                                     </div>
                                     <div class="col-md-6 col-sm-6 galleryvideo">
@@ -133,16 +137,7 @@ $header = $root."/inc/header_".$lng.".php";
                                             <iframe width="100%" src="https://www.youtube.com/embed/DiRS0OblqeY?rel=0&amp;showinfo=0&amp;autoplay=0" frameborder="0" allowfullscreen=""></iframe>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 col-sm-6 galleryvideo">
-                                        <div class="videoWrapper">
-                                            <iframe width="100%" src="https://www.youtube.com/embed/C1d_Dc8B_5Q?rel=0&amp;showinfo=0&amp;autoplay=0" frameborder="0" allowfullscreen=""></iframe>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-sm-6 galleryvideo">
-                                        <div class="videoWrapper">
-                                            <iframe width="100%" src="https://www.youtube.com/embed/e4-NQl8QSdw?rel=0&amp;showinfo=0&amp;autoplay=0" frameborder="0" allowfullscreen=""></iframe>
-                                        </div>
-                                    </div>
+                                    
                                 </div>
                                 <div class="row-container features">
                                     <div class="row">
@@ -203,7 +198,7 @@ $header = $root."/inc/header_".$lng.".php";
                                 <div class="gallery">
                                     <ul class="btn-sp clearfix">
                                         <?php
-                                        for($g = 40; $g > 0; $g--){
+                                        for($g = 52; $g > 0; $g--){
                                             echo '<li><a type="gallery" href="javascript:void(0);"><img src="/images/prod/cm/jh/gallery/s/'.$g.'.jpg" alt=""></a></li>';
                                         }
                                         ?>
@@ -223,9 +218,12 @@ $header = $root."/inc/header_".$lng.".php";
                         <!--/tabs-->
                     </div>
                     <!-- /content -->
+                    <div class="btn-buy">
+                        <a href="http://buk1003.shoplineapp.com/categories/jollyheap" target="_blank">立即購買</a>
+                    </div>
                 </section>
-                <!--/prod-intro-->
-
+                <!--/section.prod-intro-->
+                
             </div>
         </main>
         <footer>

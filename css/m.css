@@ -1,4 +1,7 @@
 @media (max-width: 768px) {
+    .m-hide{
+        display: none;
+    }
     .row {
         margin: 0;
     }
@@ -130,6 +133,7 @@
     }
     .prod .intro-bar {
         /*padding: 5px;*/
+        width: 100%;
     }
     .intro-bar h3 .short-intro {
         margin-right: 1em;
@@ -216,7 +220,7 @@
     }
     .overlay .overlay-container {
         padding: 5px;
-        /*width: 100%;*/
+        width: 100%;
         max-height: 100%;
         max-width: 100%;
     }

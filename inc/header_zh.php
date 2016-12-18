@@ -49,4 +49,5 @@
         include_once("lng.inc");
         ?>
     </nav>
+    <div class="social"><a href="https://www.facebook.com/blumenundkatze/?fref=ts">Facebook</a></div>
 </div>

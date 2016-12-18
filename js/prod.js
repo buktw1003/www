@@ -1,7 +1,7 @@
 $(function() {
     var thumbsPerPage = 5;
     var $imgShow = $(".image-show");
-    var $img = $("img", $imgShow);
+    var $img = $(".img img", $imgShow);
 
     function imgRearrange() {
         $imgShow.each(function() {
@@ -46,16 +46,17 @@ $(function() {
             var currentPos = parseInt($ul.css("left"));
             switch (thisDirection) {
                 case "next":
-                    slideNext(that, $ul, movingPos, maxLeftPos, currentPos);
+                    thumbSlideNext(that, $ul, movingPos, maxLeftPos, currentPos);
                     break;
                 case "prev":
-                    slidePrev(that, $ul, movingPos, currentPos);
+                    thumbSlidePrev(that, $ul, movingPos, currentPos);
                     break;
             }
         }
     })
 
-    function slideNext(that, $ul, movingPos, maxLeftPos, currentPos) {
+    function thumbSlideNext(that, $ul, movingPos, maxLeftPos, currentPos) {
+        console.log("source");
         var leftPos = currentPos - movingPos;
         if (leftPos < maxLeftPos) {
             leftPos = maxLeftPos;
@@ -69,7 +70,7 @@ $(function() {
         });
     };
 
-    function slidePrev(that, $ul, movingPos, currentPos) {
+    function thumbSlidePrev(that, $ul, movingPos, currentPos) {
         var leftPos = currentPos + movingPos;
         if (leftPos > 0) {
             leftPos = 0;
@@ -83,11 +84,17 @@ $(function() {
         });
     };
     $img.click(function() {
+        console.log("source");
         var thisParent = $(this).parents(".image-show");
         var $mainImg = $(".slides img", thisParent);
         var thisSrc = $(this).attr("src");
-        $mainImg.attr("src", thisSrc);
+        $mainImg.parent().prepend('<img src="'+thisSrc+'" />');
+        $mainImg.fadeOut(200,function(){
+            $mainImg.remove();
+        });
+        //$mainImg.attr("src", thisSrc);
     });
+
     var $tablist = $(".tablist a");
     var $tabContent = $(".tabs .tab-content");
     $tablist.click(function() {
