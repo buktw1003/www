@@ -34,10 +34,11 @@ $header = $root."/inc/header_".$lng.".php";
                 <!-- <video autoplay="autoplay" loop="loop" width="100%" ><source src="video/video.mp4" type="video/mp4"></video> -->
                 <iframe width="100%" src="https://www.youtube.com/embed/pxRoFYlS6EY?rel=0&amp;controls=0&amp;loop=1&amp;playlist=FKryFcf4b4k&amp;showinfo=0&amp;autoplay=1" frameborder="0" allowfullscreen=""></iframe>
 
-                <div class="wrapp">
-                    <div class="container"><div class="caption"><h1>JollyHeap - 磁性益智布積木</h1></div></div>
-                </div>
+                
 
+            </div>
+            <div class="wrapp">
+                <div class="container"><div class="caption"><h1>JollyHeap - 磁性益智布積木</h1></div></div>
             </div>
         </div>
         <div class="block-figure clearfix">

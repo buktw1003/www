@@ -1,4 +1,5 @@
-<div class="overlay" aria-hidden="true">
+<div class="overlay" aria-hidden="true"><div class="middle">
+	
 	<div class="overlay-container">
 		<div class="top">
 			<h3>title</h3>
@@ -9,7 +10,8 @@
 				<div id="ov-item1">
 					<div class="clearfix">
 						<div class="image-show">
-							<div class="slides"><img src="/images/prod/kt/<?php echo $prodSn ;?>/items/it1-1.jpg" alt=""></div>
+							<div class="slides"><a href="javascript:;"><img src="/images/prod/kt/<?php echo $prodSn ;?>/items/it1-1.jpg" alt=""></a></div>
+							<div class="slider-assist"><img src="/images/slider_assist_4.3.png" alt=""></div>
 							<div class="slides-nav">
 								<div class="slide-img">
 									<ul class="img clearfix">
@@ -84,7 +86,7 @@
 				<div id="ov-item2">
 					<div class="clearfix">
 						<div class="image-show">
-							<div class="slides"><img src="/images/prod/kt/<?php echo $prodSn ;?>/items/it2-1.jpg" alt=""></div>
+							<div class="slides"><a href="javascript:;"><img src="/images/prod/kt/<?php echo $prodSn ;?>/items/it2-1.jpg" alt=""></a></div>
 							<div class="slides-nav">
 								<div class="slide-img">
 									<ul class="img clearfix">
@@ -114,7 +116,7 @@
 								<p>近代デザインは過剰な美を排除してきたが私は日本が元来もってきた絢爛としたエネルギーをデザインのなかに生かそうとしてきた。</p>
 								<p>様式を伝承しながらも現代の生活の中で調和しながら息づくデザインを考えてみた。</p>
 							</div>
-							
+
 
 							<table>
 								<tr>
@@ -160,7 +162,7 @@
 				<div id="ov-item3">
 					<div class="clearfix">
 						<div class="image-show">
-							<div class="slides"><img src="/images/prod/kt/<?php echo $prodSn ;?>/items/it3-1.jpg" alt=""></div>
+							<div class="slides"><a href="javascript:;"><img src="/images/prod/kt/<?php echo $prodSn ;?>/items/it3-1.jpg" alt=""></a></div>
 							<div class="slides-nav">
 								<div class="slide-img">
 									<ul class="img clearfix">
@@ -215,7 +217,7 @@
 				<div id="ov-item4">
 					<div class="clearfix">
 						<div class="image-show">
-							<div class="slides"><img src="/images/prod/kt/<?php echo $prodSn ;?>/items/it4-1.jpg" alt=""></div>
+							<div class="slides"><a href="javascript:;"><img src="/images/prod/kt/<?php echo $prodSn ;?>/items/it4-1.jpg" alt=""></a></div>
 							<div class="slides-nav">
 								<div class="slide-img">
 									<ul class="img clearfix">
@@ -325,7 +327,7 @@
 				<div id="ov-item5">
 					<div class="clearfix">
 						<div class="image-show">
-							<div class="slides"><img src="/images/prod/kt/<?php echo $prodSn ;?>/items/it5-1.jpg" alt=""></div>
+							<div class="slides"><a href="javascript:;"><img src="/images/prod/kt/<?php echo $prodSn ;?>/items/it5-1.jpg" alt=""></a></div>
 							<div class="slides-nav">
 								<div class="slide-img">
 									<ul class="img clearfix">
@@ -388,7 +390,7 @@
 				<div id="ov-item6">
 					<div class="clearfix">
 						<div class="image-show">
-							<div class="slides"><img src="/images/prod/kt/<?php echo $prodSn ;?>/items/it6-1.jpg" alt=""></div>
+							<div class="slides"><a href="javascript:;"><img src="/images/prod/kt/<?php echo $prodSn ;?>/items/it6-1.jpg" alt=""></a></div>
 							<div class="slides-nav">
 								<div class="slide-img">
 									<ul class="img clearfix">
@@ -463,7 +465,8 @@
 				<div id="ov-item1">
 					<div class="clearfix">
 						<div class="image-show">
-							<div class="slides"><img src="/images/prod/kt/kh/items/it1-1.jpg" alt=""></div>
+							<div class="slides"><a href="javascript:;"><img src="/images/prod/kt/kh/items/it1-1.jpg" alt=""></a></div>
+							<div class="slider-assist"><img src="/images/slider_assist_4.3.png" alt=""></div>
 							<div class="slides-nav">
 								<div class="slide-img">
 									<ul class="img clearfix">
@@ -489,17 +492,20 @@
 						</div>
 						<div class="spec">
 							<div class="intro">
+								<h4>有田方圓・有田四様 </h4>
 								<p>伊萬里・有田燒，為古九州肥前國所燒製的陶器，是日本最具代表性的陶瓷之一。</p>
-								<p>該陶器在古代被大量出口至歐洲，其燒制工藝在日本一直延續至今。&nbsp;</p>
+								<p>該陶器在古代被大量出口至歐洲，其燒制工藝在日本一直延續至今。</p>
 								<p>作品依製造時期、樣式等大致區分成初期伊萬里、古九穀樣式、柿右衛門樣式、金襴手等。</p>
-								
-								<p>木原製陶精選四種代表樣式「初期伊万里樣式」、「柿右衛門樣式」、「鍋島樣式」、「古伊万里樣式」，與四位設計師「永井一正」、「佐藤晃一」、「吉澤美香」、「高橋正」合作，將傳統有田燒四個樣式融合創新設計，為有田四樣注入不一樣的生命。</p>
+								<p>株式會社KIHARA精選四種代表樣式「初期伊万里樣式」、「柿右衛門樣式」、「鍋島樣式」、「古伊万里樣式」，與四位設計師「永井一正」、「佐藤晃一」、「吉澤美香」、「高橋正」合作，將傳統有田燒四個樣式融合創新設計，為有田四樣注入不一樣的生命。</p>
+								<h4>鍋島樣式</h4>
+								<p>設計師高橋正用傳統紋飾參入抽象意念，盤側以悠遊空中的燕子圖紋點綴，配上花草盛開的盤面；<br/>漂浮在水面上抽象山茶花圖樣替整體更添風采</p>
 							</div>
 							<table>
 								<tr>
 									<th>型號</th>
 									<th>顏色</th>
 									<th>尺寸</th>
+									<th>建議售價</th>
 									<th>微波爐使用</th>
 									<th>洗碗機使用</th>
 								</tr>
@@ -507,6 +513,7 @@
 									<th>KT-KH001</th>
 									<td>燕子紋</td>
 									<td>φ30 H7cm</td>
+									<td>$24800</td>
 									<td>可</td>
 									<td>可</td>
 								</tr>
@@ -514,6 +521,7 @@
 									<th>KT-KH002</th>
 									<td>山茶花紋</td>
 									<td>φ30 H7cm</td>
+									<td>$29800</td>
 									<td>可</td>
 									<td>不可</td>
 								</tr>
@@ -521,6 +529,7 @@
 									<th>KT-KH003</th>
 									<td>燕子紋</td>
 									<td>φ15 H3cm</td>
+									<td>$3980</td>
 									<td>可</td>
 									<td>可</td>
 								</tr>
@@ -528,6 +537,7 @@
 									<th>KT-KH004</th>
 									<td>山茶花紋</td>
 									<td>φ15 H3cm</td>
+									<td>$4680</td>
 									<td>可</td>
 									<td>不可</td>
 								</tr>
@@ -541,7 +551,8 @@
 				<div id="ov-item2" class="">
 					<div class="clearfix">
 						<div class="image-show">
-							<div class="slides"><img src="/images/prod/kt/kh/items/it2-1.jpg" alt=""></div>
+							<div class="slides"><a href="javascript:;"><img src="/images/prod/kt/kh/items/it2-1.jpg" alt=""></a></div>
+							<div class="slider-assist"><img src="/images/slider_assist_4.3.png" alt=""></div>
 							<div class="slides-nav">
 								<div class="slide-img">
 									<ul class="img clearfix">
@@ -619,7 +630,8 @@
 				<div id="ov-item3" class="">
 					<div class="clearfix">
 						<div class="image-show">
-							<div class="slides"><img src="/images/prod/kt/kh/items/it3-1.jpg" alt=""></div>
+							<div class="slides"><a href="javascript:;"><img src="/images/prod/kt/kh/items/it3-1.jpg" alt=""></a></div>
+							<div class="slider-assist"><img src="/images/slider_assist_4.3.png" alt=""></div>
 							<div class="slides-nav">
 								<div class="slide-img">
 									<ul class="img clearfix">
@@ -674,7 +686,8 @@
 				<div id="ov-item4">
 					<div class="clearfix">
 						<div class="image-show">
-							<div class="slides"><img src="/images/prod/kt/kh/items/it4-1.jpg" alt=""></div>
+							<div class="slides"><a href="javascript:;"><img src="/images/prod/kt/kh/items/it4-1.jpg" alt=""></a></div>
+							<div class="slider-assist"><img src="/images/slider_assist_4.3.png" alt=""></div>
 							<div class="slides-nav">
 								<div class="slide-img">
 									<ul class="img clearfix">
@@ -786,7 +799,8 @@
 				<div id="ov-item5">
 					<div class="clearfix">
 						<div class="image-show">
-							<div class="slides"><img src="/images/prod/kt/kh/items/it5-1.jpg" alt=""></div>
+							<div class="slides"><a href="javascript:;"><img src="/images/prod/kt/kh/items/it5-1.jpg" alt=""></a></div>
+							<div class="slider-assist"><img src="/images/slider_assist_4.3.png" alt=""></div>
 							<div class="slides-nav">
 								<div class="slide-img">
 									<ul class="img clearfix">
@@ -849,7 +863,8 @@
 				<div id="ov-item6">
 					<div class="clearfix">
 						<div class="image-show">
-							<div class="slides"><img src="/images/prod/kt/kh/items/it6-1.jpg" alt=""></div>
+							<div class="slides"><a href="javascript:;"><img src="/images/prod/kt/kh/items/it6-1.jpg" alt=""></a></div>
+							<div class="slider-assist"><img src="/images/slider_assist_4.3.png" alt=""></div>
 							<div class="slides-nav">
 								<div class="slide-img">
 									<ul class="img clearfix">
@@ -919,5 +934,5 @@
 			<!-- /prod-items-html zh -->
 		</div>
 	</div>
-</div>
+</div></div>
 <div class="backtop"><a href="javascript:void(0);"><img src="/images/backtop.png" alt=""></a></div>

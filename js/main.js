@@ -22,6 +22,8 @@ $(function() {
             });
         };
         middleCenter();
+        $(".overlay .content>*").css({ "maxHeight": windowHeight * 0.9 - ($(".overlay h3").height() + 20) });
+        $(".overlay .content>*").css({ "maxHeight": windowHeight * 0.9 - ($(".overlay h3").height() + 20) });
 
         $overlay.css({ "top": currentTop })
         resizeVideo();
@@ -43,7 +45,6 @@ $(function() {
         $(img).each(function() {
             if (this.complete || /*for IE 10-*/ $(this).height() > 0) {
                 callback.apply(this);
-                console.log("complete");
                 $(this).show(0);
             } else {
                 $(this).on('load', function() {
@@ -89,6 +90,7 @@ $(function() {
                     var $imgBeingLoaded = $('.overlay .content img')
                     $imgBeingLoaded.hide();
                     onImgLoad($imgBeingLoaded, function() {
+                        //set image appear size
                         $(".overlay img").css({ "maxHeight": windowHeight * 0.9 - ($(".overlay h3").height() + 20) });
                         $(".overlay img").css({ "maxHeight": windowHeight * 0.9 - ($(".overlay h3").height() + 20) });
                     });
@@ -98,9 +100,9 @@ $(function() {
             //$overlayContent.html(overlayHtml);
             //imgRearrange();
 
-            // $(window).scrollTop(currentTop-1);
-            // var currentTop = $(window).scrollTop();
-            // $(window).scrollTop(currentTop+1);
+            $(window).scrollTop(currentTop - 1);
+            var currentTop = $(window).scrollTop();
+            $(window).scrollTop(currentTop + 1);
 
 
 
@@ -130,7 +132,7 @@ $(function() {
             $overlay.css({ "display": "none" });
             $overlayContainer.css({ "display": "none" });
             $overlayContent.find(">div").removeClass("active");
-            $overlayContent.html("");
+            //$overlayContent.html("");
             $body.removeClass("overlay-enabled");
         });
     };

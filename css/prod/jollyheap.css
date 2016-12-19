@@ -19,23 +19,15 @@
     margin: 0;
     z-index: 99;
 }
-.video-container .wrapp {
+.video .wrapp {
     position: absolute;
-    bottom: 0;
+    bottom: 40px;
     z-index: 100;
     left: 0;
     width: 100%;
 }
-.video-container .wrapp .container{
+.video .wrapp .container{
     width: 1200px;
-}
-@media (min-width: 1350px){
-    .caption {
-        bottom: 100px;
-    }
-    .caption h1 {
-        font-size: 64px;
-    }
 }
 
 .caption {
@@ -62,6 +54,18 @@
 @media (max-width: 768px) {
     .prod .intro-bar{
         margin-top: 0;
+    }
+    .caption{
+        position: relative;
+        bottom: 0;
+    }
+
+    .video-container .wrapp{
+        position: relative;
+    }
+    .video-container .wrapp .container{
+        padding: 0;
+        width: auto;
     }
 }
 .block-figure .onimg.text{

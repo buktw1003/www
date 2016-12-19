@@ -119,6 +119,9 @@ section {
     width: auto;
     max-width: 100%;
 }
+.overlay .item img{
+    width: 100%;
+}
 .overlay .middle{
     vertical-align: middle;
     display: table-cell;
@@ -129,7 +132,7 @@ section {
     max-height: 100%;
     display: none;
     margin: 0 auto;
-    /*position: relative;*/
+    position: relative;
     padding: 5px;
     background-color: #231815;
     box-sizing: border-box;
@@ -145,23 +148,22 @@ section {
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#000000', GradientType=1);
     /* IE6-9 fallback on horizontal gradient */
 }
+.overlay .overlay-container.item{
+    max-width: 65%;
+}
 .overlay .video{
     width: 65%;
 }
 
 .overlay .top {
     position: relative;
+    margin-bottom: 10px;
 }
 .overlay .content{
     background-color: #fff;
 }
 
-.overlay .item .content{
-    padding: 0 2.5% 10px;
-    max-height: 500px; 
-    overflow: auto;
 
-}
 .overlay .gallery h3{
 
 }
@@ -170,8 +172,9 @@ section {
 }
 .overlay .content>div{
     display: none;
-    padding-top: 10px;
-    overflow: hidden;
+     padding-top: 10px; 
+     padding-bottom: 20px; 
+    overflow: auto;
 }
 .overlay .content>div.active{
     display: block;
@@ -181,7 +184,7 @@ section {
     line-height: 45px;
     text-transform: uppercase;
     background-color: #ffffff;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     box-shadow: inset 0px 0px 10px #000000;
     padding-left: 0.5em;
     width: calc(100% - 45px);
@@ -361,6 +364,8 @@ header nav .lng>a {
 header .lng>a:after {
     content: "";
     display: inline-block;
+    width: 0;
+    height: 0;
     border-top: 8px solid #ffffff;
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
@@ -403,6 +408,8 @@ header nav>ul>li>.submenu {
     left: 0;
     padding-top: 10px;
     padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 header nav .submenu .leftside {
@@ -866,6 +873,9 @@ footer p {
 .prod-intro .main-intro .btn-buy{
     text-align: center;
 }
+.slider-assist img{
+    width: 100%;
+}
 .image-show{
     margin-left: 5px;
     width: 50%;
@@ -1161,6 +1171,7 @@ section>.btn-buy a:hover{
     line-height: 2em;
     border: 1px solid #999;
     width: 20%;
+    min-width: 120px;
     text-align: center;
     color: #fff;
     border-radius: 3px;

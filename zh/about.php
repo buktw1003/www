@@ -1,6 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en">
 <?php 
+$prodName = "About";
 $root = $_SERVER['DOCUMENT_ROOT'];
 $commVar = $root."/inc/comm_var.php";
 include_once($commVar);
