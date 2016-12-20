@@ -122,6 +122,9 @@
         width: 100%;
         position: static;
     }
+    .social{
+        display: none;
+    }
     main {
         margin-top: 80px;
     }
@@ -189,8 +192,8 @@
         line-height: 1.25em;
     }
     .prod .dk .img {
-        float: left;
-        width: 40%;
+        /* float: left; */
+        /* width: 40%; */
     }
     .prod .dk .img img {
         opacity: 1;
@@ -220,7 +223,7 @@
     }
     .overlay .overlay-container {
         padding: 5px;
-        width: 100%;
+        width: 100%!important;
         max-height: 100%;
         max-width: 100%!important;
     }
@@ -273,7 +276,7 @@
     }
     .image-show {
         float: none;
-        width: 100%;
+        width: 100%!important;
         margin: 0 auto;
         padding: 0 2.5%;
         margin-bottom: 20px;

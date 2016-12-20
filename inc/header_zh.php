@@ -6,7 +6,6 @@
         <a href="javascript:;" class="switch mobile">menu</a>
         <ul class="menu clearfix">
             <li class="nav-new"><a href="/zh/index.php"><span>首頁</span><span class="bar"></span></a></li>
-            <li class="nav-about"><a href="/zh/about.php"><span>關於我們</span><span class="bar"></span></a></li>
             <li class="nav-categories">
                 <a href="#"><span>產品類別</span><span class="bar"></span></a>
                 <div class="submenu">
@@ -27,9 +26,9 @@
                                     <div class="submenu prod">
                                         <ul>
                                             <!-- <li><a prodname="kn" href="/<?php echo "$lng";?>/prod/kt/kakuni.php">KAKUNI</a></li> -->
-                                            <li><a prodname="kh" href="/<?php echo "$lng";?>/prod/kt/kihara.php">KIHARA</a></li>
+                                            <li><a prodname="kh" href="/<?php echo "$lng";?>/prod/kt/kh/prod.php">KIHARA</a></li>
                                             <!-- <li><a prodname="ts" href="/<?php echo "$lng";?>/prod/kt/coppercups.php">銅杯</a></li> -->
-                                            </ul>
+                                        </ul>
                                     </div>
                                 </li>
                                 <li cat="hd" class="cat"><a href="javascript:;">家飾裝潢<span class="bar"></span></a></li>
@@ -42,6 +41,8 @@
                     </ul>
                 </div>
             </li>
+            <li class="nav-about"><a href="/zh/about.php"><span>關於我們</span><span class="bar"></span></a></li>
+            
             <li class="nav-shop"><a href="<?php echo $bukShopUrl; ?>"><span>線上購物</span><span class="bar"></span></a></li>
             <li class="nav-contact"><a href="/zh/contact.php"><span>聯絡我們</span><span class="bar"></span></a></li>
         </ul>

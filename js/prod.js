@@ -46,16 +46,16 @@ $(function() {
             var currentPos = parseInt($ul.css("left"));
             switch (thisDirection) {
                 case "next":
-                    thumbSlideNext(that, $ul, movingPos, maxLeftPos, currentPos);
+                    thumbSlideNext(that, $ul, movingPos, maxLeftPos, currentPos, thisParent);
                     break;
                 case "prev":
-                    thumbSlidePrev(that, $ul, movingPos, currentPos);
+                    thumbSlidePrev(that, $ul, movingPos, currentPos, thisParent);
                     break;
             }
         }
     })
 
-    function thumbSlideNext(that, $ul, movingPos, maxLeftPos, currentPos) {
+    function thumbSlideNext(that, $ul, movingPos, maxLeftPos, currentPos, thisParent) {
         console.log("source");
         var leftPos = currentPos - movingPos;
         if (leftPos < maxLeftPos) {
@@ -66,11 +66,11 @@ $(function() {
             if (leftPos == maxLeftPos) {
                 that.addClass("inactive");
             }
-            $(".arrow a").not(that).removeClass("inactive");
+            $(".arrow a", thisParent).not(that).removeClass("inactive");
         });
     };
 
-    function thumbSlidePrev(that, $ul, movingPos, currentPos) {
+    function thumbSlidePrev(that, $ul, movingPos, currentPos, thisParent) {
         var leftPos = currentPos + movingPos;
         if (leftPos > 0) {
             leftPos = 0;
@@ -80,7 +80,7 @@ $(function() {
             if (leftPos == 0) {
                 that.addClass("inactive");
             }
-            $(".arrow a").not(that).removeClass("inactive");
+            $(".arrow a", thisParent).not(that).removeClass("inactive");
         });
     };
     $img.click(function() {
@@ -114,4 +114,13 @@ $(function() {
     $tablist.filter(":eq(0)").addClass("active");
     $tabContent.filter(":eq(0)").addClass("active");
     //$("")
+    $(".btn-scrollTo").each(function(){
+        $(this).find("a").click(function(e){
+            e.preventDefault();
+            var toId = $(this).attr("href");
+            var scrollPos = $(toId).offset().top;
+            console.log(scrollPos)
+            $("body,html").animate({"scrollTop" : scrollPos-130});
+        })
+    })
 });

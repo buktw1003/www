@@ -6,7 +6,6 @@
         <a href="javascript:;" class="switch mobile">menu</a>
         <ul class="menu clearfix">
             <li class="nav-new"><a href="/en/"><span>New</span><span class="bar"></span></a></li>
-            <li class="nav-about"><a href="/en/about.php"><span>About</span><span class="bar"></span></a></li>
             <li class="nav-categories">
                 <a href="#"><span>Categories</span><span class="bar"></span></a>
                 <div class="submenu">
@@ -17,7 +16,7 @@
                                     <a href="javascript:;">CHILD AND MOM<span class="bar"></span></a>
                                     <div class="submenu prod">
                                         <ul>
-                                            <li><a prodname="jh" href="/en/prod/cm/jollyheap.php">JollyHeap</a></li>
+                                            <li><a prodname="jh" href="/en/prod/cm/jh/prod.php">JollyHeap</a></li>
                                             <!-- <li><a prodname="tm" href="/en/prod/cm/tamamono.php">Tamamono</a></li> -->
                                         </ul>
                                     </div>
@@ -33,6 +32,7 @@
                     </ul>
                 </div>
             </li>
+            <li class="nav-about"><a href="/en/about.php"><span>About</span><span class="bar"></span></a></li>
             <li class="nav-shop"><a href="<?php echo $bukShopUrl; ?>"><span>Online Shop</span><span class="bar"></span></a></li>
             <li class="nav-contact"><a href="/en/contact.php"><span>Contact Us</span><span class="bar"></span></a></li>
         </ul>

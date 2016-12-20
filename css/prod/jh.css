@@ -46,10 +46,47 @@
     text-shadow: -2px 3px 5px #000;
 
 }
-.caption h1 {
-}
+
 .prod .intro-bar{
     margin-top: -80px;  
+}
+.sets h4,.price h4{
+    font-weight: bold;
+    text-align: center;
+    font-size: 28px;
+    margin: 30px 0;
+}
+.sets p{
+    padding: 14px 0;
+    border-bottom: #e2e2e2 1px solid;
+}
+.price .col-md-3{
+    position: relative;
+}
+.price .szt{
+    position: absolute;
+        right: 30px;
+        bottom: 15px;
+        background-color: #5e4736;
+        width: 112px;
+        height: 112px;
+        border-radius: 50%;
+        text-align: center;
+}
+.price .szt span {
+    color: #fff;
+    font-size: 18px;
+    line-height: 112px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+}
+.price .szt span strong {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 106px;
+}
+.price img{
+    width: auto;
 }
 @media (max-width: 768px) {
     .prod .intro-bar{
@@ -60,19 +97,34 @@
         bottom: 0;
     }
 
-    .video-container .wrapp{
+    .video .wrapp{
         position: relative;
+        background-color: #808080;
+        bottom: 0;
     }
-    .video-container .wrapp .container{
+    .video .wrapp .container{
         padding: 0;
         width: auto;
     }
+    .caption h1 {
+        font-size: 18px;
+    }
+    .video{
+        margin-bottom: 0;
+    }
 }
 .block-figure .onimg.text{
-    bottom: 100px;  
+    bottom: 100px;
+    display: none;
+}
+.main-intro .btn-buy a{
+    background-color: #fff;
+    width: auto;
+    height: auto;
 }
 .btn-buy span
-{
+{   
+    text-transform: uppercase;
     width: 60px;
     height: 60px;
     display: inline-block;
@@ -93,5 +145,14 @@
     background-color: #b9d980;
 }
 .btn-buy span.t4{
+    background-color: #f75ec6;
+}
+.btn-buy span.t5{
+    background-color: #1da2ba;
+}
+.btn-buy span.t6{
+    background-color: #5b5d50;
+}
+.btn-buy span.t7{
     background-color: #f75ec6;
 }

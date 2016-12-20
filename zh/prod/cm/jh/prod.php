@@ -2,6 +2,7 @@
 <html lang="en">
 <?php 
 $prodName = "JollyHeap";
+$prodCode = "jh";
 $root = $_SERVER['DOCUMENT_ROOT'];
 $commVar = $root."/inc/comm_var.php";
 include_once($commVar);
@@ -68,7 +69,7 @@ $header = $root."/inc/header_".$lng.".php";
                                 <div class="slide-img">
                                     <ul class="img clearfix">
                                         <?php
-                                        include_once($root."/inc/prod/slideimgs/".strtolower($prodName).".inc");
+                                        include_once($root."/inc/prod/slideimgs/".strtolower($prodCode).".inc");
                                         ?>
                                     </ul>
 
@@ -128,17 +129,26 @@ $header = $root."/inc/header_".$lng.".php";
                             </ul> -->
                             <div class="tab-content">
                                 <div class="row videos">
-                                    <div class="col-md-6 col-sm-6 galleryvideo">
+                                    <div class="col-xs-4 galleryvideo">
                                         <div class="videoWrapper">
                                             <iframe width="100%" src="https://www.youtube.com/embed/PyftOwa-FRg?rel=0&amp;showinfo=0&amp;autoplay=0" frameborder="0" allowfullscreen=""></iframe>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 col-sm-6 galleryvideo">
+                                    <div class="col-xs-4 galleryvideo">
                                         <div class="videoWrapper">
                                             <iframe width="100%" src="https://www.youtube.com/embed/DiRS0OblqeY?rel=0&amp;showinfo=0&amp;autoplay=0" frameborder="0" allowfullscreen=""></iframe>
                                         </div>
                                     </div>
-                                    
+                                    <div class="col-xs-4 galleryvideo">
+                                        <div class="videoWrapper">
+                                            <iframe width="100%" src="https://www.youtube.com/embed/C1d_Dc8B_5Q?rel=0&amp;showinfo=0&amp;autoplay=0" frameborder="0" allowfullscreen=""></iframe>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="col-md-6 col-sm-6 galleryvideo">
+                                        <div class="videoWrapper">
+                                            <iframe width="100%" src="https://www.youtube.com/embed/p76UZPJMgJg?rel=0&amp;showinfo=0&amp;autoplay=0" frameborder="0" allowfullscreen=""></iframe>
+                                        </div>
+                                    </div> -->
                                 </div>
                                 <div class="row-container features">
                                     <div class="row">
@@ -196,6 +206,9 @@ $header = $root."/inc/header_".$lng.".php";
                                         </div>
                                     </div>
                                 </div>
+                                <div class="btn-buy">
+                                    <a href="http://buk1003.shoplineapp.com/categories/jollyheap" target="_blank">立即購買</a>
+                                </div>
                                 <div class="gallery">
                                     <ul class="btn-sp clearfix">
                                         <?php
@@ -205,6 +218,180 @@ $header = $root."/inc/header_".$lng.".php";
                                         ?>
                                     </ul>
                                 </div>
+                                <div class="btn-buy">
+                                    <a href="http://buk1003.shoplineapp.com/categories/jollyheap" target="_blank">立即購買</a>
+                                </div>
+                                <div class="sets">
+                                    <h4>積木配色</h4>
+                                    <div class="row">
+                                        <div class="col-md-3 col-xs-6">
+                                        <img src="/images/prod/cm/jh/kits/1121.jpg" alt="Klocki Magnetyczne JollyHeap Zestaw-1121">
+                                            <p>1121</p>
+                                        </div>
+                                        <div class="col-md-3 col-xs-6">
+                                        <img src="/images/prod/cm/jh/kits/1122.jpg" alt="Klocki Magnetyczne JollyHeap Zestaw-1122">
+                                            <p>1122</p>
+                                        </div>
+                                        <div class="col-md-3 col-xs-6">
+                                        <img src="/images/prod/cm/jh/kits/1123.jpg" alt="Klocki Magnetyczne JollyHeap Zestaw-1123">
+                                            <p>1123</p>
+                                        </div>
+                                        <div class="col-md-3 col-xs-6">
+                                        <img src="/images/prod/cm/jh/kits/1124.jpg" alt="Klocki Magnetyczne JollyHeap Zestaw-1124">
+                                            <p>1124</p>
+                                        </div>
+                                        <div class="col-md-3 col-xs-6">
+                                        <img src="/images/prod/cm/jh/kits/1221.jpg" alt="Klocki Magnetyczne JollyHeap Zestaw-1221">
+                                            <p>1221</p>
+                                        </div>
+                                        <div class="col-md-3 col-xs-6">
+                                        <img src="/images/prod/cm/jh/kits/1222.jpg" alt="Klocki Magnetyczne JollyHeap Zestaw-1222">
+                                            <p>1222</p>
+                                        </div>
+                                        <div class="col-md-3 col-xs-6">
+                                        <img src="/images/prod/cm/jh/kits/1223.jpg" alt="Klocki Magnetyczne JollyHeap Zestaw-1223">
+                                            <p>1223</p>
+                                        </div>
+                                        <div class="col-md-3 col-xs-6">
+                                        <img src="/images/prod/cm/jh/kits/1224.jpg" alt="Klocki Magnetyczne JollyHeap Zestaw-1224">
+                                            <p>1224</p>
+                                        </div>
+                                        <div class="col-md-3 col-xs-6">
+                                        <img src="/images/prod/cm/jh/kits/1321.jpg" alt="Klocki Magnetyczne JollyHeap Zestaw-1321">
+                                            <p>1321</p>
+                                        </div>
+                                        <div class="col-md-3 col-xs-6">
+                                        <img src="/images/prod/cm/jh/kits/1322.jpg" alt="Klocki Magnetyczne JollyHeap Zestaw-1322">
+                                            <p>1322</p>
+                                        </div>
+                                        <div class="col-md-3 col-xs-6">
+                                        <img src="/images/prod/cm/jh/kits/1323.jpg" alt="Klocki Magnetyczne JollyHeap Zestaw-1323">
+                                            <p>1323</p>
+                                        </div>
+                                        <div class="col-md-3 col-xs-6">
+                                        <img src="/images/prod/cm/jh/kits/1324.jpg" alt="Klocki Magnetyczne JollyHeap Zestaw-1324">
+                                            <p>1324</p>
+                                        </div>
+                                        <div class="col-md-3 col-xs-6">
+                                        <img src="/images/prod/cm/jh/kits/1421.jpg" alt="Klocki Magnetyczne JollyHeap Zestaw-1421">
+                                            <p>1421</p>
+                                        </div>
+                                        <div class="col-md-3 col-xs-6">
+                                        <img src="/images/prod/cm/jh/kits/1422.jpg" alt="Klocki Magnetyczne JollyHeap Zestaw-1422">
+                                            <p>1422</p>
+                                        </div>
+                                        <div class="col-md-3 col-xs-6">
+                                        <img src="/images/prod/cm/jh/kits/1423.jpg" alt="Klocki Magnetyczne JollyHeap Zestaw-1423">
+                                            <p>1423</p>
+                                        </div>
+                                        <div class="col-md-3 col-xs-6">
+                                        <img src="/images/prod/cm/jh/kits/1424.jpg" alt="Klocki Magnetyczne JollyHeap Zestaw-1424">
+                                            <p>1424</p>
+                                        </div>
+                                    </div>
+                                    <h4>新配色</h4>
+                                    <div class="row">
+                                        <div class="col-md-3 col-xs-6">
+                                        <img src="/images/prod/cm/jh/kits/1125.jpg" alt="Klocki Magnetyczne JollyHeap Zestaw-1125">
+                                            <p>1125</p>
+                                        </div>
+                                        <div class="col-md-3 col-xs-6">
+                                        <img src="/images/prod/cm/jh/kits/1126.jpg" alt="Klocki Magnetyczne JollyHeap Zestaw-1126">
+                                            <p>1126</p>
+                                        </div>
+                                        <div class="col-md-3 col-xs-6">
+                                        <img src="/images/prod/cm/jh/kits/1225.jpg" alt="Klocki Magnetyczne JollyHeap Zestaw-1225">
+                                            <p>1225</p>
+                                        </div>
+                                        <div class="col-md-3 col-xs-6">
+                                        <img src="/images/prod/cm/jh/kits/1226.jpg" alt="Klocki Magnetyczne JollyHeap Zestaw-1226">
+                                            <p>1226</p>
+                                        </div>
+                                        <div class="col-md-3 col-xs-6">
+                                        <img src="/images/prod/cm/jh/kits/1325.jpg" alt="Klocki Magnetyczne JollyHeap Zestaw-1325">
+                                            <p>1325</p>
+                                        </div>
+                                        <div class="col-md-3 col-xs-6">
+                                        <img src="/images/prod/cm/jh/kits/1326.jpg" alt="Klocki Magnetyczne JollyHeap Zestaw-1326">
+                                            <p>1326</p>
+                                        </div>
+                                        <div class="col-md-3 col-xs-6">
+                                        <img src="/images/prod/cm/jh/kits/1425.jpg" alt="Klocki Magnetyczne JollyHeap Zestaw-1425">
+                                            <p>1425</p>
+                                        </div>
+                                        <div class="col-md-3 col-xs-6">
+                                        <img src="/images/prod/cm/jh/kits/1426.jpg" alt="Klocki Magnetyczne JollyHeap Zestaw-1426">
+                                            <p>1426</p>
+                                        </div>
+                                        <div class="col-md-3 col-xs-6">
+                                        <img src="/images/prod/cm/jh/kits/1521.jpg" alt="Klocki Magnetyczne JollyHeap Zestaw-1521">
+                                            <p>1521</p>
+                                        </div>
+                                        <div class="col-md-3 col-xs-6">
+                                        <img src="/images/prod/cm/jh/kits/1522.jpg" alt="Klocki Magnetyczne JollyHeap Zestaw-1522">
+                                            <p>1522</p>
+                                        </div>
+                                        <div class="col-md-3 col-xs-6">
+                                        <img src="/images/prod/cm/jh/kits/1523.jpg" alt="Klocki Magnetyczne JollyHeap Zestaw-1523">
+                                            <p>1523</p>
+                                        </div>
+                                        <div class="col-md-3 col-xs-6">
+                                        <img src="/images/prod/cm/jh/kits/1524.jpg" alt="Klocki Magnetyczne JollyHeap Zestaw-1524">
+                                            <p>1524</p>
+                                        </div>
+                                        <div class="col-md-3 col-xs-6">
+                                        <img src="/images/prod/cm/jh/kits/1525.jpg" alt="Klocki Magnetyczne JollyHeap Zestaw-1525">
+                                            <p>1525</p>
+                                        </div>
+                                        <div class="col-md-3 col-xs-6">
+                                        <img src="/images/prod/cm/jh/kits/1526.jpg" alt="Klocki Magnetyczne JollyHeap Zestaw-1526">
+                                            <p>1526</p>
+                                        </div>
+                                    </div>
+                                    <!--/row-->
+
+                                </div>
+                                <!--sets-->
+                                <div class="price">
+                                        <div class="container">
+                                            <h4>豪華款擁有100塊積木</h4>
+                                            <div class="row">
+                                                <div class="col-md-3 col-sm-6 col-xs-6">
+                                                    <img src="/images/prod/cm/jh/kits/cube.jpg" alt="Klocki Magnetyczne JollyHeap Brązowy Kwadrat">
+                                                    <div class="szt">
+                                                        <span>
+                                                            <strong>76</strong> pcs.
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6 col-xs-6">
+                                                    <img src="/images/prod/cm/jh/kits/sliced-cube.jpg" alt="Klocki Magnetyczne JollyHeap Jasnozielony Diament">
+                                                    <div class="szt">
+                                                        <span>
+                                                            <strong>8</strong> pcs.
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6 col-xs-6">
+                                                    <img src="/images/prod/cm/jh/kits/triangle.jpg" alt="Klocki Magnetyczne JollyHeap Czerwona Piramida">
+                                                    <div class="szt">
+                                                        <span>
+                                                            <strong>12</strong> pcs.
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6 col-xs-6">
+                                                    <img src="/images/prod/cm/jh/kits/pyramid.jpg" alt="Klocki Magnetyczne JollyHeap Niebieski Trójkąt">
+                                                    <div class="szt">
+                                                        <span>
+                                                            <strong>4</strong> pcs.
+                                                        </span>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
                             </div>
                             <!--/tab-content-->
                             <div class="tab-content">
@@ -217,11 +404,12 @@ $header = $root."/inc/header_".$lng.".php";
                             </ul> -->
                         </div>
                         <!--/tabs-->
+                        <div class="btn-buy">
+                            <a href="http://buk1003.shoplineapp.com/categories/jollyheap" target="_blank">立即購買</a>
+                        </div>
                     </div>
                     <!-- /content -->
-                    <div class="btn-buy">
-                        <a href="http://buk1003.shoplineapp.com/categories/jollyheap" target="_blank">立即購買</a>
-                    </div>
+                    
                 </section>
                 <!--/section.prod-intro-->
                 

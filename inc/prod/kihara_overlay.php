@@ -465,7 +465,11 @@
 				<div id="ov-item1">
 					<div class="clearfix">
 						<div class="image-show">
-							<div class="slides"><a href="javascript:;"><img src="/images/prod/kt/kh/items/it1-1.jpg" alt=""></a></div>
+							<div class="slides"><div class="easyzoom easyzoom--overlay">
+								<a href="/images/prod/kt/kh/items/it1-1.jpg">
+									<img src="/images/prod/kt/kh/items/it1-1.jpg" alt="" />
+								</a>
+							</div></div>
 							<div class="slider-assist"><img src="/images/slider_assist_4.3.png" alt=""></div>
 							<div class="slides-nav">
 								<div class="slide-img">
@@ -505,41 +509,41 @@
 									<th>型號</th>
 									<th>顏色</th>
 									<th>尺寸</th>
-									<th>建議售價</th>
 									<th>微波爐使用</th>
 									<th>洗碗機使用</th>
+									<th>建議售價</th>
 								</tr>
 								<tr>
 									<th>KT-KH001</th>
 									<td>燕子紋</td>
 									<td>φ30 H7cm</td>
+									<td>可</td>
+									<td>可</td>
 									<td>$24800</td>
-									<td>可</td>
-									<td>可</td>
 								</tr>
 								<tr>
 									<th>KT-KH002</th>
 									<td>山茶花紋</td>
 									<td>φ30 H7cm</td>
-									<td>$29800</td>
 									<td>可</td>
 									<td>不可</td>
+									<td>$29800</td>
 								</tr>
 								<tr>
 									<th>KT-KH003</th>
 									<td>燕子紋</td>
 									<td>φ15 H3cm</td>
+									<td>可</td>
+									<td>可</td>
 									<td>$3980</td>
-									<td>可</td>
-									<td>可</td>
 								</tr>
 								<tr>
 									<th>KT-KH004</th>
 									<td>山茶花紋</td>
 									<td>φ15 H3cm</td>
-									<td>$4680</td>
 									<td>可</td>
 									<td>不可</td>
+									<td>$4680</td>
 								</tr>
 
 							</table>
@@ -559,7 +563,6 @@
 										<li style="left: 0px;"><a href="javascript:;"><img src="/images/prod/kt/kh/items/it2-1.jpg" alt=""></a></li>
 										<li style="left: 25px;"><a href="javascript:;"><img src="/images/prod/kt/kh/items/it2-2.jpg" alt=""></a></li>
 										<li style="left: 50px;"><a href="javascript:;"><img src="/images/prod/kt/kh/items/it2-3.jpg" alt=""></a></li>
-										<li style="left: 75px;"><a href="javascript:;"><img src="/images/prod/kt/kh/items/it2-4.jpg" alt=""></a></li>
 										<li style="left: 100px;"><a href="javascript:;"><img src="/images/prod/kt/kh/items/it2-5.jpg" alt=""></a></li>
 									</ul>
 
@@ -575,14 +578,14 @@
 						</div>
 						<div class="spec">
 							<div class="intro">
-								<p>金襴手為伊萬里・有田燒譜系的其中一個分枝</p>
-								<p>此系列作品如其名，利用金彩絢爛的色調重現江戶元祿時期流行的巴洛克/洛可可風格燒物，搭配日本文化特有的寂靜空靈美感，有別於近代華麗的風格，作者永井一正將日本文化獨特的美學態度揉捏入其中，以傳統的技法製作出具現代感的瓷器，使舊與新之間取得完美的平衡。</p>
-								<br>
-								<h4>猪口(CHYOKO)的由來</h4>
-								<p>猪口一詞，一說源自吳語又或是朝鮮語 - “鍾甌”（chyongku)</p>
-								<p>鍾：着献盛酒的器具。說文解字：「鍾，酒器也。」</p>
-								<p>甌：着献盆、盂等瓦器。</p>
-								<p>由字義上來看，即是盛裝物品的小容器，流傳到愛用外來語的日本就音譯成為猪口啦！</p>
+								<h4>有田方圓・有田四様 </h4>
+								<p>伊萬里・有田燒，為古九州肥前國所燒製的陶器，是日本最具代表性的陶瓷之一。</p>
+								<p>該陶器在古代被大量出口至歐洲，其燒制工藝在日本一直延續至今。</p>
+								<p>作品依製造時期、樣式等大致區分成初期伊萬里、古九穀樣式、柿右衛門樣式、金襴手等。</p>
+								<p>株式會社KIHARA精選四種代表樣式「初期伊万里樣式」、「柿右衛門樣式」、「鍋島樣式」、「古伊万里樣式」，與四位設計師「永井一正」、「佐藤晃一」、「吉澤美香」、「高橋正」合作，將傳統有田燒四個樣式融合創新設計，為有田四樣注入不一樣的生命。</p>
+								<h4>古伊萬里樣式 - 金襴手</h4>
+								<p>金襴手為伊萬里・有田燒譜系分支之一，作品如其名，利用金彩絢爛的色調重現江戶元祿時期流行的巴洛克/洛可可風格燒物。</p>
+								<p>有別於近代華麗的風格，作者永井一正將日本文化獨特的美意識揉捏其中，以傳統的技法製作出具現代感的瓷器，使舊與新之間取得完美的平衡。</p>
 							</div>
 
 							<table>
@@ -805,8 +808,6 @@
 								<div class="slide-img">
 									<ul class="img clearfix">
 										<li style="left: 0px;"><a href="javascript:;"><img src="/images/prod/kt/kh/items/it5-1.jpg" alt=""></a></li>
-										<li style="left: 25px;"><a href="javascript:;"><img src="/images/prod/kt/kh/items/it5-2.jpg" alt=""></a></li>
-										<li style="left: 50px;"><a href="javascript:;"><img src="/images/prod/kt/kh/items/it5-3.jpg" alt=""></a></li>
 									</ul>
 
 								</div>
@@ -840,20 +841,8 @@
 									<td>可</td>
 									<td>可</td>
 								</tr>
-								<tr>
-									<th>KT-KH020</th>
-									<td>四稜小皿　草花</td>
-									<td>φ11 H2cm</td>
-									<td>可</td>
-									<td>可</td>
-								</tr>
-								<tr>
-									<th>KT-KH021</th>
-									<td>四稜小皿　水玉</td>
-									<td>φ11 H2cm</td>
-									<td>可</td>
-									<td>可</td>
-								</tr>
+								
+								
 							</table>
 							<a class="btn-shop" href="http://buk1003.shoplineapp.com/categories/kihara-%E5%8F%A4%E7%99%BD%E7%A3%81" target="_blank">立即訂購</a>
 

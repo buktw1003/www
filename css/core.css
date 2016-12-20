@@ -19,7 +19,10 @@ th,
 td {
     padding: 5px;
 }
-
+a:focus{
+    outline: 0;
+    color: white;
+}
 .width-limiter,
 section {
     max-width: 1210px;
@@ -150,6 +153,7 @@ section {
 }
 .overlay .overlay-container.item{
     max-width: 65%;
+    width: 65%;
 }
 .overlay .video{
     width: 65%;
@@ -173,7 +177,7 @@ section {
 .overlay .content>div{
     display: none;
      padding-top: 10px; 
-     padding-bottom: 20px; 
+     padding-bottom: 25px; 
     overflow: auto;
 }
 .overlay .content>div.active{
@@ -189,25 +193,37 @@ section {
     padding-left: 0.5em;
     width: calc(100% - 45px);
 }
-.overlay .content .spec{
-    width: 45%;
-    float: right;
-    margin-right: 10px;
-}
-.overlay .content .spec .intro{
+.ov-item{
+    padding-bottom: 10px;
     margin-bottom: 20px;
+    border-bottom: 1px solid #cccccc;
 }
-.overlay .content .spec .intro h4{
+.content .spec{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.content .intro{
+    /* float: left; */
+    /* width: 45%; */
+    text-align: center;
+}
+.content .intro h4{
     font-weight: bold;
+    font-size: 24px;
 }
-.overlay .content .spec table{
-    width: 100%;
+.content .spec .spec-table{
+    /* width: 52%; */
+    /* float: right; */
 }
-.overlay .content table th, .overlay .content table td{
+.content .spec .spec-table table{
+    margin: 0 auto;
+}
+.content .spec table th, .content .spec table td{
     border: 1px solid gray;
     vertical-align: middle;
+    font-size: 14px;
 }
-.overlay .content table th{
+.content .spec table th{
     background-color: #aaa;
     color: #ffffff;
 }
@@ -607,7 +623,7 @@ main .popular {
 }
 
 .prod .dk .img img {
-    /*opacity: 0.7;*/
+    opacity: 0.7;
 }
 
 .prod .text {
@@ -622,8 +638,11 @@ main .popular {
 
 .prod .brief-intro .text {
     color: #fff;
+    display: none;
 }
-
+.prod .brief-intro.dk .text{
+    display: block;
+}
 .prod .brief-intro .text h4 {
     font-size: 18px;
     margin-bottom: 0.5em;
@@ -755,7 +774,6 @@ footer p {
     font-weight: bold;
 }
 .prod-intro .col-xs-6 {
-    width: 100%;
     margin-bottom: 2em;
 }
 .prod-intro .features {
@@ -876,6 +894,7 @@ footer p {
 .slider-assist img{
     width: 100%;
 }
+
 .image-show{
     margin-left: 5px;
     width: 50%;
@@ -894,9 +913,9 @@ footer p {
     margin-top: 5px;
 }
 .image-show .slides-nav ul{
-
+    min-height: 2px;
     /* width: 465px; */
-    
+    max-width: 100%!important;
     position: relative;
     
     left: 0;
@@ -975,6 +994,12 @@ footer p {
     border-left:2px solid #eeeeee;
 
 }
+.ov-item .image-show{
+    float: none;
+    margin: 0 auto;
+    width: 70%;
+    margin-bottom: 20px;
+}
 .prod-intro .content{
     /*padding: 0 2.5%;*/
     width: calc(100% - 10px);
@@ -1036,9 +1061,10 @@ footer p {
 }
 .prod-intro .items{
     overflow: hidden;
+    margin-bottom: 20px;
 }
 .prod-intro .items li{
-    margin-bottom: 20px;    
+    margin-bottom: 20px;
 }
 .prod-intro .items a{
     position: relative;
@@ -1081,7 +1107,8 @@ footer p {
     content:"+";
     background-color: #000000;
     width: 20px;
-    height: 20px;
+    /*height: 20px;*/
+    height: 0;
     font-family: Arial;
     font-weight: bold;
     color: #ffffff;
@@ -1089,6 +1116,7 @@ footer p {
     border-radius: 50%;
     margin: 0 auto;
     text-shadow: none;
+    visibility: hidden;
 }
 .prod-intro .items a .text .title{
     display: block;
@@ -1097,6 +1125,9 @@ footer p {
     font-weight: normal;
     font-size: 15px;
     color: #000000;
+}
+.prod-intro .prod-title{
+    text-align: center;
 }
 .prod-intro .content .gallery li{
     width: 25%;
@@ -1134,12 +1165,13 @@ footer p {
 .prod-intro .content .gallery li a:hover img{
     opacity: 0.5;
 }
-section>.btn-buy{
+.btn-buy{
     text-align: center;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
-section>.btn-buy a{
-    width: 250px;
+.btn-buy a{
+    width: 300px;
     height: 80px;
     display: block;
     font-size: 30px;
@@ -1169,13 +1201,13 @@ section>.btn-buy a:hover{
     display: block;
     background-color: #666;
     line-height: 2em;
-    border: 1px solid #999;
     width: 20%;
     min-width: 120px;
     text-align: center;
     color: #fff;
     border-radius: 3px;
     margin: 10px auto;
+    clear: both;
 }
 .btn-shop:hover{
     color: #ffffff;

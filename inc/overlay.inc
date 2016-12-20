@@ -9,4 +9,4 @@
 		</div>
 	</div>
 </div>
-<div class="backtop"><a href="javascript:void(0);"><img src="/images/backtop.png" alt=""></a></div>
+<div class="backtop"><a href="javascript:;"><img src="/images/backtop.png" alt=""></a></div>

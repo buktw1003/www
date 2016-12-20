@@ -65,7 +65,8 @@ $(function() {
         });
     });*/
     //$(".nav-categories .rightside img").attr("src","/images/prod/" + thisClass + "/cat-sub-1.jpg");
-    $(".backtop").click(function(){
-        $("body","html").animate({"scrollTop" : 0});
+    $(".backtop a").click(function(){
+        $("body,html").animate({"scrollTop" : 0});
+        $(window).scrollTop(0);
     })
 })
