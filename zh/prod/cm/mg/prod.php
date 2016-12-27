@@ -3,6 +3,7 @@
 <?php 
 $prodName = "Riding Horse";
 $prodCode = "mg";
+$prodCat = "cm";
 $root = $_SERVER['DOCUMENT_ROOT'];
 $commVar = $root."/inc/comm_var.php";
 include_once($commVar);

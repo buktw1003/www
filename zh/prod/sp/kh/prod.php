@@ -50,11 +50,11 @@ $header = $root."/inc/header_".$lng.".php";
                             <div class="slides-nav">
                                 <div class="slide-img">
                                     <ul class="img clearfix">
-                                        <?php
-                                        include $root."/inc/prod/slideimgs/".strtolower($prodCode).".inc";
-                                        ?>
+                                        <li><a href="javascript:;"><img src="/images/prod/sp/<?php echo $prodCode ;?>/p1.jpg" alt=""></a></li>
+                                        <li><a href="javascript:;"><img src="/images/prod/sp/<?php echo $prodCode ;?>/p2.jpg" alt=""></a></li>
+                                        <li><a href="javascript:;"><img src="/images/prod/sp/<?php echo $prodCode ;?>/p3.jpg" alt=""></a></li>
+                                        <li><a href="javascript:;"><img src="/images/prod/sp/<?php echo $prodCode ;?>/p4.jpg" alt=""></a></li>                  
                                     </ul>
-
                                 </div>
                                 <div class="slide-img-assist">
                                     <img src="/images/prod/main-img-assist.png" alt="">
@@ -72,7 +72,7 @@ $header = $root."/inc/header_".$lng.".php";
                                 瓷器像個不多話的好朋友，靜靜的陪伴在每一個你需要的時刻<br/>
                             </p>
                             <p>跳脫傳統，日本KIHARA為您帶來便利生活的日常瓷器。</p>
-                            <div class="btn-buy"><a class="btn-shop" href="http://buk1003.shoplineapp.com/products?query=kihara" target="_blank">立即訂購</a></div>
+                            <div class="btn-buy"><a class="btn-shop" href="http://buk1003.shoplineapp.com/categories/%E5%BB%9A%E6%88%BF%E7%94%A8%E5%93%81" target="_blank">立即訂購</a></div>
                         </div>
                     </div>
 
@@ -83,7 +83,7 @@ $header = $root."/inc/header_".$lng.".php";
                     <div class="items">
                         <ul class="row btn-scrollTo">
                             <li class="col-xs-4">
-                            <a href="#ov-item1" type="item">
+                                <a href="#ov-item1" type="item">
                                     <span class="img"><img src="/images/prod/kt/<?php echo $prodCode ;?>/items/it1.jpg" alt=""></span>
                                     <span class="text v-center" style="top: 65.75px;">
                                         <span class="title">鍋島様式<br/>髙橋正</span>
@@ -106,23 +106,9 @@ $header = $root."/inc/header_".$lng.".php";
                                     </span>
                                 </a>
                             </li>
-                            <li class="col-xs-4">
-                                <a href="#ov-item4" type="item">
-                                    <span class="img"><img src="/images/prod/kt/<?php echo $prodCode ;?>/items/it4.jpg" alt=""></span>
-                                    <span class="text v-center" style="top: 77.75px;">
-                                        <span class="title">KIHARA<br/>HANA</span>
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="col-xs-4">
-                                <a href="#ov-item5" type="item">
-                                    <span class="img"><img src="/images/prod/kt/<?php echo $prodCode ;?>/items/it5.jpg" alt=""></span>
-                                    <span class="text v-center" style="top: 65.75px;">
-                                        <span class="title">KIHARA<br/>古白磁</span>
-                                    </span>
-                                </a>
-                            </li>
-                            
+
+
+
                         </ul>
                     </div>
                     <div id="ov-item1" class="ov-item">
@@ -357,7 +343,7 @@ $header = $root."/inc/header_".$lng.".php";
                             <a class="btn-shop" href="http://buk1003.shoplineapp.com/categories/kihara-%E5%88%9D%E6%9C%9F%E4%BC%8A%E8%90%AC%E9%87%8C%E6%A8%A3%E5%BC%8F" target="_blank">立即訂購</a>
                         </div>
                     </div>
-                    <div id="ov-item4" class="ov-item">
+                    <!-- <div id="ov-item4" class="ov-item">
                         <div class="clearfix">
                             <div class="intro">
                                 <h4>Hana系列</h4>
@@ -482,8 +468,8 @@ $header = $root."/inc/header_".$lng.".php";
                             </div>
                             <a class="btn-shop" href="http://buk1003.shoplineapp.com/categories/kihara-hana%E7%B3%BB%E5%88%97" target="_blank">立即訂購</a>
                         </div>
-                    </div>
-                    <div id="ov-item5" class="ov-item">
+                    </div> -->
+                    <!-- <div id="ov-item5" class="ov-item">
                         <div class="clearfix">
                             <div class="intro">
                                 <h4>古白磁系列</h4>
@@ -535,7 +521,7 @@ $header = $root."/inc/header_".$lng.".php";
                             </div>
                             <a class="btn-shop" href="http://buk1003.shoplineapp.com/categories/kihara-%E5%8F%A4%E7%99%BD%E7%A3%81" target="_blank">立即訂購</a>
                         </div>
-                    </div>
+                    </div> -->
                     
                 </div>
                 <!-- /content -->

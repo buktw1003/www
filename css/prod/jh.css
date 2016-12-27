@@ -87,6 +87,7 @@
 }
 .price img{
     width: auto;
+    max-width: 100%;
 }
 @media (max-width: 768px) {
     .prod .intro-bar{
@@ -111,6 +112,9 @@
     }
     .video{
         margin-bottom: 0;
+    }
+    .price .col-md-3{
+        width: 100%;
     }
 }
 .block-figure .onimg.text{

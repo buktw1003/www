@@ -3,6 +3,7 @@
 <?php 
 $prodName = "JollyHeap";
 $prodCode = "jh";
+$prodCat = "cm";
 $root = $_SERVER['DOCUMENT_ROOT'];
 $commVar = $root."/inc/comm_var.php";
 include_once($commVar);

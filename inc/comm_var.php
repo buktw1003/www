@@ -4,22 +4,22 @@ $path = $_SERVER["SCRIPT_NAME"];
 $lng = substr($path, 1,2);
 $prodCondition = "strpos($url,'prod') !== false";//if url has string 'prod'
 if($prodCondition){
-  $prodCss = '/css/prod/'.strtolower($prodCode).'.css';
+  $prodCss = '/css/prod/'.strtolower($prodCode).'.css?v=20161222';
   $prodJs = '/js/prod/'.strtolower($prodCode).'.js';
 };
 
-$css = '<link rel="stylesheet" href="/css/bootstrap.min.css?v=20161217">
-        <link rel="stylesheet" href="/css/reset.css?v=20161217">
-        <link rel="stylesheet" href="/css/core.css?v=20161217">
-        <link rel="stylesheet" href="/css/slider.css?v=20161217">
-        <link rel="stylesheet" href="/css/m.css?v=20161217">';
+$css = '<link rel="stylesheet" href="/css/bootstrap.min.css?v=20161222">
+        <link rel="stylesheet" href="/css/reset.css?v=20161222">
+        <link rel="stylesheet" href="/css/core.css?v=20161222">
+        <link rel="stylesheet" href="/css/slider.css?v=20161222">
+        <link rel="stylesheet" href="/css/m.css?v=20161222">';
         //if($prodCondition && file_exists($root.$prodCss)){
           $css .= '<link rel="stylesheet" href="'.$prodCss.'">';
         //};
-$js = '<script src="https://code.jquery.com/jquery-3.1.1.js?v=20161217"></script>
-       <script src="/js/load.js?v=20161217"></script>
-       <script src="/js/slider.js?v=20161217"></script>
-       <script src="/js/main.js?v=20161217"></script>
+$js = '<script src="https://code.jquery.com/jquery-3.1.1.js?v=20161222"></script>
+       <script src="/js/load.js?v=20161222"></script>
+       <script src="/js/slider.js?v=20161222"></script>
+       <script src="/js/main.js?v=20161222"></script>
        <script src="/js/index.js"></script>';
        if(strpos($url,'prod') !== false){
           $js .= '<script src="/js/prod.js?v=2"></script>';
